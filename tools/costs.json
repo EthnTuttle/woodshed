@@ -1,0 +1,1502 @@
+{
+ "howtospecialist-16x20-gable": {
+  "caveats": "[\"WHAT 'PARTIAL' MEANS HERE: about 92% of the dollars are retailer unit price x the plan's own published quantity. The soft parts are (a) all hardware quantities \u2014 the plan lists joist hangers, rafter ties, screws, nails, hinges and a latch with NO counts, so those take-offs are mine; (b) the nails line, where the per-pound prices are real but the poundage is my estimate and roofing nails could not be priced at either yard; (c) wood glue/filler, a $30-40 placeholder that is not a price at all.\", \"THE RANGE IS GEOGRAPHIC AND GRADE-BASED, NOT A GUESS. Low end = Sutherlands, a Kansas/Missouri/Texas chain, value grades (SPF Std&Btr studs, BC yellow-pine plywood, APA Premium T1-11, 3-tab shingles). High end = Dunn Lumber, Seattle, better grades (Hem-Fir #2&Btr, CDX, Douglas Fir APA 303 siding, primed finger-jointed cedar trim, architectural shingles). Both were fetched live on 2026-09-07. Your actual bill lands inside this band unless you are in Hawaii, Alaska or a remote area.\", \"THE TWO YARDS AGREE CLOSELY ON COMMODITIES AND DIVERGE ON APPEARANCE GOODS. 3/4 in. plywood: $42.99 vs $41.88 (3% apart). 2x4: $3.99/8ft vs $4.64/8ft equivalent (16% apart), with Menards at $4.89 for a pre-cut DF stud sitting between them. But siding is $50.99 vs $95.88 a sheet and 1x8 trim is $16 vs $30 a board. That is where you control your own cost, not on the framing.\", \"SIDING IS THE DECISION. 24 sheets of T1-11 is $1,224-$2,301 \u2014 22% to 32% of the whole bill. Verified cheaper options exist at both yards (Sutherlands rough-fir T1-11 $40.28/sheet; Dunn shop-grade falldown 5/8 grooved siding $55.88/sheet), which would pull the high end down to roughly $5,900.\", \"THE PLAN'S 3/4 IN. PLYWOOD ROOF DECK IS OVERBUILT AND EXPENSIVE. 16 sheets of 3/4 in. on a roof framed at 24 in. OC costs ~$680; 7/16 in. OSB (verified at Sutherlands for $12.49/sheet) costs ~$200 and is code-compliant at 24 in. OC in most places. That single substitution saves about $490 and is the cheapest real saving in this bill.\", \"THE PLAN CONTRADICTS ITSELF ON THE LONGEST MEMBERS and I priced the SHOPPING LIST, not the cut list. The cut list gives 192 in. for both the skids (item A) and the outer rim joists (item B), while the shopping list buys 20 ft (240 in.) stock. If you cut to 192 in. you build a 16x16 floor, not 16x20. Priced as 20 ft. Verify against the diagrams before you cut, and note that the 320 sq ft and the $/sq ft figures depend on the 20 ft reading being correct.\", \"THE 20 FT 1x8 IN THE PLAN IS TOO SHORT FOR ITS OWN CUT LIST (263-1/4 in. = 21 ft 11 in.), and no yard I could reach stocks a 22 ft 1x8. Priced as spliced shorter boards.\", \"ARCHIVED PRICES ARE FLAGGED AND ARE PROBABLY LOW TODAY. Two lines lean on Wayback snapshots of Menards: the architectural shingle at $35.99 (2026-02-25, priceValidUntil 2026-03-01) and the 10 ft drip cap at $6.67 (2025-08-17). FRED WPU0811, the PPI for softwood lumber, is up 15.0% year-over-year and 20.2% since December 2025 as of the July 2026 reading, so anything quoted before mid-2026 is likely understated. The two live yards are not affected.\", \"HOME DEPOT AND LOWE'S PRICES ARE NOT IN THIS NUMBER. Both hard-block direct requests, and I could not find usable Wayback product snapshots for the specific items. Big-box prices are usually within about 10% of a competitive yard on commodity framing but often run higher on siding and trim, so a Home Depot cart would most likely land near or somewhat above the high end here.\", \"SUTHERLANDS PRICES ARE STORE-SPECIFIC AND SOME SKUS RETURN NO PRICE AT ALL AT A GIVEN BRANCH. I queried multiple branches per item and reported the first branch that published a price; that branch is named in the source field. Prices move between branches \u2014 the same 1x4x8 board was $4.89 in Wichita, $5.19 in Emporia and $5.49 in Springfield MO.\", \"WINDOWS ARE INCLUDED IN THE TOTAL BUT NOT IN THE PLAN. The plan's own bill is $5,310-$6,775 ($16.59-$21.17/sq ft). Adding two 36x36 vinyl single-hungs gets you to $5,640-$7,213. Subtract $330-$438 if you want the literal published list.\", \"THIS IS NOT A PROJECT BUDGET. Add gravel, permit, engineering if demanded, delivery, sales tax, paint (~$300-600), 5-10% waste and any electrical. A realistic all-in cash cost for this shed, built by the owner with no labor charged, is meaningfully north of $8,000 and can pass $11,000 once a permit, stamped trusses, a gravel pad, paint and power are in. That is worth knowing before you conclude the $30 plan beats the $11,000-15,000 kit \u2014 the honest gap on materials alone is roughly $5,600-$7,200 versus $11,000-$15,000, i.e. the DIY route saves about half, and it buys you the labor bill instead.\"]",
+  "confidence": "MEDIUM-HIGH on the lumber, sheet-goods, siding and roofing subtotal, which is ~85% of the dollars. Reasons: (1) every unit price on those lines came from a retailer page I fetched myself, and I re-verified the two largest lines (T1-11 $50.99 and 3/4 plywood $42.99) on a second fetch reading the schema.org ld+json offer directly; (2) two geographically independent live retailers, fetched the same day, agree within 3% on 3/4 in. plywood and within 16% on 2x4, with an archived Menards big-box stud price sitting between them \u2014 three-way corroboration on the commodity core; (3) all quantities on those lines are the plan's OWN published shopping list, not my take-off; (4) FRED WPU0811 confirms the price level is current rather than stale. MEDIUM on the total. Reasons it is not higher: the plan publishes zero counts for joist hangers, rafter ties, screws, nails, hinges and glue, so ~$500-700 of hardware rests on my take-offs and estimates rather than the plan; roofing nails could not be priced at all; the drip-edge unit price is a year-old archived Menards figure; the Dunn 4x4 skid price is extrapolated per-foot from an 8 ft post because they do not stock 20 ft; and the plan's own internal contradiction (192 in. cut list vs 20 ft shopping list on skids and rim joists) means the footprint the bill actually builds is not fully settled. LOW confidence specifically on the nails/staples line and the glue/filler placeholder \u2014 those two are marked as estimates and together are worth about $150, so they cannot move the headline much. Home Depot and Lowe's being unreachable is the main gap I could not close; I would not present this as a big-box cart price.",
+  "cost_per_sqft_high": 22.54,
+  "cost_per_sqft_low": 17.63,
+  "excludes": [
+   "Foundation prep entirely: gravel bed, compaction, ground cloth, site levelling, excavation. The plan says 'leveled, compacted gravel bed' and buys nothing for it. Budget roughly $250-700 delivered for 6-8 cu yd of crushed rock on a 16x20 pad.",
+   "Concrete, piers, footings, anchors, hold-downs and tie-downs of any kind. The plan is 4x4 skids on gravel with no anchoring detail published.",
+   "Permits, plan-check fees, inspections. At 320 sq ft this is over the usual 100-200 sq ft exempt threshold, so a permit is very likely \u2014 commonly $150-800 depending on jurisdiction.",
+   "Engineering. The eleven 16 ft clear-span site-built 2x6/plywood-gusset trusses are not stamped. If a plan checker demands calculations, expect $400-1,500 for an engineer, or the cost of buying manufactured trusses instead.",
+   "Delivery. A 320 sq ft shed bill is roughly 3,000-3,500 lb of lumber plus 24 sheets of siding, 26 sheets of 3/4 plywood and 16 bundles of shingles \u2014 well past pickup-truck territory. Typical yard delivery $75-250.",
+   "Sales tax (0% to ~10% depending on state \u2014 on a $6,000 bill that is up to ~$600).",
+   "All tools: miter saw, circular saw, jigsaw, drill/driver, pocket-hole jig, chalk line, levels, ladders and scaffold, plus roof-safety gear.",
+   "Labor. Everything here is materials only. The plan's claimed 'one day' per part is fantasy for 320 sq ft with 11 site-built trusses.",
+   "Paint or stain, primer, caulk and brushes. The plan mentions 'stain/paint' but buys none. T1-11 must be finished: ~24 sheets = ~770 sq ft of wall, roughly 8-12 gallons for two coats, about $300-600.",
+   "Housewrap / weather-resistive barrier and structural shear sheathing. The plan puts 5/8 T1-11 straight on studs at 24 in. OC with no housewrap and no plywood shear panels \u2014 if your code requires either, add ~$700-1,200.",
+   "Insulation, vapor barrier, interior wall/ceiling finish, interior paint, shelving, workbenches.",
+   "Electrical of any kind: trenching, conduit, feeder, subpanel, receptacles, lighting, permits and electrician labor. For a detached 320 sq ft shop this is commonly $1,500-4,000 on its own.",
+   "Ridge vent, soffit vents, gable vents or any roof ventilation \u2014 none is specified in the plan.",
+   "Starter strip and hip/ridge cap shingles (the 16 bundles cover field area; a starter course is normally a separate product), and roof sealant/flashing cement.",
+   "Ramp, threshold, door sweep, door handles/pulls beyond the single latch, and any lock/hasp upgrade.",
+   "Gutters and downspouts.",
+   "Waste, breakage and miscut allowance. Every quantity here is the plan's published count with no overage factor; real jobs run 5-10% over."
+  ],
+  "price_sources": [
+   "Sutherlands (sutherlands.com) \u2014 50-store Midwest/South chain (KS, MO, TX, OK, AR, LA, NM, CO, WY, UT, OH, KY, MS). Prices are server-rendered in each product page's schema.org ld+json when a store is selected via ?store=<branchCode>. Fetched LIVE by curl on 2026-09-07. Stores hit: Emporia KS (4308), Kansas City-Wornall (1211), Wichita KS (1403), Corpus Christi TX (3210), Shreveport LA (3218), Alice TX. Verified SKUs include 10173 (2x4x8 SPF $3.99), 10215 (2x4x16 $8.89), 10231 (2x4x20 $12.89), 10397/10413/10439/10454 (2x6 8/12/16/20ft $6.89/$9.99/$13.29/$22.29), 12906 (4x4x20 PT ground-contact $49.99), 24950 (23/32 BC yellow-pine plywood 4x8 $42.99), 95570 (19/32 APA Premium T1-11 8in OC 4x8 $50.99), 25254 (19/32 T1-11 rough fir $40.28), 23416 (7/16 OSB $12.49), 5948609 (3/4 T&G OSB $29.99), 3899200 (IKO Marathon 3-tab bundle $34.99), 1557255 (#15 felt 432 sq ft $26.99), 1638576 (3x144ft roofing felt $31.99), 47837 (1x8x12 board $15.99), 6748123 (1x4x8 $5.19), 555284/555292 (3in/4in T-hinge $8.49/$10.49), 555193 (hasp $7.79), 1487446 (Simpson #10x2-1/2 500ct $79.99), 2103315 (25 lb #9x2 exterior screw tub $131.99), 2918324 (3in 10d common 5 lb $20.99), 1492883 (Croft 36x36 vinyl Low-E single hung $164.99), 1628304 (Atrium 36x36 $218.99), 4173191 (MI 3500 36x36 $173.99)",
+   "Dunn Lumber (dunnlumber.com) \u2014 Seattle-area yard, 8 stores. Category and product pages publish prices directly; dimensional lumber is quoted PER LINEAL FOOT (confirmed on the grouped-product table, e.g. 'Hem Fir 2x4-8' ... $0.58 / lf'). Fetched LIVE by curl on 2026-09-07. Prices used: Hem-Fir 2x4 #2&Btr KD S4S $0.58/lf; Hem-Fir 2x6 $0.88/lf; Douglas Fir 2x4 $0.74/lf and 2x6 $1.18/lf; SPF 2x4 $0.88/lf and 2x6 $1.38/lf; PT Hem/Fir 4x4-8ft incised ground-contact post $16.78 ea; CDX 3/4in plywood sheathing 4x8 $41.88; Premium Douglas Fir APA 303 plywood siding 5/8in 8in OC 4x8 $95.88 (shop-grade falldown equivalent $55.88); Advantech 3/4 OSB T&G $43.88; primed finger-jointed cedar 1x8-20ft $3.28/lf and 1x4-20ft $1.58/lf; Simpson Standard Joist Hanger galv 2x6 $3.28; Simpson Roof Truss Clip 18ga $0.88; metal ply edge flashing 10ft $9.88; Power Pro 9x2-1/2in exterior screws 2500pc bucket $150.99; galv deck screws 8x2in 3000pc bucket $75.59; 16d galv box nails $5.78/lb; 8d/7d galv smooth siding nails $7.28/lb; 1-1/2in galv joist-hanger nails $6.48/lb; Ornamental T-Hinge 8in black 2-pack $29.99; Universal Gate Latch black $13.49",
+   "Menards via Wayback Machine (direct menards.com is Imperva-blocked). Atlas Pinnacle Pristine architectural shingles, SKU 1516712, 32.8 sq ft/bundle, $35.99 \u2014 ld+json shows priceValidUntil 2026-03-01; Wayback snapshot 20260225184306 (2026-02-25). 2x4x92-5/8in pre-cut Douglas Fir stud, SKU 1021093, $4.89 \u2014 Wayback snapshot 20260211111839 (2026-02-11), used as a big-box cross-check. 10ft steel drip cap 2in, SKU 1571525, $6.67 \u2014 priceValidUntil 2025-08-17, Wayback snapshot 20250817233017",
+   "FRED series WPU0811 (PPI, softwood lumber), fredgraph.csv fetched 2026-09-07: 2026-07 = 300.6 vs 2025-07 = 261.4 (+15.0% YoY) and vs 2025-12 = 250.1 (+20.2%). Used only as a directional cross-check confirming that mid-2026 framing lumber is materially more expensive than 2025, i.e. the live prices above are not stale-low and the archived Menards prices likely understate today",
+   "BLOCKED / NOT USABLE, for transparency: homedepot.com 403 direct and no usable product-page Wayback snapshots found for framing lumber, T1-11, shingles, drip edge, joist hangers, screws or windows (CDX filtered queries returned nothing and archive.org went 'Temporarily Offline' twice mid-session); lowes.com 403 'Access Denied'; menards.com direct 'Pardon Our Interruption'; acehardware.com 403 on search; mccoys.com 403; bestmaterials.com Cloudflare 403; doitbest.com and truevalue.com 406; 84lumber.com and carterlumber.com reachable but publish no prices"
+  ],
+  "priced": "PARTIAL",
+  "priced_lines": [
+   {
+    "extended": "$441.90 (Sutherlands) - $487.20 (Dunn)",
+    "item": "2x4 wall framing (plates, studs, cripples, truss webs, door frames) \u2014 78 @ 8ft, 6 @ 16ft, 6 @ 20ft = 840 lineal ft",
+    "qty": "90 pieces / 840 lf",
+    "source": "REAL. Sutherlands SKUs 10173/10215/10231, live 2026-09-07. Dunn Lumber grouped-product table, live 2026-09-07. Cross-check: Menards 2x4x92-5/8 DF stud $4.89 (Wayback 2026-02-11). Quantities are the plan's own published shopping list.",
+    "unit_price": "$3.99 per 8ft, $8.89 per 16ft, $12.89 per 20ft (Sutherlands SPF Std&Btr KD S4S) | $0.58/lf (Dunn Hem-Fir #2&Btr)"
+   },
+   {
+    "extended": "$765.12 (Sutherlands) - $795.52 (Dunn)",
+    "item": "2x6 floor joists, rim joists, headers/sills, truss top and bottom chords, overhangs \u2014 9 @ 8ft, 30 @ 12ft, 27 @ 16ft, 2 @ 20ft = 904 lineal ft",
+    "qty": "68 pieces / 904 lf",
+    "source": "REAL. Sutherlands SKUs 10397/10413/10439/10454, live 2026-09-07. Dunn Lumber, live 2026-09-07. Quantities from the plan's shopping list.",
+    "unit_price": "$6.89 / $9.99 / $13.29 / $22.29 per 8/12/16/20ft (Sutherlands SPF #2&Btr) | $0.88/lf (Dunn Hem-Fir #2&Btr)"
+   },
+   {
+    "extended": "$210.00 (Dunn, derived) - $249.95 (Sutherlands)",
+    "item": "4x4 pressure-treated skids, 5 @ 20ft (100 lf)",
+    "qty": "5 pieces / 100 lf",
+    "source": "REAL price / DERIVED unit at Dunn. Dunn does not stock a 20ft PT 4x4, so its figure is a per-foot extrapolation from the 8ft post price and would in practice cost more in 20ft lengths. Sutherlands figure is a straight 20ft SKU price, live 2026-09-07.",
+    "unit_price": "$49.99 ea (Sutherlands #2 S4S treated ground-contact yellow pine, SKU 12906) | $2.10/lf derived from Dunn PT Hem/Fir 4x4-8ft incised ground-contact post at $16.78"
+   },
+   {
+    "extended": "$1,088.88 - $1,117.74",
+    "item": "3/4 in. plywood \u2014 floor deck (10 sheets) + roof deck (16 sheets)",
+    "qty": "26 sheets 4x8",
+    "source": "REAL, two independent live retailers agreeing within 3%, both 2026-09-07. Quantity is the plan's own (10 + 16 sheets). Note: 3/4 in. plywood on a 24 in. OC roof is heavy overkill; swapping the 16 roof sheets to 7/16 OSB (Sutherlands $12.49, verified) cuts about $490.",
+    "unit_price": "$42.99/sheet (Sutherlands 23/32 BC-grade yellow pine, SKU 24950) | $41.88/sheet (Dunn CDX 3/4 sheathing)"
+   },
+   {
+    "extended": "$1,223.76 - $2,301.12",
+    "item": "T1-11 5/8 in. grooved plywood siding \u2014 18 walls + 4 gable ends + 2 doors",
+    "qty": "24 sheets 4x8",
+    "source": "REAL, both live 2026-09-07. This is the single biggest line and the biggest swing in the whole bill. Cheaper verified options: Sutherlands rough-fir T1-11 19/32 $40.28 (SKU 25254) and Dunn shop-grade/falldown 5/8 grooved siding $55.88 \u2014 using the latter drops the high total by about $960.",
+    "unit_price": "$50.99/sheet (Sutherlands 19/32 APA Premium T1-11 8in OC yellow pine, SKU 95570) | $95.88/sheet (Dunn Premium Douglas Fir APA 303 5/8 8in OC)"
+   },
+   {
+    "extended": "$127.92 - $301.76",
+    "item": "1x8 fascia and rake trim \u2014 4 @ 12ft plus two 263-1/4 in. runs",
+    "qty": "8 boards / ~92 lf",
+    "source": "REAL unit prices, live 2026-09-07. SUBSTITUTION: the plan buys 2 pieces of 1x8 at 20ft for members that are actually 263-1/4 in. (21ft 11in) long \u2014 neither yard stocks a 22ft 1x8, so this is priced as 8 shorter boards with splices.",
+    "unit_price": "$15.99 per 1x8x12 board (Sutherlands SKU 47837) | $3.28/lf primed finger-jointed cedar 1x8-20ft (Dunn)"
+   },
+   {
+    "extended": "$83.04 - $202.24",
+    "item": "1x4 decorative corner/door trim",
+    "qty": "16 @ 8ft / 128 lf",
+    "source": "REAL, both live 2026-09-07. Quantity from the plan's Part 3 shopping list.",
+    "unit_price": "$5.19 ea (Sutherlands 1x4x8 whitewood appearance board, SKU 6748123) | $1.58/lf primed finger-jointed cedar (Dunn)"
+   },
+   {
+    "extended": "$559.84 - $575.84",
+    "item": "Asphalt shingles, 500 sq ft of roof coverage",
+    "qty": "16 bundles (~5.3 squares)",
+    "source": "REAL. Sutherlands live 2026-09-07; Menards via Wayback snapshot 2026-02-25 with ld+json priceValidUntil 2026-03-01. Coverage-to-bundle math is mine: 500 sq ft / 33.3 = 15.02, rounded up to 16 for starter and ridge waste.",
+    "unit_price": "$34.99/bundle, 33.3 sq ft, IKO Marathon 3-tab (Sutherlands SKU 3899200) | $35.99/bundle, 32.8 sq ft, Atlas Pinnacle Pristine architectural (Menards SKU 1516712)"
+   },
+   {
+    "extended": "$53.98",
+    "item": "Tar paper / #15 asphalt-saturated felt underlayment, 500 sq ft",
+    "qty": "2 rolls @ 432 sq ft",
+    "source": "REAL, Sutherlands live 2026-09-07 (Kansas City-Wornall). Same price used on both ends of the range. A synthetic upgrade (Dunn Interwrap Titanium PSU30, $158.88 per 216 sq ft, live) would add roughly $420.",
+    "unit_price": "$26.99/roll (Sutherlands Tarco, SKU 1557255)"
+   },
+   {
+    "extended": "$60.03 - $88.92",
+    "item": "Roof drip edge, ~84 lf (two 20ft eaves + two ~22ft rakes)",
+    "qty": "9 pieces @ 10ft",
+    "source": "REAL unit prices (Menards via Wayback 2025-08-17, priceValidUntil 2025-08-17 \u2014 this one is a year old and likely low today; Dunn live 2026-09-07). QUANTITY IS MY TAKE-OFF: the plan lists drip edge but publishes no length.",
+    "unit_price": "$6.67 per 10ft (Menards steel drip cap, SKU 1571525) | $9.88 per 10ft (Dunn metal ply edge flashing, galv 28ga)"
+   },
+   {
+    "extended": "$104.96",
+    "item": "Simpson Strong-Tie 2x6 joist hangers for the floor frame (16 joists x 2 ends)",
+    "qty": "32",
+    "source": "REAL unit price, Dunn live 2026-09-07. QUANTITY IS MY TAKE-OFF \u2014 the plan just says 'joist hanger' with no count. Not priced at Sutherlands (their hanger SKUs return no store price), so the same figure is used on both ends.",
+    "unit_price": "$3.28 ea (Dunn, Simpson Standard Joist Hanger galvanized 2x6)"
+   },
+   {
+    "extended": "$19.36",
+    "item": "Rafter / truss ties, 11 trusses x 2 bearing points",
+    "qty": "22",
+    "source": "REAL unit price, Dunn live 2026-09-07. QUANTITY IS MY TAKE-OFF \u2014 the plan says 'structural nails for ties' and 'rafter ties' with no count.",
+    "unit_price": "$0.88 ea (Dunn, Simpson Roof Truss Clip galvanized 18ga)"
+   },
+   {
+    "extended": "$226.58 - $291.97",
+    "item": "Screws \u2014 1-5/8 in. (plywood decking and gussets), 2-1/2 in. (framing and doors), 3-1/2 in. (plates)",
+    "qty": "~3,000-3,500 assorted",
+    "source": "REAL unit prices (both yards live 2026-09-07). QUANTITY IS MY ESTIMATE \u2014 the plan names screw sizes but publishes no counts. 26 sheets of decking at 8 in. on-centre alone is roughly 2,000 screws.",
+    "unit_price": "Dunn: Power Pro 9x2-1/2in 2500pc bucket $150.99 + galv deck screw 8x2in 3000pc bucket $75.59 | Sutherlands: 25 lb #9x2in exterior tub $131.99 + 2 x Simpson #10x2-1/2in 500ct $79.99"
+   },
+   {
+    "extended": "$110 - $175",
+    "item": "Nails and staples \u2014 8d/7d galvanized siding nails for 24 sheets of T1-11, 16d framing, 1-1/2 in. joist-hanger nails, roofing nails/staples",
+    "qty": "~20-25 lb assorted",
+    "source": "REAL per-pound prices; POUNDAGE IS MY ESTIMATE. Roofing nails specifically could not be priced at either yard (Dunn is a cedar/composite market and carries no asphalt shingles; the Sutherlands bulk roofing-nail SKU returned $77.99 with no stated box weight, so I did not use it). Treat this line as the softest in the bill.",
+    "unit_price": "Dunn bulk, per pound, live: 7d galv smooth siding $7.28/lb; 16d galv box $5.78/lb; 1-1/2in galv joist-hanger $6.48/lb. Sutherlands: 3in 10d common 5 lb box $20.99"
+   },
+   {
+    "extended": "$70.73 - $103.46",
+    "item": "Double-door hinges and latch",
+    "qty": "6 T-hinges + 1 latch/hasp",
+    "source": "REAL, both live 2026-09-07. The plan lists 'shed hinges & latch' with no brand, model or count; 3 hinges per leaf is my assumption for a 36 x 80 in. T1-11 door leaf.",
+    "unit_price": "$10.49 ea 4in T-hinge + $7.79 hasp (Sutherlands SKUs 555292 / 555193) | $29.99 per 2-pack 8in ornamental T-hinge + $13.49 gate latch (Dunn)"
+   },
+   {
+    "extended": "$0 incremental",
+    "item": "Two site-built double doors (2x4 frames + T1-11 panels + pocket-hole screws)",
+    "qty": "2 leaves",
+    "source": "The plan builds the doors from stock 2x4 (10 @ 8ft) and T1-11 (2 sheets), both of which are already inside the 2x4 and T1-11 lines above. There is no purchased pre-hung door in this plan.",
+    "unit_price": "n/a \u2014 materials already counted"
+   },
+   {
+    "extended": "$30 - $40",
+    "item": "Wood glue and wood filler",
+    "qty": "1 lot",
+    "source": "ESTIMATE \u2014 not priced. The plan lists 'wood filler, wood glue' with no quantity; this is a placeholder, not a retailer price.",
+    "unit_price": "estimated"
+   },
+   {
+    "extended": "$329.98 - $437.98",
+    "item": "Windows \u2014 2 @ 36 x 36 in. vinyl single-hung (NOT in the plan's shopping list)",
+    "qty": "2",
+    "source": "REAL, Sutherlands live 2026-09-07 (Corpus Christi TX / Shreveport LA stores \u2014 these SKUs return no price at the Kansas stores). IMPORTANT: the plan frames two 36x36 openings but its shopping list never buys the windows. I have included them in the totals because a shed with two framed holes is not finished; subtract $330-$438 if you want the plan's literal bill.",
+    "unit_price": "$164.99 ea (Sutherlands Croft 36x36 white vinyl Low-E single hung, SKU 1492883) | $218.99 ea (Sutherlands Atrium 36x36, SKU 1628304). Cross-check: MI 3500 Series Low-E $173.99 (SKU 4173191)"
+   }
+  ],
+  "slug": "howtospecialist-16x20-gable",
+  "total_high_usd": 7213,
+  "total_low_usd": 5640
+ },
+ "howtospecialist-16x20-pole-barn": {
+  "caveats": "[\"WHAT THE NUMBER IS: $3,302-$3,915 buys every stick of wood, every sheet of siding and roof deck, the shingles, the felt, the door hardware, the rafter ties and the nails and screws on this plan's two published shopping lists, at ONE real retailer, priced on 2026-09-07. $10.32-$12.23 per sq ft on 320 sq ft. It is a bill of materials for a roofed, sided, doored, FLOORLESS post-frame shelter. It is not a project budget.\", \"The low/high spread is driven by GRADE, not by two different stores. Low = whitewood/fir 'Preferred Cut' framing, 3/4 OSB roof deck, 11/32 T1-11, cheapest stocked 3-tab shingle, one felt roll, minimum fastener boxes. High = pressure-treated #1 ground-contact skirt boards, 23/32 APA CDX yellow-pine plywood roof deck (which is what the plan actually specifies), 19/32 T1-11, Owens Corning 3-tab, two felt rolls, and a waste allowance on consumables. Both columns use real 2026-09-07 Sutherlands prices for every line.\", \"GRADE WARNING ON THE FRAMING: at these Sutherlands stores the stocked dimensional lumber is a Whitewood/Fir 'Preferred Cut' line. Every #2-&-Better SPF, Hem-Fir and Southern Yellow Pine SKU I checked returned price 0 = not stocked. Site-built trusses spanning the full 16 ft on 2x6 chords really want #2 or better; if your yard makes you buy #2 SYP or Doug Fir instead, add roughly 15-30% to the ~$1,200 framing subtotal.\", \"The plan itself specifies NO grades, NO species, NO roof pitch, NO wall height and NO fastener quantities, and its trusses are not engineer-stamped. Quantities for shingles, felt, nails, screws, hinges and rafter ties are MY derivations from the plan's own 13-sheet roof deck and 22-sheet siding count, flagged line by line; every unit price behind them is a real retailer price.\", \"PRICES MOVE, AND THEY ARE MOVING UP. FRED WPU0811 (PPI, softwood lumber) is 300.6 in Jul-2026 versus 261.4 in Jul-2025 (+15.0%) and 250.1 in Dec-2025 (+20.2%). Any 16x20 shed materials figure a reader finds from 2024 or 2025 is roughly 15-20% too low today, and this figure will drift too. Re-price before you buy.\", \"REGIONAL SPREAD IS UNVERIFIED AT THE TOP END. Sutherlands is a Midwest/South chain (MO, KS, OK, TX, AR, OH). Independent Menards checks put big-box within a few percent of these prices on treated 4x4s and 10-20% above on 2x4x16 and 7/16 OSB, so the totals are representative of the Midwest. I could NOT obtain a single Home Depot or Lowe's price (403 on every route; archived pages carry no price data), and I could not obtain any Northeast or West Coast yard price. Coastal and Northeast buyers should expect to be above the $3,915 high end.\", \"SOME UNIT PRICES ARE STORE-SPECIFIC. Sutherlands' default store (Harrisonville MO) does not stock shingles, felt, hurricane ties or bagged concrete at all, so those four lines were priced at other named Sutherlands branches (Fredericksburg TX, Fort Smith AR, Great Bend KS, Columbus-South OH). Framing lumber, T1-11, plywood and OSB all carried a single price across all 42 stores. Bulk-quantity discounts also exist on the sheet goods (e.g. 3/4 OSB drops from $21.99 to a lower tier at 68+ sheets) and are NOT applied here \u2014 you will not hit those thresholds on one shed.\", \"THE 'FREE PLAN IS CHEAPEST' CLAIM HOLDS, BUT ONLY BECAUSE THIS BUILDING IS LESS BUILDING. At $3.3-3.9k of materials for 320 sq ft, the free post-frame plan is roughly 1/3 the price of the $11,000-15,000 kits in this dataset \u2014 but the kits include a floor system, engineered framing, cut-to-length parts and delivery, and this one includes no floor at all, no windows, no trim, no drip edge, no paint and no concrete. Add the omitted concrete ($246-$375) and paint ($180-$350) and drip edge ($120-$220) and you are at roughly $3.9k-$4.9k for a comparable-but-still-floorless shell.\", \"The Simpson H10A tie at $5.29 x 22 = $116 is the one line I know is conservative. The plan just says 'rafter ties'; a lighter H2.5A would be roughly $1.50-2.00 each and would cut ~$80 off both columns. I priced the H10A because it is the tie I could actually verify a 2026 price for.\", \"PART 1 of this plan's cut list and shopping list is now paywalled behind an 'UNLOCK PREMIUM PLANS' upsell on the live howtospecialist.com page. The Part 1 quantities used here come from the site's 2018 Wayback snapshot as recorded in the dataset; Part 2's lists are still free on the live page. I did not buy the $5 Gumroad PDF, so I cannot confirm the paid PDF's Part 1 list matches the 2018 archived one.\"]",
+  "confidence": "MEDIUM-HIGH on the unit prices, MEDIUM on the total. High confidence in the prices themselves: every one of the 23 lines is a live 2026-09-07 unit price pulled from a real retailer's own product page (schema.org JSON-LD, corroborated against the rendered '$X.XX /EA' text), from a 42-store chain, and four independent 2026 Menards prices recovered via Wayback land within 3-20% of the Sutherlands equivalents \u2014 plus FRED WPU0811 confirms the 2026 price level is real and elevated. Confidence drops to medium on the TOTAL for three reasons: (1) the plan publishes no quantities for shingles, felt, nails, screws, hinges or rafter ties, so roughly $900 of the bill rests on my derived counts (the ~$2,400 of lumber and sheet goods is the plan's own published counts); (2) Sutherlands' stocked framing is a whitewood 'Preferred Cut' grade rather than the #2-and-better a 16 ft truss span really wants, and the #2 SKUs were all out of stock so I could not price the upgrade; (3) I could not obtain a single Home Depot, Lowe's, Northeast or West Coast price despite trying ~15 routes, so the geographic top of the range is genuinely unknown rather than measured. Treat $3,300-$3,900 as a solid Midwest-yard materials number and add the listed exclusions \u2014 especially the $246-$375 of concrete the plan forgets to list \u2014 before calling it a budget.",
+  "cost_per_sqft_high": 12.23,
+  "cost_per_sqft_low": 10.32,
+  "excludes": [
+   "CONCRETE for the 17 post holes \u2014 the plan tells you to set pressure-treated 4x4s 3 ft deep in 10-12 in diameter holes filled with concrete, but concrete is NOT on either shopping list. Quantified: 17 holes at 3 ft deep needs ~1.3-2.1 cu ft of mix per hole net of the post, i.e. 38 bags (10 in holes) to 58 bags (12 in holes) of 80 lb Quikrete. At the REAL price of $6.47/80 lb bag (Sutherlands sku 471474, store 1221, 2026-09-07) that is an additional $246-$375 not included in the totals above.",
+   "GRAVEL / site prep / excavation / post-hole digger or auger rental",
+   "ANY FLOOR. The plan is deliberately a shelter over bare grade \u2014 there is no slab, no gravel floor, no wood floor and no floor framing anywhere in it. A 320 sq ft 4 in slab is roughly 4 cu yd of concrete, typically $1,500-$3,000 delivered and finished, and is entirely outside this number.",
+   "DRIP EDGE, starter strip, ridge cap shingles and any roof flashing \u2014 none appear in the plan's cut list or shopping list, but a shingle roof normally wants all of them (budget roughly $120-$220 more).",
+   "Gable / eave vents, ridge vent, soffit or any fascia and trim boards \u2014 not in the plan",
+   "PAINT, primer or stain. T1-11 plywood siding MUST be finished or it fails fast; 22 sheets = ~700 sq ft of wall needing primer plus two coats, typically $180-$350 in materials. Not included.",
+   "Construction adhesive (the plan says to glue the door frames) and caulk",
+   "Windows \u2014 the plan has none",
+   "Permits, plan review, engineering (the site-built 2x6 trusses are NOT engineer-stamped and carry no published snow or wind load rating; many jurisdictions will not permit unstamped site-built trusses on a 16 ft span)",
+   "Sales tax",
+   "DELIVERY. 22 siding sheets + 13 roof sheets + 17 posts will not fit in a pickup; yard delivery is commonly $75-$200.",
+   "Tools and tool rental (post-hole auger, circular saw, framing nailer, ladders, scaffolding, laser/level)",
+   "All LABOR \u2014 this is a materials-only bill",
+   "Electrical, lighting, receptacles, conduit, service run",
+   "Insulation, vapour barrier, interior sheathing, drywall or any interior finish",
+   "House wrap / weather-resistive barrier behind the siding (the plan nails T1-11 straight to the girts)",
+   "The optional $5 PDF of this same plan on Gumroad (the two web articles are free, and Part 1's cut/shopping list is now behind an upsell on the live page \u2014 the numbers above come from the site's 2018 Wayback snapshot of Part 1 plus the still-free Part 2)"
+  ],
+  "price_sources": [
+   "PRIMARY \u2014 Sutherlands.com (42-store Midwest/South lumber-yard chain). Direct HTTPS fetch of each product page; unit price read out of the page's schema.org/Product JSON-LD `offers[].price` block and confirmed against the visible '$X.XX /EA' on the rendered page text. Every page footer read 'Estimated stock levels as of Mon, Sep 7, 2026'. PRICE SNAPSHOT DATE: 2026-09-07. Example: https://sutherlands.com/products/item/12864/... = 4x4x12 #2 S4S Treated Ground Contact Yellow Pine, price 20.18, identical across all 42 store offers. Items not stocked at the default store (Harrisonville MO) were re-fetched with ?store=NNNN \u2014 shingles from store 3118 Fredericksburg TX, Tamko shingles store 2705 Fort Smith AR, hurricane ties + concrete store 1221 Columbus-South OH, felt store 3702 Great Bend KS, nails store 1214. Store IDs are recorded per line.",
+   "CROSS-CHECK \u2014 Menards.com via Wayback Machine (menards.com direct-fetches return an Imperva 'Pardon Our Interruption' block, so archived snapshots were used; snapshot HTML contains the live schema.org price plus a `priceValidUntil` field). Verified 2026 Menards prices: AC2 4x4x8 #2 ground-contact treated timber $11.79 (snapshot 2026-08-30, priceValidUntil 2026-08-30) vs Sutherlands 4x4x8 equivalent $11.48 \u2014 3% apart, which validates the Sutherlands price level. Also: 3/4 x 4 x 8 Plywood Rated Sheathing $32.91 (snapshot 2026-03-14); 7/16 x 4 x 8 OSB $16.48 (2026-01-30); 2x4x16 Construction/Framing $10.25 (2026-04-09); 2x4x12 $8.38 (2026-01-09); 2x10x16 #2&Btr $29.48 (2026-04-09); Atlas Pinnacle architectural shingles 32.8 sq ft $35.99/bundle (2026-02-25); Owens Corning Supreme 3-tab 33.3 sq ft $31.14/bundle (snapshot 2025-07-22).",
+   "MACRO CROSS-CHECK \u2014 FRED series WPU0811 (PPI by Commodity: Lumber and Wood Products: Softwood Lumber), fetched 2026-09-07 from fred.stlouisfed.org/graph/fredgraph.csv?id=WPU0811. Jul-2026 = 300.614 vs Jul-2025 = 261.368 (+15.0% YoY) and vs Dec-2025 = 250.132 (+20.2%). Framing lumber is at a multi-year high in 2026, so any 2024/2025 shed-cost figure a reader finds elsewhere is low by roughly 15-20%.",
+   "NOT OBTAINED \u2014 Home Depot and Lowe's. homedepot.com and lowes.com return HTTP 403 to both curl and the WebFetch tool; the r.jina.ai proxy is Cloudflare-blocked. Wayback DOES have 2025-2026 snapshots of both, but their prices are injected client-side and are absent from the archived bytes (Lowe's JSON-LD literally archives `\"price\":false`; Home Depot's archived page has no price node at all). No Home Depot or Lowe's price is used or implied anywhere in this estimate.",
+   "ALSO TRIED AND FAILED \u2014 menards.com direct (Imperva), mccoys.com (403), ruralking.com / zoro.com / fleetfarm.com / fastenal.com (403), doitbest.com / truevalue.com (406), acehardware.com search (403), 84lumber.com and hammondlumber.com and carterlumber.com (reachable but publish no online prices), farmandfleet.com and dunnlumber.com (prices JS-only)."
+  ],
+  "priced": "YES",
+  "priced_lines": [
+   {
+    "extended": "$242.16",
+    "item": "4x4 x 12 ft #2 S4S treated ground-contact Southern Yellow Pine post (12 of the 17 posts)",
+    "qty": "12 ea",
+    "source": "REAL \u2014 Sutherlands sku 12864, https://sutherlands.com/products/item/12864/sutherlands-4-x-4-inch-x-12-foot-number2-s4s-treated-ground-contact-yellow-pine-lumber, JSON-LD price 20.18 (same at all 42 stores), 2026-09-07. Menards cross-check on the 8 ft length was within 3%.",
+    "unit_price": "$20.18"
+   },
+   {
+    "extended": "$130.90",
+    "item": "4x4 x 14 ft #2 S4S treated ground-contact SYP post (the 5 tall/ridge posts, 166 in cut)",
+    "qty": "5 ea",
+    "source": "REAL \u2014 Sutherlands sku 12872, JSON-LD price 26.18, 2026-09-07.",
+    "unit_price": "$26.18"
+   },
+   {
+    "extended": "$72.18 - $86.78",
+    "item": "2x10 x 20 ft base/skirt board (long walls)",
+    "qty": "2 ea",
+    "source": "REAL \u2014 low = Sutherlands sku 2366458 Whitewood/Fir 'Preferred Cut' $36.09; high = sku 126672 #1 S4S Treated Ground Contact SYP $43.39. Both 2026-09-07. The plan never says whether the skirt is treated; it sits at grade, so the high column buys PT.",
+    "unit_price": "$36.09 low / $43.39 high"
+   },
+   {
+    "extended": "$39.72 - $57.78",
+    "item": "2x10 x 16 ft base/skirt board (gable-end walls)",
+    "qty": "2 ea",
+    "source": "REAL \u2014 low = Sutherlands sku 2366441 $19.86; high = sku 126391 #1 treated ground contact $28.89. 2026-09-07.",
+    "unit_price": "$19.86 low / $28.89 high"
+   },
+   {
+    "extended": "$128.90",
+    "item": "2x4 x 20 ft wall girts (siding nailers, long walls)",
+    "qty": "10 ea",
+    "source": "REAL \u2014 Sutherlands sku 4552097, Whitewood/Fir Preferred Cut, $12.89, 2026-09-07. (Sutherlands' SPF and Hem-Fir 2x4x20 SKUs exist but return price 0 = not stocked; Preferred Cut is what these stores actually carry.)",
+    "unit_price": "$12.89"
+   },
+   {
+    "extended": "$116.20",
+    "item": "2x4 x 8 ft \u2014 5 wall girts (Part 1) + 23 truss web/door pieces (Part 2)",
+    "qty": "28 ea",
+    "source": "REAL \u2014 Sutherlands sku 4549051, $4.15, 2026-09-07. Menards 2x4x8 Construction/Framing was $3.85 in a Jan-2025 snapshot (stale; lumber PPI is +15% since).",
+    "unit_price": "$4.15"
+   },
+   {
+    "extended": "$44.10",
+    "item": "2x4 x 16 ft wall girts (gable-end walls)",
+    "qty": "5 ea",
+    "source": "REAL \u2014 Sutherlands sku 4549374, $8.82, 2026-09-07. Menards same size $10.25 (Wayback snapshot 2026-04-09, priceValidUntil 2026-04-12) \u2014 big box is 16% higher on this line.",
+    "unit_price": "$8.82"
+   },
+   {
+    "extended": "$5.58",
+    "item": "2x4 x 10 ft door jamb / header",
+    "qty": "1 ea",
+    "source": "REAL \u2014 Sutherlands sku 4549135, $5.58, 2026-09-07.",
+    "unit_price": "$5.58"
+   },
+   {
+    "extended": "$270.01",
+    "item": "2x6 x 10 ft truss rafters (22) + 2x6 gable overhangs (4) + spares per the plan's own count of 31",
+    "qty": "31 ea",
+    "source": "REAL \u2014 Sutherlands sku 4549531, $8.71, 2026-09-07. Qty is the plan's published shopping-list number, not my estimate.",
+    "unit_price": "$8.71"
+   },
+   {
+    "extended": "$152.35",
+    "item": "2x6 x 16 ft truss bottom chords (11 trusses, 192 in / full 16 ft span)",
+    "qty": "11 ea",
+    "source": "REAL \u2014 Sutherlands sku 4549770, $13.85, 2026-09-07.",
+    "unit_price": "$13.85"
+   },
+   {
+    "extended": "$879.78 - $985.16",
+    "item": "T1-11 4x8 plywood siding, 8 in o.c. groove \u2014 16 sheets walls (Part 1) + 6 sheets gables/doors (Part 2). LARGEST SINGLE LINE IN THE BILL.",
+    "qty": "22 sheets",
+    "source": "REAL \u2014 Sutherlands sku 95554 (11/32 APA Premium T1-11 YP, $39.99) and sku 95570 (19/32 APA Premium T1-11 YP, $44.78), both 2026-09-07. Not independently cross-checked: Menards' equivalent 5/8 pine plywood siding has no priced Wayback snapshot, and the only Menards panel-siding price I could recover was LP SmartSide 7/16 grooved at $62.83 (Apr-2025), a different and dearer product.",
+    "unit_price": "$39.99 low (11/32 in) / $44.78 high (19/32 in)"
+   },
+   {
+    "extended": "$285.87 - $518.57",
+    "item": "Roof deck, 4x8 sheets, 3/4 in (13 sheets per the plan)",
+    "qty": "13 sheets",
+    "source": "REAL \u2014 Sutherlands sku 23507 (3/4 OSB sheathing, $21.99) and sku 95232 (23/32 APA CDX YP plywood, $39.89), both 2026-09-07. Menards cross-check: 3/4 x 4 x 8 Plywood Rated Sheathing $32.91 (Wayback snapshot 2026-03-14, priceValidUntil 2026-03-15); softwood-lumber PPI rose ~12% Mar->Jul 2026, which brings that to ~$37 \u2014 consistent with the $39.89 high figure.",
+    "unit_price": "$21.99 low (3/4 OSB) / $39.89 high (23/32 APA CDX yellow pine plywood, i.e. what the plan actually specifies)"
+   },
+   {
+    "extended": "$12.98 - $26.19",
+    "item": "Truss gusset sheet, 4x8 (plan calls for one sheet of 1/2 in plywood)",
+    "qty": "1 sheet",
+    "source": "REAL \u2014 Sutherlands sku 23416 ($12.98) and sku 95216 ($26.19), 2026-09-07. Menards 7/16 x 4 x 8 OSB was $16.48 (Wayback 2026-01-30) \u2014 higher than Sutherlands on this line.",
+    "unit_price": "$12.98 low (7/16 OSB) / $26.19 high (15/32 APA CDX 3-ply plywood)"
+   },
+   {
+    "extended": "$472.29 - $559.58",
+    "item": "3-tab asphalt shingles, per bundle (33.3 sq ft coverage). Roof area = 13 x 32 sq ft = 416 sq ft, so 12.5 bundles minimum.",
+    "qty": "13 bundles low / 14 bundles high",
+    "source": "REAL UNIT PRICE, QTY DERIVED BY ME \u2014 low = Sutherlands sku 9632555 Tamko Oxford Grey Elite 3-tab bundle $36.33 (store 2705 Fort Smith AR); high = sku 3903259 Owens Corning Supreme Onyx Black 3-tab bundle $39.97 (store 3118 Fredericksburg TX, page states 'Coverage 33.3 sq ft', 69 in stock). Both 2026-09-07. The plan lists shingles with no quantity, so 13/14 bundles is MY calculation from the plan's own 13-sheet roof deck. Menards cross-check: OC Supreme 3-tab $31.14 (2025-07-22) and Atlas Pinnacle architectural $35.99/bundle (2026-02-25).",
+    "unit_price": "$36.33 low / $39.97 high"
+   },
+   {
+    "extended": "$26.99 - $60.00",
+    "item": "#15 roofing felt / tar paper, 36 in x 144 ft roll (432 sq ft)",
+    "qty": "1 roll low / 2 rolls high",
+    "source": "REAL UNIT PRICE, QTY DERIVED BY ME \u2014 low = Sutherlands sku 1557255 Tarco Asphalt Saturated Felt 432 sq ft $26.99; high = sku 2268704 GAP Roofing #15 Standard 'G' Felt, spec page states 36 in x 432 sq ft, $30.00/RL (store 3702 Great Bend KS). Both 2026-09-07. One 432 sq ft roll nets only ~408 sq ft after the plan's 2 in overlap vs a 416 sq ft deck, so the high column buys 2 rolls.",
+    "unit_price": "$26.99 low / $30.00 high"
+   },
+   {
+    "extended": "$116.38",
+    "item": "Simpson Strong-Tie H10A hurricane / rafter tie (plan says 'use rafter ties to secure the trusses to the top plates'; 11 trusses x 2 bearings)",
+    "qty": "22 ea",
+    "source": "REAL UNIT PRICE, QTY DERIVED BY ME \u2014 Sutherlands sku 1600568, Mfg# H10A, 18 ga galvanized, $5.29/EA (store 1221 Columbus-South OH), 2026-09-07. The plan does not name a model or a count. A lighter H2.5A would cut this line to roughly $30-40 but I could not find a priced H2.5A listing, so I priced the tie I could actually verify \u2014 this line is therefore conservative/high.",
+    "unit_price": "$5.29"
+   },
+   {
+    "extended": "$92.94 - $101.94",
+    "item": "8 in heavy-duty T-hinge for the two site-built T1-11 doors (3 per door)",
+    "qty": "6 ea",
+    "source": "REAL UNIT PRICE, QTY DERIVED BY ME \u2014 Sutherlands sku 555326 ($15.49) and sku 555342 ($16.99), 2026-09-07. The plan's entire door hardware spec is the words 'latch & hinges', so 6 hinges is my choice.",
+    "unit_price": "$15.49 low (zinc) / $16.99 high (black)"
+   },
+   {
+    "extended": "$13.99",
+    "item": "Gate latch / handle for the double doors",
+    "qty": "1 ea",
+    "source": "REAL \u2014 Sutherlands sku 563916, Hardware Essentials 2x4 in black gate latch, $13.99, 2026-09-07.",
+    "unit_price": "$13.99"
+   },
+   {
+    "extended": "$79.98 - $119.97",
+    "item": "#10 x 3-1/2 in exterior deck screws, 275-count box (the plan's '3 1/2 in screws' for girts, skirt, post connections)",
+    "qty": "2 boxes low / 3 boxes high",
+    "source": "REAL UNIT PRICE, QTY DERIVED BY ME \u2014 Sutherlands sku 618439 Deck Plus green star-drive 275-pk, $39.99, 2026-09-07. The plan gives no screw counts.",
+    "unit_price": "$39.99"
+   },
+   {
+    "extended": "$29.99 - $59.98",
+    "item": "#8 x 1-5/8 in screws, 735-count box (roof-deck screws at 8 in o.c. plus 1-1/4 in gusset screws)",
+    "qty": "1 box low / 2 boxes high",
+    "source": "REAL UNIT PRICE, QTY DERIVED BY ME \u2014 Sutherlands sku 618397 Deck Plus 735-pk, $29.99, 2026-09-07.",
+    "unit_price": "$29.99"
+   },
+   {
+    "extended": "$29.99",
+    "item": "#10 x 2-1/2 in screws, 365-count box (door assembly and jambs)",
+    "qty": "1 box",
+    "source": "REAL UNIT PRICE, QTY DERIVED BY ME \u2014 Sutherlands sku 618413 Deck Plus 365-pk, $29.99, 2026-09-07.",
+    "unit_price": "$29.99"
+   },
+   {
+    "extended": "$20.90 - $31.35",
+    "item": "6d vinyl-coated sinker nails, 5 lb box (the plan's '6d nails' for fastening the 22 T1-11 sheets every 8 in)",
+    "qty": "2 boxes low / 3 boxes high",
+    "source": "REAL UNIT PRICE, QTY DERIVED BY ME \u2014 Sutherlands sku 4294450, 1-7/8 in 6d vinyl-coated sinker, 5 lb, $10.45 (store 1214), 2026-09-07.",
+    "unit_price": "$10.45"
+   },
+   {
+    "extended": "$37.98 - $56.97",
+    "item": "1-1/4 in electro-galvanized roofing nails, 5 lb box (needed for the shingles; NOT on the plan's shopping list at all)",
+    "qty": "2 boxes low / 3 boxes high",
+    "source": "REAL UNIT PRICE, QTY DERIVED BY ME \u2014 Sutherlands sku 4295309, $18.99 (store 1214), 2026-09-07. ~13 squares of shingles needs roughly 1,500-1,900 nails.",
+    "unit_price": "$18.99"
+   }
+  ],
+  "slug": "howtospecialist-16x20-pole-barn",
+  "total_high_usd": 3915,
+  "total_low_usd": 3302
+ },
+ "icreatables-16x20-gambrel-barn": {
+  "caveats": "[\"THE HEADLINE FINDING: iCreatables' own FAQ rule of thumb of '$10.00 per square foot for a basic shed' implies $3,200 for this build. The real 2026 materials bill is $5,753-$7,612, i.e. 1.8x to 2.4x the vendor's guidance. The vendor's cited customer builds ('12x20 Gambrel Shed with loft $3,000') are dated Spring 2016 and should not be used for budgeting. So the answer to 'if I buy the $30 plan, what will the lumber bill be?' is: for this $59.99 plan, roughly $5,800-$7,600 in materials \u2014 which still lands well under the $11,000-15,000 kit prices, but is nowhere near the vendor's own estimate.\", \"GEOGRAPHY: this is a MIDWEST price picture. Sutherlands prices are for Harrisonville, Missouri; Menards is a Midwest/Great Lakes chain. Coastal, mountain-west, Canadian and remote-rural pricing will be materially higher \u2014 15-30% is a common spread. Treat this as a floor for high-cost metros.\", \"MIXED PRICE DATES, and they are not all 'today'. Sutherlands lines are live as of 2026-09-07. Menards lines come from Wayback snapshots spread across 2026-01-02 to 2026-05-20, and TWO fastener lines are from 2025 snapshots (8d sinker 2025-06-19, roofing nails 2025-07-22) because no 2026 capture exists. I verified those two dates from the Wayback memento-datetime headers rather than assuming the date I requested \u2014 my initial request string said '2026' and the archive actually served 2025.\", \"LUMBER HAS MOVED SINCE THE SNAPSHOTS. FRED WPU0811 (softwood lumber PPI) rose from 282.875 in April 2026 to 300.614 in July 2026, +6.3%. Most Menards framing snapshots sit at the April level, so the LOW column is arguably already stale on the cheap side. I applied +6% to commodity framing and sheet goods in the HIGH column for exactly this reason. Commodity lumber can move 10%+ in a quarter \u2014 re-quote before you buy.\", \"FOUR LINES ARE PURE ESTIMATES, NOT RETAILER PRICES: 15 lb roofing felt, Z metal flashing, gable vents, and hot-dip galvanized siding nails. Together they are $357 of the low total (6.2%) and $644 of the high (8.5%). Two more lines are DERIVED by interpolation from real prices of other lengths (2x6x12, 1x4x8) plus the 12d sinker box. Everything else \u2014 about 89-91% of the dollar value \u2014 is a real price from a real retailer page with a date. Do not present the estimated lines as quotes.\", \"THE WINDOWS ARE THE WEAKEST BIG LINE, a ~$720 spread. Neither product I priced is the specified 30\\\"x30\\\" 2626: the low is a 23-1/2\\\" utility slider and the high is a 26\\\"x36-1/2\\\" residential double-hung. Five windows is the line most worth a local quote, and dropping to three windows would cut $200-500.\", \"SUBSTITUTIONS ARE BAKED INTO THE SPREAD, not hidden: low uses 11/32\\\" T1-11, T&G OSB waferboard floor, a home-built double door and value connectors; high uses 5/8\\\" panel siding, AdvanTech subfloor, two factory prehung units and premium connectors. Both ends are real published prices, so the range reflects genuine product choices rather than pricing uncertainty.\", \"EQUIVALENT PARTS, NOT THE NAMED BRAND: the plan calls out Simpson A23 and H2.5. Menards stocks MiTek, so I priced MiTek JA1-TZ and RT15-TZ equivalents (Sutherlands' Simpson tie at $0.71 corroborates the price class). If your jurisdiction or engineer specifies Simpson by name, verify locally.\", \"THE SHINGLE GRADE IS MY CHOICE, not the plan's. The plan says only 'asphalt shingles, 570 s.f., 6 squares' with no grade or warranty. I priced architectural shingles at $37.99/bundle; 3-tab would save roughly $150-200. The prior verification pass established that the '25-yr' shingle rating in the dataset record is not actually published by iCreatables.\", \"INDEPENDENT VALIDATION IS STRONG. Sutherlands sells complete shed material packages (framing, siding, trim, shingles, door, hardware, plans, wood floor) and its live 2026-09-07 prices run $17.31-$23.55/sq ft across five sizes \u2014 including a 12x16 gambrel-with-loft Mini-Barn at $21.27/sq ft. Scaled to 320 sq ft that band implies $5,539-$7,536. My bottom-up bill of $5,753-$7,612 lands almost exactly on top of it, built from entirely separate unit prices. Two of my individual lines also cross-checked cleanly across sources: T1-11 siding at $44.78 (Sutherlands) vs $44.92 (Menards), and 4x6 treated at $78.88 (Sutherlands 20') vs $78.99 (Menards 24' prorated).\", \"Caveat on that benchmark: the Sutherlands packages have one door and no windows and no loft, while this plan has two doors, five windows and a loft deck \u2014 those differences partly offset, so the agreement is reassuring but not a perfect apples-to-apples match.\", \"QUANTITIES ARE THE VENDOR'S, INCLUDING ITS GAPS. Every quantity came from iCreatables' own free materials-list PDF. Where that list is thin, my bill inherits the gap \u2014 most importantly the loft, where the vendor lists 6 sheets of decking and zero joists.\", \"THIS IS A MATERIALS BILL, NOT A PROJECT BUDGET. With tax it is ~$6,200-$8,300. Add concrete or gravel, engineering, a permit, paint, delivery and a ramp and a realistic all-in DIY cash outlay is meaningfully higher \u2014 plausibly $8,000-$11,000 before any of your own labor is valued. At that point the $11,000-15,000 turnkey kits stop looking like a different category of purchase.\"]",
+  "confidence": "MEDIUM-HIGH on the total, HIGH on the method. Why: (1) Quantities are effectively certain \u2014 they come from iCreatables' own free materials-list PDF, already verified byte-for-byte in a prior pass, so no quantity is invented. (2) About 89-91% of the dollar value rests on real, dated retailer prices I fetched and parsed myself, and I show the source and snapshot date for every one. (3) The strongest reason for confidence is independent convergence: a completely separate benchmark \u2014 Sutherlands' own live 2026 shed material packages at $17.31-$23.55/sq ft, including a gambrel-with-loft at $21.27/sq ft \u2014 implies $5,539-$7,536 for 320 sq ft, and my bottom-up bill came out at $5,753-$7,612. Two individual lines also matched across independent retailers to within 0.3% (T1-11 siding $44.78 vs $44.92; 4x6 treated $78.88 vs $78.99). It would be hard for both methods to be wrong in the same direction by much. What holds it back from HIGH: four lines (~6-9% of value) are honest estimates rather than quotes; the five windows carry a ~$720 spread because neither priced product is exactly the specified 2626; Menards prices come from Wayback snapshots dated Jan-May 2026 with two fastener lines from 2025, and FRED WPU0811 shows softwood lumber already +6.3% above the April level those snapshots reflect; and it is a Midwest price picture that will not transfer to high-cost regions. Anyone about to spend this money should treat the range as a well-anchored planning figure and still take the vendor's part-numbered list to two local yards for a firm bid \u2014 which is exactly what iCreatables designed that numbering system for.",
+  "cost_per_sqft_high": 23.79,
+  "cost_per_sqft_low": 17.98,
+  "excludes": [
+   "CONCRETE \u2014 the plan's alternate slab foundation is entirely unpriced. A 16x20 4\" slab is roughly 4 cu yd plus rebar/mesh/forms and would add well over $1,000 delivered.",
+   "GRAVEL \u2014 the materials list literally says 'F5 Gravel' with no quantity, so it cannot be priced. A skid pad needs roughly 3-5 tons of compacted base.",
+   "Site work: excavation, grading, leveling, sod removal, drainage, spoil haul-off.",
+   "PERMITS and fees. At 320 sq ft this shed is far above the usual 120-200 sq ft exemption, so a permit is likely.",
+   "STRUCTURAL ENGINEERING \u2014 and this one is not optional-feeling: the plan page itself says to have a local structural engineer size and specify the 16' clear-span gambrel truss members and connections, and the plans carry no engineer's stamp. Budget a real engineering fee.",
+   "LABOR \u2014 the entire number assumes you swing every hammer yourself. Contract framing/roofing labor on a 320 sq ft building would typically exceed the materials cost.",
+   "TOOLS, and specifically the ones this build forces: staging/scaffolding and tall ladders for a 17'-11\" ridge, plus a truss assembly jig for 13 site-built gambrel trusses.",
+   "DELIVERY / lumber-yard haul fees. 26 siding sheets, 42 sheets of OSB, 58 2x6x8s and four 20' treated 4x6 timbers will not fit in a pickup.",
+   "SALES TAX (shown separately above, not in the headline total).",
+   "ANCHORING / TIE-DOWN hardware for the skid foundation \u2014 the plan publishes no anchoring detail at all.",
+   "LOFT FRAMING LUMBER AND LOFT ACCESS \u2014 a genuine gap in the vendor's own free list, not just in my pricing: the loft section lists only 6 sheets of 3/4\" T&G OSB and NO loft joists, and there is no stair or ladder spec. Loft joists for ~192 sq ft could add $200-400.",
+   "PAINT, primer and stain. Textured plywood siding must be finished; 320 sq ft of shed needs roughly 8-10 gallons of body paint plus primer.",
+   "INSULATION, vapor barrier, interior wall/ceiling finish \u2014 none are in the plan.",
+   "ELECTRICAL: service, conduit, panel, wiring, receptacles, lighting.",
+   "House wrap / weather-resistive barrier behind the siding (not on the plan's list).",
+   "Gutters and downspouts.",
+   "A RAMP \u2014 not on the plan's list, and a 320 sq ft shed with a 6' double door almost certainly wants one.",
+   "Shelving, workbenches, loft railing, or any interior fit-out.",
+   "The $59.99 plan set itself.",
+   "Waste/overage beyond the one extra shingle bundle in the high column. Real jobs typically run 5-10% over on cut lumber."
+  ],
+  "price_sources": [
+   "Sutherlands.com (regional Midwest lumberyard chain, ~50 stores) \u2014 LIVE direct fetch, no archive. Product pages carry the line 'Estimated stock levels as of Mon, Sep 7, 2026', confirming the price snapshot date. Store = Harrisonville, MO (storenum cookie 1219). Discovered products by downloading all 7 sitemaps (160,639 URLs) since the on-site search returns nothing for lumber terms. Prices parsed from the <span class=\"regular-price\"> block that follows the product's Sku#, plus the published volume-break price. SNAPSHOT DATE: 2026-09-07. Items priced here: 7/16 4x8 OSB $12.98 (SKU 23416, vol 68+ $12.33); 3/4 4x8 OSB $21.99 (23507); 3/4 4x8 T&G OSB waferboard $23.49 (23556, vol 42+ $22.31); AdvanTech 3/4 T&G $41.99 (3783750, vol 45+ $39.89); APA Premium T1-11 19/32 8\"oc yellow pine $44.78 (95570); APA Premium T1-11 11/32 4\"oc $39.99 (95547); 4x6x20' #2 S4S treated yellow pine $78.88 (41244); Amerimax 10' galvanized steel roof drip edge $9.30 (7915499); Simpson Strong-Tie 6\"x1-3/8\" galvanized hurricane tie $0.71 (4186714); Duo-Corp double-slider utility window 23-1/2\" OAW $104.07 (885988); Hardware Essentials 4\" black light T-hinge $10.49 (555292).",
+   "Sutherlands.com shed material PACKAGES \u2014 LIVE direct fetch 2026-09-07, /shed-packages/10,11,18,19,20,21, priced for Harrisonville MO. Used as an INDEPENDENT WHOLE-BUILDING CROSS-CHECK, not as unit prices. These packages include 'All framing lumber, 4'x8' grooved panel siding, 1x4 trim boards, fiberglass roof shingles, door, nails/hinges/hardware, plans, wood floor': 8x16 Deluxe Mini-Barn $2,517 (128 sf = $19.66/sf); 10x14 YardStar Gable $3,297 (140 sf = $23.55/sf); 14x12 Garden House no floor $2,945 (168 sf = $17.53/sf); 12x16 YardStar Mini-Barn gambrel-with-loft $4,084 (192 sf = $21.27/sf, SKU 3645256); 12x20 YardStar Gable $4,154 (240 sf = $17.31/sf, SKU 3645173). Scaling these to 320 sf implies $5,539-$7,536 \u2014 my independently built bill of $5,753-$7,612 lands almost exactly on that band.",
+   "Menards.com product pages via the Wayback Machine (menards.com 403s direct fetch and 403s the WebFetch tool). URLs discovered by CDX enumeration; every price parsed from the embedded JSON \"price\": field. EACH PRICE IS DATED TO ITS OWN SNAPSHOT \u2014 2x4x8 Construction/Framing $3.54 (2026-04-09) and $3.85 (2026-01-05); 2x4x10 $7.22 (2026-02-14); 2x4x12 $8.38 (2026-01-09); 2x4x16 $10.25 (2026-04-09); 2x4x20 $14.50 (2026-04-09); 2x6x8 $8.24 (2026-02-17); 2x6x10 $10.89 (2026-05-16); 2x6x16 $15.54 (2026-04-09); 2x6x20 $19.48 (2026-02-26, re-confirmed 2026-03-10); 7/16 4x8 OSB $16.48 (2026-01-30); 1/2 4x8 OSB $15.55 (2026-04-09); 7/16 4x9 OSB $21.48 (2026-02-09); 5/8 4x8 pine plywood panel siding 8\"oc $44.92 (2026-01-05); 3/8 4x8 beaded plywood soffit panel $32.99 (2026-01-05); 1x2x8' furring strip $1.93 (2026-02-05); 1x4x4' Quality Pine board $2.84 (2026-04-04); 4x6x24' #2 Critical Structural CCA .60 treated timber $94.78 (2026-04-12); Owens Corning Oakridge architectural shingles $37.99/bundle of 32.8 sq ft (2026-05-20); MiTek JA1-TZ joist angle $0.72 (2026-04-21); MiTek RT15-TZ rafter-to-stud hurricane/seismic anchor $1.20 (2026-04-21); LIQUID NAILS Heavy Duty 10 oz $3.58 (2026-01-02); LIQUID NAILS Subfloor & Deck 28 oz $4.99 (2026-01-02); Commander 36\"W x 80\"H primed steel flush prehung exterior door $177.11 (2026-04-15); JELD-WEN Best Series 26\"x36-1/2\" vinyl double-hung window w/ nailing flange $248.31 (2026-05-11). TWO Menards prices are from 2025 snapshots, not 2026, and I verified their real dates via the Wayback 302 Location + memento-datetime headers rather than trusting my request string: Grip Fast 2-3/8\" 8d vinyl-coated sinker nail 5 lb box $14.12 (snapshot 2025-06-19) and Grip Fast 1-1/4\" electro-galvanized roofing nail 5 lb box $14.22 (snapshot 2025-07-22).",
+   "FRED / BLS PPI, fred.stlouisfed.org, fetched 2026-09-07. Series WPU0811 (softwood lumber): 2026-04 = 282.875, 2026-05 = 284.485, 2026-06 = 282.546, 2026-07 = 300.614 (latest published). That is +6.3% above the April 2026 level where most of my Menards snapshots sit, which is the basis for the +6% escalation applied to commodity framing/sheet-goods lines in the HIGH column. Also pulled WPU081 (lumber & wood products): 2026-07 = 291.019, and WPU132 for context. Used ONLY to bracket and escalate, never as a substitute for a unit price.",
+   "iCreatables' own free materials-list PDF (/materials-list-shed/16x20-GB Gambrel Shed Materials.pdf) supplied every quantity. Quantities were taken from the local dataset record, which the prior verification pass confirmed byte-for-byte against that PDF. No quantity in this bill is my invention.",
+   "NOT PRICED \u2014 attempted and failed: homedepot.com and lowes.com both 403 on direct curl AND on the WebFetch tool; the specific Home Depot 2x4 product URL I tried is not in Wayback (404). mccoys.com 403, doitbest.com 406, acehardware.com 403 on search, zoro.com 403, fastenal.com 403. carterlumber.com and 84lumber.com return 200 at the root but expose no usable product prices (Carter's sitemap.xml contains only the homepage; both search pages are empty JS shells). hardwareworld.com search returns no lumber results. Sutherlands publishes NO online price for commodity SPF dimensional lumber at any store I tried (items show 'In Stock' with the price block absent) \u2014 I confirmed this is a site-wide policy, not a store artifact, by re-testing store 1211 Kansas City and 1214 Liberty via the storenum cookie."
+  ],
+  "priced": "PARTIAL",
+  "priced_lines": [
+   {
+    "extended": "$307.98 \u2013 $355.05",
+    "item": "2x4x8' SPF/whitewood framing \u2014 W1 studs 74 + W5 trimmers 2 + R1.3 truss collar ties 11",
+    "qty": "87 pcs",
+    "source": "REAL \u2014 Menards via Wayback, 2x4x8 Construction/Framing Lumber $3.54 (snapshot 2026-04-09) and $3.85 (2026-01-05). High = $3.85 x 1.06 FRED WPU0811 escalation to Jul-2026.",
+    "unit_price": "$3.54 low / $4.08 high"
+   },
+   {
+    "extended": "$102.50 \u2013 $108.65",
+    "item": "2x4x16' wall plate (W2)",
+    "qty": "10 pcs",
+    "source": "REAL \u2014 Menards via Wayback, snapshot 2026-04-09, $10.25. High = +6% PPI.",
+    "unit_price": "$10.25 low / $10.87 high"
+   },
+   {
+    "extended": "$87.00 \u2013 $92.22",
+    "item": "2x4x20' wall plate (W3)",
+    "qty": "6 pcs",
+    "source": "REAL \u2014 Menards via Wayback, snapshot 2026-04-09, $14.50. High = +6% PPI.",
+    "unit_price": "$14.50 low / $15.37 high"
+   },
+   {
+    "extended": "$477.92 \u2013 $506.60",
+    "item": "2x6x8' \u2014 W6 headers 6 + R1.1 truss upper top chords 26 + R1.2 lower top chords 26 (the gambrel truss stock)",
+    "qty": "58 pcs",
+    "source": "REAL \u2014 Menards via Wayback, 2x6x8 Construction/Framing Lumber $8.24, snapshot 2026-02-17. High = +6% PPI.",
+    "unit_price": "$8.24 low / $8.73 high"
+   },
+   {
+    "extended": "$93.52 \u2013 $110.80",
+    "item": "2x6x12' fascia (R4 x4) + blocking (R12 x4)",
+    "qty": "8 pcs",
+    "source": "DERIVED \u2014 no 12' snapshot existed and CDX 504'd on the retry. Interpolated from four REAL Menards 2x6 prices: 8'=$1.030/lf, 10'=$1.089/lf, 16'=$0.971/lf, 20'=$0.974/lf. Smallest-risk line in the bill.",
+    "unit_price": "$11.69 low / $13.85 high"
+   },
+   {
+    "extended": "$248.64 \u2013 $263.56",
+    "item": "2x6x16' floor joist @16\" o.c. (F1)",
+    "qty": "16 pcs",
+    "source": "REAL \u2014 Menards via Wayback, snapshot 2026-04-09, $15.54. High = +6% PPI.",
+    "unit_price": "$15.54 low / $16.47 high"
+   },
+   {
+    "extended": "$38.96 \u2013 $41.30",
+    "item": "2x6x20' rim joist (F2)",
+    "qty": "2 pcs",
+    "source": "REAL \u2014 Menards via Wayback, snapshot 2026-02-26, re-confirmed identical at 2026-03-10, $19.48. High = +6% PPI.",
+    "unit_price": "$19.48 low / $20.65 high"
+   },
+   {
+    "extended": "$315.52 \u2013 $334.92",
+    "item": "4x6x20' #2 treated skid (F3)",
+    "qty": "4 pcs",
+    "source": "REAL, TWO INDEPENDENT SOURCES AGREE \u2014 Sutherlands LIVE 2026-09-07 SKU 41244 $78.88; Menards via Wayback 4x6x24' CCA .60 treated timber $94.78 (2026-04-12) = $3.949/lf \u2192 $78.99 for 20'. High = +6% PPI.",
+    "unit_price": "$78.88 low / $83.73 high"
+   },
+   {
+    "extended": "$375.84 \u2013 $671.84",
+    "item": "3/4\" 4'x8' T&G OSB \u2014 floor deck F4 x10 + loft deck F4.1 x6",
+    "qty": "16 sheets",
+    "source": "REAL both ends, Sutherlands LIVE 2026-09-07 \u2014 low = 3/4 T&G OSB waferboard $23.49 (SKU 23556); high = AdvanTech 3/4 T&G premium subfloor $41.99 (SKU 3783750). Genuine product-grade choice, not a guess.",
+    "unit_price": "$23.49 low / $41.99 high"
+   },
+   {
+    "extended": "$337.48 \u2013 $454.19",
+    "item": "7/16\" 4'x8' OSB \u2014 roof deck R2 x24 + truss gusset stock R3 x2",
+    "qty": "26 sheets",
+    "source": "REAL both ends \u2014 low = Sutherlands LIVE 2026-09-07 $12.98 (SKU 23416); high = Menards via Wayback $16.48 (2026-01-30) x 1.06 PPI.",
+    "unit_price": "$12.98 low / $17.47 high"
+   },
+   {
+    "extended": "$1,039.74 \u2013 $1,238.00",
+    "item": "Textured/grooved plywood panel siding 4'x8' (W7) \u2014 the single biggest line in the bill",
+    "qty": "26 sheets",
+    "source": "REAL, THREE PRICES CORROBORATE \u2014 Sutherlands LIVE 2026-09-07 APA Premium T1-11 11/32\" 4\"oc $39.99 (SKU 95547) and 19/32\" 8\"oc $44.78 (SKU 95570); Menards via Wayback 5/8 pine plywood panel siding 8\"oc $44.92 (2026-01-05). High = $44.92 x 1.06.",
+    "unit_price": "$39.99 low / $47.62 high"
+   },
+   {
+    "extended": "$65.98 \u2013 $89.84",
+    "item": "Plywood soffit panel 4'x8' (T6)",
+    "qty": "2 sheets",
+    "source": "REAL \u2014 low = Menards via Wayback 3/8 4x8 beaded plywood soffit panel $32.99 (2026-01-05); high = the siding panel price, since the plan calls for the same textured plywood at the soffit.",
+    "unit_price": "$32.99 low / $44.92 high"
+   },
+   {
+    "extended": "$181.42 \u2013 $192.31",
+    "item": "1x2x8' batten @12\" o.c. (T2)",
+    "qty": "94 pcs",
+    "source": "REAL \u2014 Menards via Wayback, 1x2x8' Furring Strip $1.93, snapshot 2026-02-05. High = +6% PPI. Caveat: furring strip is rough-grade; a paint-grade batten costs more.",
+    "unit_price": "$1.93 low / $2.05 high"
+   },
+   {
+    "extended": "$62.48 \u2013 $66.22",
+    "item": "1x4x8' trim (T4)",
+    "qty": "11 pcs",
+    "source": "DERIVED \u2014 only the 4' length was fetchable: Menards 1x4x4' Quality Pine Board $2.84 (2026-04-04) = $0.71/lf, doubled to 8'. Sutherlands lists 1x4x8' but publishes no price.",
+    "unit_price": "$5.68 low / $6.02 high"
+   },
+   {
+    "extended": "$683.82 \u2013 $721.81",
+    "item": "Architectural asphalt shingles \u2014 R7, 570 sq ft / 6 squares; bundle covers 32.8 sq ft",
+    "qty": "18 bundles (low) / 19 bundles (high)",
+    "source": "REAL \u2014 Menards via Wayback, Owens Corning Oakridge Onyx Black Architectural Roofing Shingles, $37.99/bundle, snapshot 2026-05-20. High column buys one extra bundle for waste. The plan does not state a shingle grade; 3-tab would cut roughly $150\u2013200 off this line.",
+    "unit_price": "$37.99"
+   },
+   {
+    "extended": "$50.00 \u2013 $70.00",
+    "item": "15 lb roofing felt, ~432 sq ft roll (R6)",
+    "qty": "2 rolls",
+    "source": "*** ESTIMATE \u2014 NOT PRICED. *** I located the exact Menards product ('15# Felt Roofing Underlayment 3' x 144' (432 sq ft)') but every Wayback fetch of it failed across 6 retries; Sutherlands stocks only synthetic underlayment and publishes no price for it. This figure is my judgement, not a retailer quote.",
+    "unit_price": "$25.00 \u2013 $35.00 ESTIMATE"
+   },
+   {
+    "extended": "$120.90",
+    "item": "10' galvanized steel roof drip edge (R5; plan spec 1-1/2\"x1-1/2\"x10')",
+    "qty": "13 pcs",
+    "source": "REAL \u2014 Sutherlands LIVE 2026-09-07, Amerimax 10-Foot Galvanized Steel Roof Drip Edge $9.30 (SKU 7915499). Note: Sutherlands also lists an exact 1-1/2\"x1-1/2\" hemmed profile (SKU 8447989) but it is unavailable/unpriced at every store I tried.",
+    "unit_price": "$9.30"
+   },
+   {
+    "extended": "$40.00 \u2013 $64.00",
+    "item": "Z metal flashing, 10' (W10)",
+    "qty": "4 pcs",
+    "source": "*** ESTIMATE \u2014 NOT PRICED. *** No fetchable 2026 price found at Menards (not in the roof-flashing category listing) or Sutherlands. My judgement.",
+    "unit_price": "$10.00 \u2013 $16.00 ESTIMATE"
+   },
+   {
+    "extended": "$520.35 \u2013 $1,241.55",
+    "item": "Window, 2'-6\"x2'-6\" '2626' (W11)",
+    "qty": "5 units",
+    "source": "REAL both ends but NEITHER IS EXACTLY 30\"x30\" \u2014 low = Sutherlands LIVE 2026-09-07 Duo-Corp double-slider utility window, 23-1/2\" OAW, $104.07 (SKU 885988), a genuine shed-grade unit; high = Menards via Wayback JELD-WEN Best Series 26\"W x 36-1/2\"H vinyl double-hung with nailing flange $248.31 (2026-05-11), a residential-grade unit larger than spec. This is the widest-spread line in the bill (~$720) and the one most worth a real local quote.",
+    "unit_price": "$104.07 low / $248.31 high"
+   },
+   {
+    "extended": "$36.00 \u2013 $60.00",
+    "item": "Gable vent 12\"x18\" (W16)",
+    "qty": "2 units",
+    "source": "*** ESTIMATE \u2014 NOT PRICED. *** I found an exact-size product (Sutherlands SKU 4519195, 12x18 Aluminum Mill Wall Louver) and it shows In Stock, but the price block is absent. My judgement.",
+    "unit_price": "$18.00 \u2013 $30.00 ESTIMATE"
+   },
+   {
+    "extended": "$177.11",
+    "item": "3068 (3'-0\"x6'-8\") prehung steel exterior door (D1)",
+    "qty": "1 unit",
+    "source": "REAL, EXACT SIZE MATCH \u2014 Menards via Wayback, Commander 36\"W x 80\"H Primed Steel Flush Prehung Exterior Door, Left Inswing, $177.11, snapshot 2026-04-15.",
+    "unit_price": "$177.11"
+   },
+   {
+    "extended": "$156.00 \u2013 $354.22",
+    "item": "6068 (6'-0\"x6'-8\") double-door opening (D2)",
+    "qty": "1 opening",
+    "source": "MIXED \u2014 low is a PART-ESTIMATE for building the doors from the plan's included door drawings: 2 siding sheets ~$80 (real siding price) + 4x 2x4x8 ~$14 (real) + 4 T-hinges @ $10.49 = $42 (REAL, Sutherlands LIVE 2026-09-07 SKU 555292) + hasp/latch ~$20 (estimated). High is REAL: 2 x the Commander prehung at $177.11.",
+    "unit_price": "$156.00 low / $354.22 high"
+   },
+   {
+    "extended": "$56.48",
+    "item": "8d 2-1/2\" coated sinker nails (roof sheathing, joist/rafter-to-wall) \u2014 20 lb",
+    "qty": "4 x 5 lb boxes",
+    "source": "REAL BUT 2025-DATED \u2014 Menards via Wayback, Grip Fast 2-3/8\" 8D Vinyl-Coated Smooth Shank Sinker Nail, 5 lb box, $14.12. Snapshot 2025-06-19, verified via memento-datetime header. No 2026 snapshot exists.",
+    "unit_price": "$14.12"
+   },
+   {
+    "extended": "$28.24 \u2013 $34.00",
+    "item": "12d 3-1/4\" coated sinker nails (floor joists, wall framing) \u2014 10 lb",
+    "qty": "2 x 5 lb boxes",
+    "source": "DERIVED from the REAL 8d sinker box price above at equal $/lb; high column allows a premium for the heavier 12d.",
+    "unit_price": "$14.12 low / $17.00 high"
+   },
+   {
+    "extended": "$75.00 \u2013 $96.00",
+    "item": "8d 2-1/2\" hot-dip galvanized siding nails \u2014 15 lb",
+    "qty": "3 x 5 lb boxes",
+    "source": "*** ESTIMATE \u2014 NOT PRICED. *** Scaled off the real $14.12 vinyl-coated sinker box at the ~1.8-2.2x premium HDG normally carries. My judgement.",
+    "unit_price": "$25.00 \u2013 $32.00 ESTIMATE"
+   },
+   {
+    "extended": "$28.44",
+    "item": "1-1/4\" 12ga electro-galvanized roofing nails \u2014 10 lb",
+    "qty": "2 x 5 lb boxes",
+    "source": "REAL BUT 2025-DATED \u2014 Menards via Wayback, Grip Fast 1-1/4\" Electro-Galvanized Roofing Nail, 5 lb box, $14.22. Snapshot 2025-07-22, verified via the Wayback 302 Location and memento-datetime headers (my request string said 2026; the archive actually served 2025 \u2014 corrected).",
+    "unit_price": "$14.22"
+   },
+   {
+    "extended": "$21.48",
+    "item": "Construction adhesive, 10 oz tube",
+    "qty": "6 tubes",
+    "source": "REAL \u2014 Menards via Wayback, LIQUID NAILS Heavy Duty Construction Adhesive 10 oz, $3.58, snapshot 2026-01-02. (28 oz Subfloor & Deck was $4.99 same date \u2014 better value if you re-spec.)",
+    "unit_price": "$3.58"
+   },
+   {
+    "extended": "$11.36 \u2013 $19.20",
+    "item": "Simpson A23 angle clip, joist-to-rim (F10)",
+    "qty": "16 pcs",
+    "source": "REAL, EQUIVALENT PART \u2014 Menards stocks MiTek, not Simpson: MiTek JA1-TZ 1-1/2x1-1/2x1-1/4 triple-zinc joist angle $0.72 (Wayback 2026-04-21). Low = Sutherlands LIVE 2026-09-07 Simpson Strong-Tie 6\"x1-3/8\" galvanized tie $0.71 (SKU 4186714).",
+    "unit_price": "$0.71 low / $1.20 high"
+   },
+   {
+    "extended": "$12.78 \u2013 $21.60",
+    "item": "Simpson H2.5 rafter/truss tie (R15)",
+    "qty": "18 pcs",
+    "source": "REAL, EQUIVALENT PART \u2014 high = Menards via Wayback MiTek RT15-TZ 5-1/4\"x1-9/16\" triple-zinc rafter-to-stud hurricane/seismic anchor tie $1.20 (2026-04-21); low = Sutherlands LIVE 2026-09-07 Simpson $0.71 (SKU 4186714).",
+    "unit_price": "$0.71 low / $1.20 high"
+   },
+   {
+    "extended": "$5,752.94 \u2013 $7,612.29",
+    "item": "=== MATERIALS SUBTOTAL, before sales tax and delivery ===",
+    "qty": "320 sq ft build",
+    "source": "Sum of the 29 lines above. With sales tax: ~$6,170\u2013$8,164 at 7.25%, ~$6,271\u2013$8,297 at 9%. About 89\u201391% of the dollar value rests on retailer-verified prices; pure estimates are $357 (6.2%) of the low and $644 (8.5%) of the high.",
+    "unit_price": "$17.98 \u2013 $23.79 per sq ft"
+   }
+  ],
+  "slug": "icreatables-16x20-gambrel-barn",
+  "total_high_usd": 7612.29,
+  "total_low_usd": 5752.94
+ },
+ "mwps-75265-16x20-milkhouse": {
+  "caveats": "SHORT ANSWER: buying this FREE plan and building it to spec at a Midwest lumber yard in September 2026 costs roughly $4,300-$6,600 in materials above grade, or $13.47-$20.72 per sq ft on 320 sq ft. Add ~$1,900-$2,600 for concrete + rebar and you are at roughly $6,200-$9,200 all-in on materials \u2014 still well under half the $11,000-$15,000 kit price, and the kit does not include a slab either.\n\nWHAT LOW vs HIGH MEANS HERE. Both ends are REAL 2026 prices from the same retailer, Sutherlands, a Midwest yard with ~49 stores. LOW = the cheapest store's price on the value-grade option (SPF/SYP #2, 7/16 OSB, 11/32 T1-11, 3-tab shingles, blown cellulose). HIGH = an expensive store's price on the upgraded option (#2 Douglas Fir, 15/32 CDX plywood, 19/32 T1-11, architectural shingles, primed-panel lining, R-30 batts). I could NOT get a single 2026 big-box unit price \u2014 Home Depot, Lowe's, Menards and McCoy's all block requests and the Wayback Machine has no Home Depot product capture after 2023-09-25 and no Lowe's product captures at all. So the high column is NOT a big-box number. Directional evidence that big-box is dearer: Home Depot's 2x4x8 Prime Whitewood Stud was $7.98 in a 2023-09-25 archive versus $3.98-$4.29 at Sutherlands today, and FRED WPU0811 softwood-lumber PPI is up ~15% since then. Treat $6,600 as a yard ceiling; a Home-Depot-only build of the same bill would plausibly land higher. Also note the store-to-store spread inside Sutherlands runs past my high on several lines (19/32 T1-11 up to $59.99/sheet, the R-13 23\\\" bag up to $149.89) \u2014 an unlucky store adds several hundred dollars.\n\nIS THE SPEC HEAVIER? Not structurally \u2014 it is LIGHTER than a modern shed plan. 2x4 studs at 24\\\" o.c. (not 16\\\"), 3/8\\\" roof sheathing (not 7/16\\\"/1/2\\\"), site-cut 2x6 rafters, no hurricane ties, no snow/wind table, no truss design. What makes it expensive is the INTERIOR: this is a dairy milkhouse, so it carries R-14 walls, R-23 ceiling, a 4-mil vapor barrier, a washable wall lining and a finished ceiling. Those five items plus the screen door, floor drains and removable panels are $1,466-$2,506 of the total \u2014 over a third. Strip them and build the same shell freestanding, unlined and uninsulated and you get $2,843-$4,124, i.e. $8.89-$12.89 per sq ft. That is the number most shed builders actually want.\n\nTHE PLAN IS ONLY THREE WALLS. This is the single biggest gotcha and it is easy to miss. The 16 ft gable endwall at the top of FLOOR PLAN 1/1 is labeled \\\"BARN\\\" and the estimating list states in plain text \\\"List does not include one endwall (existing barn wall) or material to extend roof to existing barn roof.\\\" My headline total therefore = the plan's own list ($3,779-$5,830) PLUS a fourth-endwall adder I built myself ($530-$800). If you actually have a barn to butt against, use the lower figure.\n\nTHE RAFTER COUNT IN THE PLAN IS WRONG (or at best ambiguous). The estimating list reads \\\"Rafters: 2x6's, 10 ft long ....... 11\\\" and \\\"Joists: 2x6's, 16 ft long ....... 11\\\". Eleven joists is exactly right for 24\\\" o.c. across a 20 ft building. But eleven rafter positions need TWO rafters each, one per slope \u2014 22 pieces. I priced 22. If you order off the printed list you will be 11 rafters short (about $80-$145). The ridge board (2x6 x 20 ft), the felt underlayment and the drip edge are also missing from the estimating list entirely; I added all three.\n\nCEILING JOIST SPAN IS AT THE LIMIT. A 2x6 at 24\\\" o.c. spanning the full 16 ft is right at the edge of modern IRC ceiling-joist tables for an uninhabitable attic with no storage. It is not obviously illegal, but it has essentially no margin, and if you ever put anything on that ceiling it fails. The plan's own title page says it \\\"provides conceptual information only\\\" and that professional services will be required including \\\"assurance of compliance with codes and regulations.\\\" Get it checked before you buy 2x6es.\n\nSPEC SUBSTITUTIONS I MADE, ALL FLAGGED. (1) 3/8\\\" C-C Ext plywood with medium-density overlay (MDO) is effectively a special-order product now \u2014 no fetchable retailer stocks it \u2014 so siding is priced as APA T1-11 and the lining/ceiling as 15/32 CDX (low) or a 3/8\\\" B-grade primed panel (high). (2) 3/8\\\" C-C Ext 20/0 roof sheathing no longer exists in the trade; 7/16 OSB and 15/32 CDX both exceed it. (3) The plan's windows are site-built from 22\\\" x 24\\\" double-strength glass, which nobody prices online \u2014 I substituted small vinyl units at $114-$120 each, which OVERSTATES this line; building them per the plan is much cheaper. (4) The plan's deep-seal dairy floor drains are priced as $11 PVC drains, which UNDERSTATES them.\n\nTWO LINES ARE NOT REAL PRICES, hence priced=PARTIAL: the 3/8\\\" x 10\\\" anchor bolts ($35-$50) and the quarter-round/glazing trim lot ($20-$30). Both are explicitly marked ESTIMATE in their source field. Together they are under 2% of the total. The removable-panel lot and the fourth-wall rake roof extension are derived/estimated from real unit prices. Everything else is a retailer-quoted 2026 figure.\n\nTIMING RISK. FRED WPU0811 shows softwood lumber at 300.6 in July 2026, up from 250.1 in December 2025 \u2014 a ~20% run-up in seven months, and the highest reading in the series since the 2021-22 spike. These prices are a snapshot on a rising market; re-quote before you order.",
+  "confidence": "medium-high. HIGH on the unit prices: they are live 2026-09-07 figures pulled straight from Sutherlands' own product catalog (public Meilisearch index), per-store, and I validated the index against server-rendered prices on Sutherlands' own product pages (1/4\\\" OSB $10.39 on-page = $10.39 in the index) and against the FRED softwood-lumber PPI level. 33 of 35 lines are retailer-quoted; only anchor bolts and glazing trim are estimated. HIGH on the takeoff: it comes from the plan's own printed ESTIMATING LIST on page 3, not from my own framing calc. LOWER on three things: (1) single-retailer basis \u2014 I could not obtain any 2026 Home Depot/Lowe's/Menards price because they all block and Wayback has no 2026 captures, so the high column is a yard ceiling rather than a big-box ceiling; (2) three spec substitutions were unavoidable (MDO plywood, 3/8\\\" 20/0 sheathing and double-strength window glass are not sold in any fetchable catalog), and the window substitution in particular overstates that line by maybe $150; (3) the plan itself is internally inconsistent (rafter count, missing ridge/felt/drip edge, one endwall omitted), so any total requires judgment calls that I have documented rather than hidden. Concrete is genuinely unpriced and is excluded.",
+  "cost_per_sqft_high": 20.72,
+  "cost_per_sqft_low": 13.47,
+  "excludes": [
+   "Concrete \u2014 8.75 cu yd total (3.5 cu yd trenched grade-beam foundation + 5.25 cu yd 4\" slab). NOT priced for real: no retailer publishes ready-mix per-yard delivered pricing and every big-box/ready-mix site I tried was blocked. The only real 2026 datapoint I have is bagged: Sutherlands 80 lb concrete mix sku 2797785 $4.88-$6.24 (2026-09-07), and 8.75 cu yd = ~394 bags = $1,922-$2,457 \u2014 bagging that much is impractical; ready-mix delivered will be cheaper per yard but I have no published figure.",
+   "Reinforcing steel \u2014 the plan's 110 lb of Grade 36 plus #3 @ 24\" o.c. I DID get real prices (Sutherlands sku 25866 #4 1/2\" x 20 ft $7.29-$7.49; sku 41137 #3 3/8\" x 20 ft $4.59-$5.69, 2026-09-07) which works out to roughly $157-$181 of rebar \u2014 but it sits with the concrete scope, so it is outside the headline total.",
+   "2\" sand bed under the slab (~2 cu yd), gravel grade fill and the sloped/gravel-topped perimeter fill the plan calls for",
+   "Form lumber \u2014 the plan's 2x10 form boards for the trench top",
+   "Concrete apron \u2014 the 4' x 8' slab at the entry door",
+   "Exterior paint. The plan explicitly requires a 2-coat acrylic-latex system on the MDO/Ext plywood; a real 2026 price is Sutherlands sku 3772019 5-gal Weather King exterior flat $145-$157 or sku 3772266 semi-gloss $170-$184. Add ~$150-$185.",
+   "Interior paint / finish coats on the ceiling and wall lining",
+   "The entire ELECTRICAL PLAN 5/2: switches, 150W swivel flood, 2-40W fluorescent, 120V and 240V outlets, thermostat, wire, panel, breakers",
+   "All dairy mechanical equipment shown on the sheets: 750 cfm pressurizing fan, 3000 W ceiling heater, 80 gal water heater, wash vats, bulk tank, vacuum pump, compressor/condenser",
+   "All plumbing: supply, waste, traps, and the four MILKHOUSE WASTE DISPOSAL 2/3 options (waste pond, sump, settling tank + disposal field, storage tank pump-and-haul). Only the two floor-drain bodies are in the total.",
+   "Roof-to-existing-barn tie-in \u2014 the plan's own list says \"List does not include ... material to extend roof to existing barn roof\"",
+   "Optional 2\" rigid perimeter insulation the plan offers to cut heat loss",
+   "Permits, plan review, site work, excavation, the professional services the plan's own title page says you will need",
+   "Tools, scaffolding, ladders, fall protection, mixer/compactor rental",
+   "Delivery, lift-gate, fuel surcharge, and sales tax (Sutherlands' own page warns \"Prices may vary between stores and online\")",
+   "Labor \u2014 everything here is materials only",
+   "Waste/cull factor. Quantities are the plan's own theoretical square footages plus my sheet-count rounding; add 5-10% for cuts, culls and breakage.",
+   "Any structural upgrade needed to satisfy a modern code official (snow/wind load, hurricane ties, sheathing nailing schedule, engineered truss). The 1975 sheet has none of that."
+  ],
+  "price_sources": [
+   "Sutherlands (sutherlands.com) \u2014 PRIMARY, real live 2026 prices. Their storefront hides prices behind JS, but the page JS exposes a public Meilisearch endpoint (search.sutherlands.com, index \"products\", public search key dda53533...c363). POSTing a query returns each SKU's per-store `retail` for up to ~49 Midwest stores. All prices captured 2026-09-07. Sutherlands is a Midwest lumber/farm-supply yard, which is the right price basis for a Midwest Plan Service ag plan.",
+   "Validation of that index against Sutherlands' own server-rendered HTML (2026-09-07): product page /products/item/23416 renders \"4x8x1/4 OSB Sheathing $10.39\" and \"4x8x3/4 T&G OSB $23.49\" in its Compare-with-Similar block; the index returns min $10.39 for sku 23341 and a 20.55\u201321.79+ range for sku 23556 \u2014 index values match the storefront. Site build stamp SENTRY_JS_RELEASE=2026.09.01a confirms a current 2026 catalog.",
+   "FRED WPU0811 (PPI: softwood lumber), fetched 2026-09-07 \u2014 level cross-check only, not a unit price. 2026-07-01 = 300.614; 2025-07-01 = 261.368; 2023-09-01 = 261.997. Softwood lumber is ~15% above its 2023 level and ~15% above July 2025, so 2026 lumber is expensive by recent standards \u2014 consistent with the yard prices above. Also pulled WPU083 (2026-07 = 295.177).",
+   "Home Depot 2x4x8 Prime Whitewood Stud = $7.98 \u2014 Wayback snapshot 20230925061632 only. THIS IS A 2023 PRICE, NOT 2026. Cited only to show direction: big-box was ~2x the Midwest-yard stud price in 2023. No 2026 big-box price is used anywhere in the total.",
+   "NOT priced (tried and failed): homedepot.com 403, lowes.com 403, menards.com returns a bot-interstitial, mccoys.com 403, doitbest.com 406, tractorsupply.com no connection. Wayback CDX for homedepot.com/p/... has NO capture after 2023-09-25 and lowes.com/pd/* has none at all, so no 2026 big-box unit price exists to fetch. 84lumber.com and carterlumber.com fetch fine but publish no prices."
+  ],
+  "priced": "PARTIAL",
+  "priced_lines": [
+   {
+    "extended": "$55.77 - $75.27",
+    "item": "PT sill plate, 2x4x8 #2 S4S treated yellow pine (plan: 2 plies, 100 lf)",
+    "qty": "13 pcs (104 lf)",
+    "source": "Sutherlands sku 16576 #2 treated YP $4.29-$5.99 (7 stores) / sku 128223 #1 ground-contact $4.79-$5.79, 2026-09-07",
+    "unit_price": "$4.29 - $5.79"
+   },
+   {
+    "extended": "$151.24 - $163.02",
+    "item": "Studs + blocking + door/window framing, 2x4x8 SPF stud grade (part of plan's 410 lf of 2x4)",
+    "qty": "38 pcs (304 lf)",
+    "source": "Sutherlands sku 97972 $3.98 / $3.99 / $4.29, 2026-09-07",
+    "unit_price": "$3.98 - $4.29"
+   },
+   {
+    "extended": "$60.13 - $92.75",
+    "item": "Double top plate, 2x4x16 (2 rows x 56 lf of wall)",
+    "qty": "7 pcs (112 lf)",
+    "source": "Sutherlands sku 4549374 whitewood $8.59-$13.32 (36 stores) / sku 3784949 Std&Btr Douglas Fir $11.37-$13.25, 2026-09-07",
+    "unit_price": "$8.59 - $13.25"
+   },
+   {
+    "extended": "$159.50 - $290.18",
+    "item": "Rafters, 2x6x10 (4/12, 8 ft run + 1 ft overhang). 24\" o.c. over 20 ft = 11 pairs = 22 pieces",
+    "qty": "22 pcs",
+    "source": "Sutherlands sku 3178779 #1 SYP $7.25-$8.95 / sku 3785342 #2 Douglas Fir $13.15-$13.19, 2026-09-07. NOTE: plan's estimating list prints \"11\" \u2014 see caveats",
+    "unit_price": "$7.25 - $13.19"
+   },
+   {
+    "extended": "$95.48 - $233.20",
+    "item": "Ceiling joists, 2x6x16 spanning the full 16 ft, 24\" o.c.",
+    "qty": "11 pcs",
+    "source": "Sutherlands sku 16030 #2 SYP $8.68-$13.99 / sku 3785581 #2 Douglas Fir $20.39-$21.20, 2026-09-07",
+    "unit_price": "$8.68 - $21.20"
+   },
+   {
+    "extended": "$13.28 - $25.46",
+    "item": "Ridge board, 2x6x20 \u2014 required by WALL SECTION 1/3 but ABSENT from the plan's estimating list",
+    "qty": "1 pc",
+    "source": "Sutherlands sku 16139 #2 SYP $13.28-$15.29 / sku 3785748 #2 Douglas Fir $23.99-$25.46, 2026-09-07",
+    "unit_price": "$13.28 - $25.46"
+   },
+   {
+    "extended": "$42.24 - $47.60",
+    "item": "Pressure-treated fascia, 1x6x8 (eaves + rake, ~64 lf)",
+    "qty": "8 pcs",
+    "source": "Sutherlands sku 41376 #2 S4S treated pine $5.28-$5.95, 2026-09-07",
+    "unit_price": "$5.28 - $5.95"
+   },
+   {
+    "extended": "$43.89 - $53.79",
+    "item": "1x4 soffit boards (spaced slats over hardware cloth, per plan)",
+    "qty": "11 pcs",
+    "source": "Sutherlands sku 38315 treated $3.99 / sku 6748123 whitewood appearance $4.89, 2026-09-07",
+    "unit_price": "$3.99 - $4.89"
+   },
+   {
+    "extended": "$113.40 - $335.88",
+    "item": "Roof sheathing, 380 sf. Plan spec 3/8\" C-C Ext 20/0 (obsolete) \u2014 LOW 7/16\" OSB, HIGH 15/32\" CDX plywood",
+    "qty": "12 sheets 4x8 (384 sf)",
+    "source": "Sutherlands sku 23416 7/16 OSB $9.45-$15.50 (49 stores, median $12.49) / sku 95216 15/32 APA CDX 3-ply YP $21.75-$27.99 (42 stores), 2026-09-07",
+    "unit_price": "$9.45 - $27.99"
+   },
+   {
+    "extended": "$30.00 - $31.99",
+    "item": "#15 asphalt felt underlayment, 400 sf roll \u2014 NOT in the plan's estimating list, but required",
+    "qty": "1 roll",
+    "source": "Sutherlands sku 2268704 $30.00 / sku 1638576 (3 ft x 144 ft) $31.99, 2026-09-07",
+    "unit_price": "$30.00 - $31.99"
+   },
+   {
+    "extended": "$52.43 - $111.93",
+    "item": "Aluminum drip edge, 10 ft \u2014 NOT in the plan's estimating list (~66 lf of eave + rake)",
+    "qty": "7 pcs",
+    "source": "Sutherlands sku 1124148 $7.49-$11.49 / sku 378182 F4-1/2 $15.99, 2026-09-07",
+    "unit_price": "$7.49 - $15.99"
+   },
+   {
+    "extended": "$503.86 - $615.86",
+    "item": "Asphalt shingles, 380 sf = 4 squares + starter/ridge cap. Plan spec 235 lb 3-tab",
+    "qty": "14 bundles",
+    "source": "Sutherlands sku 3903259 Supreme 3-tab $35.99-$42.49 / sku 3899309 Cambridge architectural $38.00-$43.99 (8 stores), 2026-09-07",
+    "unit_price": "$35.99 - $43.99"
+   },
+   {
+    "extended": "$14.99 - $17.99",
+    "item": "1-1/4\" electro-galvanized roofing nails, 5 lb box",
+    "qty": "1 box",
+    "source": "Sutherlands sku 2920429 $14.99-$17.99, 2026-09-07",
+    "unit_price": "$14.99 - $17.99"
+   },
+   {
+    "extended": "$391.30 - $626.92",
+    "item": "Siding, 425 sf. Plan spec 6\" drop siding OR 3/8\" MDO plywood (MDO not stocked) \u2014 SUBSTITUTED T1-11 panel",
+    "qty": "14 sheets 4x8 (448 sf)",
+    "source": "Sutherlands sku 95554 11/32 APA T1-11 8\" o.c. $27.95-$44.49 (30 stores) / sku 95570 19/32 APA T1-11 $34.98-$59.99 (32 stores; $44.78 used), 2026-09-07",
+    "unit_price": "$27.95 - $44.78"
+   },
+   {
+    "extended": "$217.50 - $399.90",
+    "item": "Ceiling lining, 320 sf (plan alternatives: 3/8\" MDO painted, FRP, 28 ga steel, 3/8\" Ext ply painted)",
+    "qty": "10 sheets 4x8",
+    "source": "Sutherlands sku 95216 15/32 CDX $21.75 / sku 8511537 3/8\" B-grade primed panel $39.99, 2026-09-07",
+    "unit_price": "$21.75 - $39.99"
+   },
+   {
+    "extended": "$304.50 - $559.86",
+    "item": "Washable wall lining, 425 sf (dairy hygiene requirement; same plan alternatives)",
+    "qty": "14 sheets 4x8",
+    "source": "Sutherlands sku 95216 15/32 CDX $21.75 / sku 8511537 3/8\" B-grade primed panel $39.99, 2026-09-07",
+    "unit_price": "$21.75 - $39.99"
+   },
+   {
+    "extended": "$245.97 - $329.97",
+    "item": "Wall insulation R-14 (plan) = R-13 3-1/2\" kraft batt, 23\" wide for 24\" o.c. framing, 425 sf",
+    "qty": "3 bags (~193 sf ea)",
+    "source": "Sutherlands sku 4798187 $81.99-$149.89 (25 stores, median $95.49) / sku 2244150 Insulpure 193.10 sf $95.70-$149.89, 2026-09-07",
+    "unit_price": "$81.99 - $109.99"
+   },
+   {
+    "extended": "$125.91 - $0.00",
+    "item": "Ceiling insulation R-23 \"6 in. min. fill\", 320 sf \u2014 LOW: blown cellulose (matches \"fill\" spec)",
+    "qty": "9 bags x 25 lb",
+    "source": "Sutherlands sku 2159341 cellulose $13.99-$15.49, 2026-09-07",
+    "unit_price": "$13.99 (low col. only)"
+   },
+   {
+    "extended": "$0.00 - $459.96",
+    "item": "Ceiling insulation, HIGH option: R-30 kraft batt, 24\" wide x 48\" (88 sf/bag)",
+    "qty": "4 bags",
+    "source": "Sutherlands sku 2244499 $105.95-$114.99 / sku 4801403 $79.99-$84.99, 2026-09-07",
+    "unit_price": "$114.99 (high col. only)"
+   },
+   {
+    "extended": "$32.99 - $35.99",
+    "item": "Vapor barrier, 4 mil clear poly 8 ft x 100 ft (745 sf of wall + ceiling)",
+    "qty": "1 roll (800 sf)",
+    "source": "Sutherlands sku 1004399 $32.99-$35.99, 2026-09-07",
+    "unit_price": "$32.99 - $35.99"
+   },
+   {
+    "extended": "$229.00 - $289.00",
+    "item": "Walk door, 3'-0\" x 6'-8\" insulated \u2014 36x80 steel flush prehung exterior",
+    "qty": "1 ea",
+    "source": "Sutherlands sku 3650868 $229-$255 / sku 1265198 $269-$289, 2026-09-07",
+    "unit_price": "$229.00 - $289.00"
+   },
+   {
+    "extended": "$289.00 - $329.00",
+    "item": "Screen door, 36x81 aluminum (plan shows a screen door outside the walk door \u2014 dairy fly control)",
+    "qty": "1 ea",
+    "source": "Sutherlands sku 6668164 $289-$299 / sku 6668776 low-E $329, 2026-09-07",
+    "unit_price": "$289.00 - $329.00"
+   },
+   {
+    "extended": "$227.98 - $239.98",
+    "item": "Windows (2). Plan is SITE-BUILT: 22\" x 2'-0\" double-strength glass in 2x4 framing. DS glass is not in any online catalog, so priced as a small vinyl unit SUBSTITUTE",
+    "qty": "2 ea",
+    "source": "Sutherlands sku 2200913 32x22 vinyl $113.99 / sku 4201372 12x24 vinyl $119.99, 2026-09-07. SUBSTITUTION \u2014 building the plan's site-built sash would be far cheaper (~$30-60/ea of glass)",
+    "unit_price": "$113.99 - $119.99"
+   },
+   {
+    "extended": "$37.67 - $57.15",
+    "item": "Removable insulated wall panels (3) per detail 2/2 \u2014 1 sheet + 4 pcs 2x4x8 (condenser vents, dairy-specific)",
+    "qty": "1 lot",
+    "source": "DERIVED from Sutherlands sheet + 2x4 unit prices above, 2026-09-07",
+    "unit_price": "$37.67 - $57.15"
+   },
+   {
+    "extended": "$44.99 - $49.99",
+    "item": "Gable-end louver vent, 17x23",
+    "qty": "1 ea",
+    "source": "Sutherlands sku 8941148 Duraflo $44.99-$49.99, 2026-09-07",
+    "unit_price": "$44.99 - $49.99"
+   },
+   {
+    "extended": "$62.97 - $62.97",
+    "item": "1/2\" galvanized hardware cloth, 24\" x 10 ft 19 ga (soffit screening, per plan)",
+    "qty": "3 rolls",
+    "source": "Sutherlands sku 7780992 $20.99 (all stores), 2026-09-07",
+    "unit_price": "$20.99"
+   },
+   {
+    "extended": "$62.97 - $79.47",
+    "item": "16d hot-galvanized common nails, 5 lb box (framing; plan says use galvanized)",
+    "qty": "3 boxes",
+    "source": "Sutherlands sku 3059862 $20.99-$26.49, 2026-09-07",
+    "unit_price": "$20.99 - $26.49"
+   },
+   {
+    "extended": "$47.98 - $61.98",
+    "item": "8d hot-galvanized common nails, 5 lb box (sheathing + siding)",
+    "qty": "2 boxes",
+    "source": "Sutherlands sku 3059383 $23.99-$30.99, 2026-09-07",
+    "unit_price": "$23.99 - $30.99"
+   },
+   {
+    "extended": "$16.56 - $17.88",
+    "item": "1x2x8 trim (window/panel/door trim per plan details)",
+    "qty": "12 pcs",
+    "source": "Sutherlands sku 2982973 premium whitewood $1.38-$1.49, 2026-09-07",
+    "unit_price": "$1.38 - $1.49"
+   },
+   {
+    "extended": "$10.98 - $12.70",
+    "item": "1x6x8 door jamb (plan: 1x6 x 6'-8\" jamb)",
+    "qty": "2 pcs",
+    "source": "Sutherlands sku 41376 treated $5.49 / sku 67595 #2 KD SYP $6.35, 2026-09-07",
+    "unit_price": "$5.49 - $6.35"
+   },
+   {
+    "extended": "$17.70 - $17.94",
+    "item": "Exterior acrylic-latex caulk, 10.1 oz (plan: seal trim, flashing, quarter round)",
+    "qty": "6 tubes",
+    "source": "Sutherlands sku 1518661 Alex Plus $2.95-$2.99, 2026-09-07",
+    "unit_price": "$2.95 - $2.99"
+   },
+   {
+    "extended": "$21.98 - $23.98",
+    "item": "Floor drains (2). Plan calls for DEEP-SEAL dairy drains; priced as PVC 3x4 solvent-weld floor drains (cheap stand-in)",
+    "qty": "2 ea",
+    "source": "Sutherlands sku 4723698 $10.99 / sku 6367858 $8.99-$11.99, 2026-09-07. A true deep-seal dairy drain + trap primer is a plumbing-supply item and costs far more",
+    "unit_price": "$10.99 - $11.99"
+   },
+   {
+    "extended": "$35.00 - $50.00",
+    "item": "Anchor bolts, 3/8\" x 10\", 8 ft o.c. \u2014 ESTIMATE, NOT A REAL PRICE",
+    "qty": "~10 ea",
+    "source": "ESTIMATE \u2014 no matching SKU found at any fetchable retailer. Not retailer-verified.",
+    "unit_price": "$3.50 - $5.00 (ESTIMATE)"
+   },
+   {
+    "extended": "$20.00 - $30.00",
+    "item": "Quarter round + misc glazing trim per FIXED WINDOW FRAMING 4/2 \u2014 ESTIMATE, NOT A REAL PRICE",
+    "qty": "1 lot",
+    "source": "ESTIMATE \u2014 not priced. Not retailer-verified.",
+    "unit_price": "$20 - $30 (ESTIMATE)"
+   },
+   {
+    "extended": "$3,779 - $5,830",
+    "item": "SUBTOTAL \u2014 plan's estimating list AS PRINTED (3 walls; 4th endwall is the existing barn)",
+    "qty": "1 building",
+    "source": "Sum of the lines above ($11.81-$18.22 per sq ft)",
+    "unit_price": "n/a"
+   },
+   {
+    "extended": "$530 - $800",
+    "item": "4TH ENDWALL ADDER to make it a freestanding shed (16 ft wall + gable): 4 PT 2x4x8, 9 studs, 2 2x4x16 plates, 6 gable studs, rake/fascia, 5 siding sheets, 5 lining sheets, 1 R-13 bag, 1 louver, rake roof extension",
+    "qty": "1 lot",
+    "source": "Built from the same Sutherlands 2026-09-07 unit prices; the roof/shingle rake-extension sub-line ($45-$80) is an ESTIMATE",
+    "unit_price": "n/a"
+   }
+  ],
+  "slug": "mwps-75265-16x20-milkhouse",
+  "total_high_usd": 6629,
+  "total_low_usd": 4310
+ },
+ "myoutdoorplans-16x20-gable": {
+  "caveats": "[\"This is PARTIAL, not fully priced. 26 of the 28 roll-up lines carry a real, dated, retailer-verified unit price. Two lines are pure estimates and are labelled so in-line: 8d siding nails ($40-$70) and door latch/handles/caulk ($60-$120). Together those are 2.1% of the low total and 2.7% of the high total, so they do not move the headline number, but they are not verified prices and must not be quoted as such.\", \"QUANTITIES ARE PARTLY MINE, NOT THE PLAN'S. The plan's 56-line list is a per-piece CUT list, not a shopping list - the consolidated buy list is the $11.99 Gumroad upsell. I converted pieces to purchasable boards with a first-fit cut plan (e.g. 22 rafters at 119-1/4in each need their own 10ft board; four 35in header/sill pieces nest in one 12ft board). A different cut plan will shift the board count by a few percent.\", \"Three material groups are MISSING from the published cut list and I added them: (1) the floor joists - the list itemizes only 4 pieces of 20ft 2x6 for the whole floor frame, so I added 17 pieces of 2x6x16 read off the free floor-frame diagram (189in joists at 16in o.c.), worth $226-$375; (2) the 1/2in plywood truss gussets, ~4 sheets, $104-$144; (3) hinges, hurricane ties and fasteners. Without those additions the plan as literally listed cannot be built.\", \"WINDOWS ARE NOT IN THE PLAN'S LIST. The cut list frames two openings (48in jacks, 35in headers/sills, 27in and 10-3/4in cripples) but never names a window. I priced two real windows ($200-$398 total) as an allowance; neither SKU exactly matches the ~32in x 50in rough opening the framing implies. Buy the window first, then frame to its actual RO.\", \"THE HIGH END IS NOT BIG-BOX RETAIL. I could not obtain a single Home Depot, Lowe's or Menards price: HD 403s and has no Wayback product snapshots at all, Lowe's 403s on /pd/ pages, Menards and Carter Lumber serve challenge shells. The high bracket is Dunn Lumber, a real Seattle-area yard with published prices - a genuinely high-cost market (its SPF 2x4x8 equivalent is $7.04 vs $3.99 at Sutherlands, +76%). Big-box pricing typically lands between these two brackets, so a Home Depot bill would probably fall in the $5,000-$6,000 band rather than at either extreme.\", \"Prices are store-specific at Sutherlands and a few lines come from different branches (Emporia KS, Fort Smith AR, Tulsa OK, Wichita KS, Harrisonville MO, Springfield MO) because no single store stocked every SKU. The page itself warns 'Prices may vary between stores and online.' Do not treat the total as one store's quote.\", \"Two Sutherlands SKUs published a price while showing out of stock at the branch I queried (2x6x10 #10405 at $8.49 and the 23/32in T&G plywood). The price is real; availability is not guaranteed.\", \"The 1-5/8in screw line is a forced over-buy: 25 lb ($119.99) when about 8 lb is needed, because that was the smallest pack with a verifiable price. Buying 5-lb boxes instead would cut roughly $80-$95 off both ends.\", \"PRICE ENVIRONMENT: FRED WPU081 (PPI, Lumber and Wood Products) is 300.6 for Jul-2026 vs 250.1 in Dec-2025 - roughly +20% in seven months and a two-year high. This bill is being struck at an expensive moment for lumber; if the index reverts to its late-2025 level the framing and sheet-goods portion (~65% of the total) could fall 10-15%, i.e. roughly $300-$650 off.\", \"MyOutdoorPlans' own on-page claim is '$5,500 to $8,000 for materials'. My verified bill comes in at $4,826-$6,943, i.e. the vendor's low end is about 14% above my competitive-yard number and its high end is about 15% above my expensive-yard number. Their estimate is defensible but conservative; add sales tax and delivery and the low end of their range is reached.\", \"This plan is materially more expensive than a typical 16x20 because of three choices in the plan itself: 3/4in sheathing on BOTH floor and roof (28 sheets - going 7/16in OSB on the roof alone would save about $175 at Sutherlands or $450 at Dunn), 2x6 trusses and 2x6 floor joists rather than 2x4/2x8-at-24in, and 5/8in T1-11 as the only wall layer, which at 21 sheets is the single biggest line item in the whole bill ($987-$1,173, about 20% of the total).\"]",
+  "confidence": "MEDIUM-HIGH on the unit prices, MEDIUM on the total. High confidence on prices: 26 of 28 lines come from two live, directly-fetchable retailer catalogs (Sutherlands, snapshot-dated on-page 'as of Mon, Sep 7, 2026'; Dunn Lumber, fetched 2026-09-08), every SKU number and URL is recorded, and I re-scraped all of them a second time with a stricter parser after catching the first one pulling prices out of a 'Compare with Similar Items' carousel - so no price here is a mis-scrape of a neighbouring product. The two independent yards agree closely where they overlap (3/4in plywood $41.88 Dunn vs $42.99 Sutherlands), and FRED WPU081 corroborates the elevated level. Lower confidence on the total, for three reasons: (1) the plan publishes a cut list, not a shopping list, so the board/sheet counts are my cut plan and could vary a few percent; (2) three material groups (floor joists, truss gussets, all connectors and hinges) are absent from the published list and I supplied the quantities, which is about $500-$650 of the total; (3) there is no big-box price anywhere in it, so the low-high spread reflects grade and regional-yard choice rather than retailer channel. Treat $4,800-$6,900 as the materials bill and expect $5,500-$8,000 all-in once tax, delivery and a gravel pad are added - and note it is NOT a project budget: no foundation, permits, paint, tools or labor are in the number.",
+  "cost_per_sqft_high": 21.7,
+  "cost_per_sqft_low": 15.08,
+  "excludes": [
+   "Sales tax - zero tax in the number. At 7-9% that is another $340-$620.",
+   "Delivery. A 1,900 board-foot, ~50-sheet order will not fit in a pickup. Yard delivery is typically $75-$250 per drop in this market, and none of it is in the total.",
+   "Foundation of any kind below the skids: gravel pad, crushed rock, landscape fabric, concrete blocks/piers/footings, ground anchors or tie-downs. The plan only says 'gravel, concrete or blocks' with no depth, spacing or quantity, so there is nothing to price. A 320 sq ft compacted gravel pad is commonly $400-$1,200 delivered.",
+   "Permits, plan review, engineering. At 320 sq ft this building exceeds the usual 100-200 sq ft exemption, and the 16ft site-built plywood-gusset trusses carry no stamp and no snow/wind rating, so a permitted jurisdiction may force engineered trusses - which would replace the 11 truss chord + 30 rafter + 44 web lines above with a truss package.",
+   "Labor. The plan's own page suggests $3,000-$5,000 for professional labor.",
+   "All tools: miter saw, circular saw, pocket-hole jig, drill/impact, ladders, truss jig, nailer or compressor, safety gear.",
+   "Housewrap, building paper, or any separate wall sheathing layer. The plan puts 5/8in T1-11 straight on the studs with nothing behind it.",
+   "Paint, primer, stain or sealer. T1-11 must be finished or it will fail; 640 sq ft of wall plus 8 trim boards is roughly 5-8 gallons.",
+   "Insulation, vapor barrier, interior wall/ceiling finish, interior floor covering.",
+   "Electrical: service feed, trenching, conduit, panel/subpanel, receptacles, lighting, switches.",
+   "Roof and soffit ventilation, ridge vent, gable vents, and any soffit/vented soffit material - none is specified anywhere in the free build.",
+   "Gutters and downspouts.",
+   "Front ramp and planter boxes (those are behind the $11.99 Gumroad PDF and are not in the free cut list).",
+   "Ice-and-water shield / valley membrane, hip-and-ridge cap shingles, pipe boots and step flashing.",
+   "Any shrinkage/damage/miscut contingency beyond the modest waste already built into the board and sheet counts."
+  ],
+  "price_sources": [
+   "Sutherlands (regional Midwest/South lumber-yard chain, ~50 stores). Live product pages fetched directly with curl (no block, no Wayback needed) on 2026-09-07/08. Each page prints 'Estimated stock levels as of Mon, Sep 7, 2026'. Prices are store-specific, so each SKU was pulled with an explicit ?store=NNNN parameter; stores used: 4308 Emporia KS, 2705 Fort Smith AR, 1904 Tulsa OK, 1403 Wichita KS, 1219 Harrisonville MO, 3222 Springfield MO. Sitemap enumeration (sutherlands.com/sitemap0-6.xml, 163k URLs) was used as the search substitute to find SKUs. All 34 unit prices were re-scraped a second time with a strict parser that only accepts a price appearing between the 'Sku#' line and the 'Pickup' line, after I caught the first parser silently picking up prices out of the 'Compare with Similar Items' carousel. Verified SKU/price examples: 2x4x8 SPF Std&Btr #10173 $3.99; 2x4x20 #10231 $14.25 ($13.99 @30+); 2x6x10 #2&Btr #10405 $8.49; 2x6x16 #10439 $13.29; 2x6x20 #10454 $22.29; 4x4x10 #2 treated ground contact #12856 $16.89; 3/4in OSB 4x8 #23507 $23.49; 23/32in BC yellow-pine plywood #24950 $42.99; 15/32in APA CDX 3-ply YP #95216 $26.09; 19/32in T1-11 8in-OC APA Decor #23564 $46.99 (APA Premium #95570 $50.99); 1x8x12 #2&Btr ponderosa #66670 $14.99; Tamko Elite 3-tab bundle #9632555 $36.33; Tamko starter bundle #130674 $59.99; IKO Dynasty Class-3 architectural bundle #3899325 $39.99; ProFelt Plus 10-square synthetic underlayment #795450 $55.99; Amerimax 10ft galvanized drip edge #7915499 $9.30; Simpson H1A hurricane tie #3046935 $1.49; Mazel 1-1/2in galv roofing nails 30-lb pail #7323207 $55.99; Grip-Rite 3-1/2in x #10 exterior screws 25-lb bucket #2103034 $127.99; Grip-Rite 1-5/8in x #8 25-lb #2103158 $119.99; Hillman 8in HD T-hinge #555342 $16.99; Duo-Corp 2020IGUT utility window #885988 $99.99; Croft 36x48 vinyl low-E single hung #1492917 $199.00.",
+   "Dunn Lumber (Seattle / Puget Sound WA, 9 yards) - used as the HIGH-cost real-yard bracket. Magento catalog fetched directly on 2026-09-08 via sitemap/sitemap.xml -> media/sitemap/sitemap-1-{1,2,3}.xml (25,188 URLs) plus category listing pages. Dunn prices long dimensional lumber by the linear foot, flat across lengths (confirmed on the product pages, which list 6/10/12/14/16/20ft variants all at the same $/lf): SPF 2x4 Std&Btr Premium KD S4S $0.88/lf; SPF 2x6 #2&Btr $1.38/lf; SPF 2x4-96in premium stud $6.08 ea; Pressure-Treated Hem/Fir 4x4 incised ground contact $2.48/lf; CDX 3/4in (net 23/32in) plywood sheathing 4x8 $41.88; CDX 1/2in (net 15/32in) $35.88; Weyerhaeuser EdgeGold 3/4in T&G OSB $30.88; shop-grade grooved plywood siding 8in-OC 4x8 5/8in (net 19/32in) $55.88 (premium Douglas-fir APA 303 8in-OC 5/8in is $95.88); Spruce 1x8 #2 boards $2.48/lf; metal drip edge flashing galv 28ga 2in x 1-1/2in x 10ft $13.78.",
+   "FRED / BLS cross-check, fetched 2026-09-08: series WPU081 (PPI by Commodity: Lumber and Wood Products) = 300.6 for Jul-2026, vs 263.7 Aug-2025 and 250.1 Dec-2025. Lumber is roughly +14% year-over-year and at the highest level in the two-year window, which is consistent with the elevated retail unit prices above. This is a sanity check on the price environment only - no unit price in this bill comes from an index.",
+   "Blocked/failed sources, for transparency: homedepot.com 403 direct and has NO Wayback snapshots for its product pages (archive.org/wayback/available returned empty for both a product and a category URL); lowes.com returns 200 at the root but 403 on /pd/ product pages; menards.com and carterlumber.com return 200 but serve a ~6KB challenge shell with no prices; mccoys.com 403; doitbest.com and truevalue.com 406; the Wayback CDX domain query for homedepot.com timed out (504). So there is NO big-box retail price in this bill - the high bracket is a real high-cost independent yard instead.",
+   "Plan / materials list source: the 56-line keyed cut & shopping list (A-R) already captured in /home/ethan/woodshed/data/plans.json for slug myoutdoorplans-16x20-gable, from https://myoutdoorplans.com/shed/16x20-gable-shed-free-diy-plans/ (Parts 1 and 2). The page is Cloudflare-403 to curl; the list was previously harvested via Wayback."
+  ],
+  "priced": "PARTIAL",
+  "priced_lines": [
+   {
+    "extended": "$89.16 - $110.40",
+    "item": "2x6 x20ft rim/band joists (cut-list line A, published as '2x6 20ft - 2 pieces' twice)",
+    "qty": "4 pc",
+    "source": "REAL: Sutherlands SKU 10454 $22.29 (store 4308, 2026-09-07) / Dunn SPF 2x6 $1.38/lf x 20ft (2026-09-08)",
+    "unit_price": "$22.29 low / $27.60 high"
+   },
+   {
+    "extended": "$225.93 - $375.36",
+    "item": "2x6 x16ft floor joists, 189in long @16in o.c. - OMITTED from the published cut list, quantity read off the free floor-frame diagram",
+    "qty": "17 pc",
+    "source": "REAL unit price (Sutherlands SKU 10439 / Dunn $1.38/lf); QUANTITY IS MINE, not the plan's - the cut list itemizes no interior joists at all",
+    "unit_price": "$13.29 low / $22.08 high"
+   },
+   {
+    "extended": "$135.12 - $198.40",
+    "item": "4x4 x10ft #2 treated ground-contact skids (B)",
+    "qty": "8 pc",
+    "source": "REAL: Sutherlands SKU 12856 $16.89 / Dunn PT Hem-Fir 4x4 incised GC $2.48/lf x 10ft",
+    "unit_price": "$16.89 low / $24.80 high"
+   },
+   {
+    "extended": "$71.25 - $88.00",
+    "item": "2x4 x20ft wall plates (D: 240in x2 + 233in; E: 240in + 233in)",
+    "qty": "5 pc",
+    "source": "REAL: Sutherlands SKU 10231 $14.25 (store 2705) / Dunn SPF 2x4 $0.88/lf x 20ft",
+    "unit_price": "$14.25 low / $17.60 high"
+   },
+   {
+    "extended": "$44.45 - $70.40",
+    "item": "2x4 x16ft wall plates (F: 192in + 185in; G: 185in x2 + 192in)",
+    "qty": "5 pc",
+    "source": "REAL: Sutherlands SKU 10215 $8.89 / Dunn SPF 2x4 $0.88/lf x 16ft",
+    "unit_price": "$8.89 low / $14.08 high"
+   },
+   {
+    "extended": "$331.17 - $584.32",
+    "item": "2x4 x8ft - 51 wall studs @92-3/4in (18+16+4+13) plus 32 boards yielding the short parts (truss webs 23-7/8in x22, 80in/73in/48in/43in/41in/39in/36in/29in/27in/8-3/4in jamb, door-frame and cripple pieces)",
+    "qty": "83 pc",
+    "source": "REAL: Sutherlands SKU 10173 $3.99 (store 4308) / Dunn SPF 2x4 $0.88/lf x 8ft. Board count is my cut plan from the published piece list",
+    "unit_price": "$3.99 low / $7.04 high"
+   },
+   {
+    "extended": "$82.35 - $132.00",
+    "item": "2x4 x10ft - E 102in x2, E 10-3/4in x10, truss webs 50-5/8in x22 (2 per board), P jamb 103in",
+    "qty": "15 pc",
+    "source": "REAL: Sutherlands SKU 10181 $5.49 / Dunn SPF 2x4 $0.88/lf x 10ft",
+    "unit_price": "$5.49 low / $8.80 high"
+   },
+   {
+    "extended": "$12.98 - $21.12",
+    "item": "2x4 x12ft - window headers/sills 35in x8 (4 per board)",
+    "qty": "2 pc",
+    "source": "REAL: Sutherlands SKU 10199 $6.49 / Dunn SPF 2x4 $0.88/lf x 12ft",
+    "unit_price": "$6.49 low / $10.56 high"
+   },
+   {
+    "extended": "$271.68 - $441.60",
+    "item": "2x6 x10ft - truss rafters 119-1/4in x22, overhang rafters 119-1/8in x8, doubled front-door header 99in x2",
+    "qty": "32 pc",
+    "source": "REAL: Sutherlands SKU 10405 $8.49 (price published; flagged out-of-stock at store 4308) / Dunn SPF 2x6 $1.38/lf x 10ft",
+    "unit_price": "$8.49 low / $13.80 high"
+   },
+   {
+    "extended": "$146.19 - $242.88",
+    "item": "2x6 x16ft truss bottom chords, 192in x11",
+    "qty": "11 pc",
+    "source": "REAL: Sutherlands SKU 10439 $13.29 / Dunn SPF 2x6 $1.38/lf x 16ft",
+    "unit_price": "$13.29 low / $22.08 high"
+   },
+   {
+    "extended": "$27.56 - $44.16",
+    "item": "2x6 x8ft overhang blocking, 8-1/2in x36 (11 per board)",
+    "qty": "4 pc",
+    "source": "REAL: Sutherlands SKU 10397 $6.89 / Dunn SPF 2x6 $1.38/lf x 8ft",
+    "unit_price": "$6.89 low / $11.04 high"
+   },
+   {
+    "extended": "$119.92 - $238.08",
+    "item": "1x8 x12ft roof trim / fascia (L: 120-1/4in x4, 132in x4 - both need a 12ft board)",
+    "qty": "8 pc",
+    "source": "REAL: Sutherlands SKU 66670 #2&Btr ponderosa pine $14.99 / Dunn spruce 1x8 #2 $2.48/lf x 12ft",
+    "unit_price": "$14.99 low / $29.76 high"
+   },
+   {
+    "extended": "$281.88 - $502.56",
+    "item": "Floor deck (C) 3/4in sheets, 8+4 as published. LOW substitutes 3/4in OSB; HIGH buys the 3/4in (23/32in) CDX plywood the plan actually specifies",
+    "qty": "12 sheet",
+    "source": "REAL: Sutherlands 3/4in OSB SKU 23507 $23.49 / Dunn CDX 3/4in plywood $41.88 (corroborated by Sutherlands 23/32in BC yellow pine SKU 24950 $42.99)",
+    "unit_price": "$23.49 low / $41.88 high"
+   },
+   {
+    "extended": "$375.84 - $670.08",
+    "item": "Roof deck (K) 3/4in sheets: 6 full + 4x7ft x4 + 4x3ft x4 + 23-1/4in x7ft x4 + 23-1/4in x8ft x2, nested onto 4x8 sheets. LOW = 3/4in OSB; HIGH = 3/4in CDX plywood per the plan",
+    "qty": "16 sheet",
+    "source": "REAL unit prices as above; 16-sheet nesting is my cut plan (bare minimum nests to 15)",
+    "unit_price": "$23.49 low / $41.88 high"
+   },
+   {
+    "extended": "$104.36 - $143.52",
+    "item": "1/2in plywood truss gussets (both faces, 11 trusses) + corner and header spacers - NOT itemized anywhere in the cut list, quantity estimated at ~100 gussets",
+    "qty": "4 sheet",
+    "source": "REAL unit price (Sutherlands 15/32in APA CDX 3-ply YP SKU 95216 $26.09 / Dunn CDX 1/2in $35.88); QUANTITY ESTIMATED BY ME",
+    "unit_price": "$26.09 low / $35.88 high"
+   },
+   {
+    "extended": "$986.79 - $1,173.48",
+    "item": "5/8in T1-11 grooved plywood siding, 4x8 (H: 16 full sheets + 5 more to yield the 4'x52in x4, 4'x29-1/2in x4 and 4'x16in x2 pieces)",
+    "qty": "21 sheet",
+    "source": "REAL: Sutherlands 19/32in APA Decor T1-11 8in-OC SKU 23564 $46.99 (store 1904) / Dunn shop-grade grooved plywood siding 8in-OC 4x8 5/8in $55.88. Dunn's premium Douglas-fir APA 303 equivalent is $95.88, which would add ~$840",
+    "unit_price": "$46.99 low / $55.88 high"
+   },
+   {
+    "extended": "$581.28 - $639.84",
+    "item": "Asphalt shingles for the 500 sq ft (5 squares) the plan calls out - LOW 3-tab, HIGH architectural",
+    "qty": "16 bundle",
+    "source": "REAL: Sutherlands Tamko Elite 3-tab SKU 9632555 $36.33/BD (store 2705) / IKO Dynasty Class-3 SKU 3899325 $39.99/BD (store 1219). Dunn does not publish asphalt shingle prices",
+    "unit_price": "$36.33 low / $39.99 high"
+   },
+   {
+    "extended": "$59.99",
+    "item": "Starter shingle bundle (10in x 40in)",
+    "qty": "1 bundle",
+    "source": "REAL: Sutherlands Tamko SKU 130674 $59.99/BD",
+    "unit_price": "$59.99"
+   },
+   {
+    "extended": "$55.99",
+    "item": "Roof underlayment - 10-square synthetic roll, replaces the tar paper the plan lists without a quantity",
+    "qty": "1 roll",
+    "source": "REAL: Sutherlands ProFelt Plus SKU 795450 $55.99",
+    "unit_price": "$55.99"
+   },
+   {
+    "extended": "$83.70 - $124.02",
+    "item": "Drip edge, 10ft lengths - ~84 lf (eaves 2 x 22.1ft + rakes 4 x 9.9ft); quantity computed from the plan's own overhang dimensions, not itemized",
+    "qty": "9 pc",
+    "source": "REAL: Sutherlands Amerimax SKU 7915499 $9.30 / Dunn metal drip edge flashing 28ga 2in x 1-1/2in x 10ft $13.78",
+    "unit_price": "$9.30 low / $13.78 high"
+   },
+   {
+    "extended": "$32.78",
+    "item": "Simpson H1A hurricane / rafter ties, one per truss bearing (the plan says 'rafter ties' but gives no quantity)",
+    "qty": "22 pc",
+    "source": "REAL: Sutherlands SKU 3046935 $1.49; QUANTITY MINE",
+    "unit_price": "$1.49"
+   },
+   {
+    "extended": "$55.99",
+    "item": "Roofing nails, 1-1/2in electro-galvanized, 30-lb pail (~2.5 lb/square x 5 sq)",
+    "qty": "1 pail",
+    "source": "REAL: Sutherlands Mazel SKU 7323207 $55.99",
+    "unit_price": "$55.99"
+   },
+   {
+    "extended": "$127.99",
+    "item": "3-1/2in #10 exterior/framing screws, 25-lb bucket (the plan specifies 3-1/2in screws for all wall framing)",
+    "qty": "1 bucket",
+    "source": "REAL: Sutherlands Grip-Rite SKU 2103034 $127.99 (store 3222); QUANTITY MINE (~1,600 screws)",
+    "unit_price": "$127.99"
+   },
+   {
+    "extended": "$119.99",
+    "item": "1-5/8in #8 screws for the plywood gussets and misc, 25-lb box",
+    "qty": "1 box",
+    "source": "REAL: Sutherlands Grip-Rite SKU 2103158 $119.99 (store 1403). NOTE: 25 lb is an over-buy for ~1,200 gusset screws (~8 lb); it is the smallest pack I could get a verified price for",
+    "unit_price": "$119.99"
+   },
+   {
+    "extended": "$40.00 - $70.00",
+    "item": "8d galvanized siding nails (~8-10 lb; plan says nail T1-11 every 8in)",
+    "qty": "1 allowance",
+    "source": "ESTIMATE - NOT a verified price. Every 8d/siding-nail SKU I found at Sutherlands was unavailable with no price published at any of the 9 stores I queried",
+    "unit_price": "$40 - $70"
+   },
+   {
+    "extended": "$101.94",
+    "item": "8in heavy-duty T-hinges - 2 per leaf x (2 front door leaves + 1 man door)",
+    "qty": "6 pc",
+    "source": "REAL: Sutherlands Hillman SKU 555342 $16.99; QUANTITY MINE - hinges are not in the cut list",
+    "unit_price": "$16.99"
+   },
+   {
+    "extended": "$60.00 - $120.00",
+    "item": "Door latch / hasp / handles + construction adhesive, caulk, misc",
+    "qty": "1 allowance",
+    "source": "ESTIMATE - NOT a verified price; none of this is itemized in the plan",
+    "unit_price": "$60 - $120"
+   },
+   {
+    "extended": "$199.98 - $398.00",
+    "item": "WINDOWS x2 - the cut list frames two ~32in x 50in rough openings but does NOT include the windows. LOW = 23-1/2in utility slider, HIGH = 36x48 vinyl low-E single hung",
+    "qty": "2 pc",
+    "source": "REAL: Sutherlands Duo-Corp 2020IGUT SKU 885988 $99.99 and Croft 36x48 low-E SKU 1492917 $199.00 (both verified in stock). Neither is an exact fit for the framed opening - treat as an allowance",
+    "unit_price": "$99.99 low / $199.00 high"
+   }
+  ],
+  "slug": "myoutdoorplans-16x20-gable",
+  "total_high_usd": 6943,
+  "total_low_usd": 4826
+ },
+ "shedking-16x20-gambrel-barn": {
+  "caveats": "[\"This is PARTIAL, not fully priced. 81% of the LOW-end dollars come from a real, dated retailer price; only 43-52% of lines are retailer-verified at BOTH ends. 28 of 47 lines have an estimate on at least one end. Every estimated line is labelled 'ESTIMATE' in its source field. Do not treat the high end as a quote.\", \"Split of the number: the plan's own published materials list prices out at $6,450 (low) to $9,699 (high). I added $841-$1,506 of items the plan's list omits but which you cannot build without - roof deck sheathing, roof underlayment, the skids themselves, and exterior trim - to get the headline $7,289-$11,205. If you want the strict 'what the PDF lists' number, use $6,450-$9,699 ($20.16-$30.31/sq ft).\", \"THE PLAN'S MATERIALS LIST HAS REAL HOLES. It specifies 370 sq ft of shingles, drip edge, ridge cap and a ridge vent but lists ZERO sheets of roof sheathing. It lists '2x8x12 - 4 - Skid Bracing' but never lists the 4x6 skids the building sits on. It lists no trim, no door hardware, no handrail/guardrail, and no roofing underlayment. It also lists both 'Siding Underlayment' AND 'Tyvek Wrap' at the same square footage on all four walls, which is redundant - most builders would buy one or the other, saving ~$90.\", \"Home Depot dimensional lumber could NOT be priced. HD deliberately omits the price from the structured data on commodity lumber and sheet-goods pages; I tested ~15 lumber SKUs across 2025 and 2026 Wayback snapshots and every one returned $0.00. Lowe's returned no usable lumber product URLs at all. So the 'big-box premium' side of this range is carried by Menards, not HD/Lowe's.\", \"Surprising finding worth passing on: in 2026 a competitive yard and a big box are NOT reliably far apart on framing lumber, and the gap goes both ways. Menards' 2x6x16 ($15.54) undercut Sutherlands ($16.70), and Menards' LP SmartSide lap siding ($12.99) undercut Sutherlands ($14.28), while Menards was 10-16% higher on 2x6x8, 2x4x10 and 2x4x12. Architectural shingles at Menards ($34.70/bundle) came in cheaper than 3-tab at Sutherlands ($39.97). Anyone using a flat '+20% for big box' rule of thumb would be wrong here.\", \"Snapshot dates are mixed. Sutherlands prices are live as of 2026-09-07/08. Menards and Home Depot prices come from Wayback snapshots dated between 2025-01 and 2026-08; each is dated in the price_sources and priced_lines fields. Lumber is a commodity and moves; treat anything older than ~6 months as indicative.\", \"Sutherlands prices are per-store. I used store 3118 (Fredericksburg, TX); many prices were identical chain-wide but dimensional lumber is not. Sutherlands' default store (Harrisonville, MO) does not stock SPF and returns $0 - which is why the store parameter matters.\", \"Two spec substitutions on the low end: (a) the plan calls for 3ft x 4ft DOUBLE-hung windows and my verified $210 price is a SINGLE-hung TAFCO 36x48 - the double-hung units the plan specifies are the $310 high-end estimate; (b) truss gussets are specified as 1/2in plywood and my low end prices 7/16in OSB. Gussets are the structural heart of a site-built gambrel truss - buy the plywood.\", \"The door line swings $185 to $1,100 and it is the single largest source of spread. The plan includes door construction drawings, so building the 6ft double door from 2x4s and a sheet of siding is the intended path; the high figure is a purchased 72in unit. Pick one before you use this number.\", \"The waste factor is thin. I added 10% only to the lap siding. Real jobs lose 5-10% on nearly everything, and a gambrel with two 8ft-tall gable ends is a high-waste roof and siding shape. Add another 5-8% overall before you go to the yard.\", \"If your building department requires stamped trusses, the roof framing lines here (roughly $700 of 2x6, gussets, plates and nails) get replaced by a factory gambrel truss package at roughly $2,000-3,500 - which alone would push the top of this range past $12,500.\", \"Context this number is for: Best Barns' 16x20 kits sit at $11,190-$12,740 and a delivered/assembled 16x20 from Sheds Unlimited is quoted around $14,170. So the $29.95 plan plus a $7,300-$11,200 materials bill genuinely does undercut a kit - by roughly $1,500 to $5,400 at the low end - but only if you supply the labor, tools, scaffolding, foundation and permit yourself, none of which are in this figure.\"]",
+  "confidence": "MEDIUM. High confidence on quantities: the entire bill of materials comes from Shedking's own 7-page public PDF (16x20-barn-materials.pdf, copyright 2024), read verbatim, so nothing is invented on the quantity side. High confidence on the framing, sheet-goods, siding, shingle and underlayment unit prices: those are real 2026 prices from two independent retailers, dated individually, cross-checked against each other and mostly within 10-16% of one another - which is itself evidence they are real. Confidence drops on the accessory tail (drip edge, soffit vents, ridge vent, mending plates, Simpson TWB bracing, joist-hanger nails, roofing nails, construction screws) where no retailer I could reach publishes a price, and on doors: that one line alone accounts for $915 of the $3,916 spread. The low end ($7,289) is the number I would stand behind - 81% of its dollars are retailer-verified and the material selections are ones I actually found in stock and priced. The high end ($11,205) is softer: it is built from grade upgrades plus the top of my estimate ranges, and it is NOT a big-box quote, because Home Depot and Lowe's lumber pricing was unobtainable from this host. A realistic single planning figure for a 2026 US build is about $8,500-$9,500 in materials, or $27-$30 per square foot, before foundation, delivery, tools and permit.",
+  "cost_per_sqft_high": 35.02,
+  "cost_per_sqft_low": 22.78,
+  "excludes": [
+   "Foundation of any kind: concrete slab (the page offers it as an option), gravel pad, concrete piers/footings and the pier anchors the plan calls for, rebar, form lumber, sonotubes. A 16x20 4in slab is roughly 4 cu yd = $900-1,600 delivered in 2026, and gravel/excavation is extra.",
+   "Labor. This is a materials bill only. The plan involves 9 site-built 16ft-clear-span gambrel trusses, 2x12 loft framing, a full stair with landing, and 18ft 5-5/8in of working height.",
+   "Delivery. A 320 sq ft framing package is 3-4 tons and will not fit in a pickup; yard delivery is typically $75-250 per trip.",
+   "Tools and rentals: circular saw, framing nailer + compressor, roofing nailer, air hose, scaffolding or ladders (an 18ft-plus gambrel effectively requires scaffold rental), truss lifting help, safety gear.",
+   "Permit fees and plan review. Shedking's designer explicitly says he recommends a permit and that his truss drawings carry NO load limits or engineering, so a structural engineer's stamp may be required on top - typically $300-1,500 depending on jurisdiction.",
+   "Engineered trusses. The designer recommends buying engineered 16ft trusses from a truss plant rather than building them, for permit purposes. That would replace the 2x6x8/2x6x10/gusset/plate/nail lines here (roughly $700 of material) with a factory truss package - budget $2,000-3,500 for 11 gambrel trusses delivered.",
+   "Paint, primer, caulk, sealant, flashing tape, house-wrap tape. LP SmartSide comes primed but not finished; 768 sq ft of siding plus trim is 2 coats over ~900 sq ft.",
+   "Insulation, vapor barrier, interior wall/ceiling finish, interior paint, interior floor covering. The bill sheathes the loft floor and main floor in bare OSB/plywood.",
+   "Electrical: service feed, trenching, conduit, panel/subpanel, wire, boxes, receptacles, switches, fixtures, and the electrical permit.",
+   "Stair handrail, guardrail and loft edge rail - a full-size stair over 3ft wide plus a loft opening will need them for a permit, and the materials list contains none.",
+   "Gutters and downspouts, cupola material (free cupola plans are included with the plan but no materials are listed for it), ramp or steps up to the door threshold.",
+   "The $29.95 plan purchase itself, and sales tax on everything above."
+  ],
+  "price_sources": [
+   "Shedking's own free materials list PDF (quantities only, no prices): https://www.shedking.net/support-files/16x20-barn-materials.pdf, 7 pages, 'Copyright 2024 Shedking.net'. Fetched 2026-09-07 via Wayback (https://web.archive.org/web/2026id_/...), 98,363 bytes, extracted with pdftotext. Every quantity in this bill is verbatim from that PDF.",
+   "Sutherlands Lumber (regional yard chain, ~130 stores) \u2014 sutherlands.com, LIVE DIRECT FETCH, prices read 2026-09-07/08. Prices are published per-store inside a JSON-LD Product/Offer block; I used the ?store=3118 parameter (Fredericksburg, TX; same prices returned for Emporia KS, Snyder TX, Sweetwater TX and in many cases chain-wide). Verified unit prices: 2x6x8 SPF #2&Btr $7.08; 2x6x10 $8.96; 2x6x12 $10.32; 2x6x16 $16.70; 2x6x92-5/8 precut stud $6.35; 2x4x92-5/8 precut stud $4.29; 2x4x10 $6.35; 2x4x12 $7.42; PT 2x8x8 $11.66; PT 2x8x12 $16.55; PT 2x8x16 $23.30; 2x8x8 SYP#2 $7.88; 2x8x10 SYP#2 $8.99; 2x12x8 SYP#2 $12.10; 2x12x16 SYP#2 $24.70; 1x8x8 whitewood $16.98; 7/16in 4x8 OSB $12.79; 3/4in 4x8 OSB $21.99; 23/32in 4x8 BC plywood $52.10; LP SmartSide 3/8x8inx16ft lap siding $14.28; LP SmartSide Panel II 4x8 $43.75; Owens Corning Supreme 3-tab shingle bundle (33.3 sq ft) $39.97; Perma-Pro house wrap 9ft x 100ft $78.99; Simpson 18ga ZMAX hurricane tie $1.39; 16d common nails 5 lb $27.99; 12d common 5 lb $26.99; 8d common 5 lb $26.99; 6d box nails 5 lb $27.99.",
+   "Menards \u2014 direct fetch is bot-blocked ('Pardon Our Interruption'), so read through the Wayback Machine (https://web.archive.org/web/2026id_/...), which preserves Menards' server-rendered price JSON. URLs discovered with the Wayback CDX prefix API on menards.com/main/building-materials. Each price carries its own snapshot date: 2x6x8 $8.24 (2026-02-17); 2x6x10 $10.89 (2026-05-16); 2x6x12 $13.62 (2025-12-20); 2x6x16 $15.54 (2026-04-09); 2x6x14 #1 SYP $15.39 (2026-08-06); 2x4x10 $7.22 (2026-02-14); 2x4x12 $8.38 (2026-01-09); 2x8x8 $11.99 (2026-02-07); 2x8x10 $13.99 (2025-01-18); 2x8x12 $14.04 (2025-10-08); 2x12x12 #1 SYP $35.59 (2026-04-21); 5/8in 4x8 OSB $20.90 (2025-08-22); LP SmartSide 3/8x8inx16ft lap siding $12.99 (2026-08-13); LP SmartSide 3/8x12inx16ft lap $25.59 (2025-11-24); LP SmartSide 3/8 4x8 grooved panel $44.49 (2025-11-13); Atlas Briarwood Pro architectural shingles, 32.8 sq ft/bundle $34.70 (2025-07-22); #30 felt 3ft x 72ft, 216 sq ft $31.12 (2025-10-31); Owens Corning Deck Defense synthetic underlayment 1,000 sq ft $154.86 (2025-07-22).",
+   "Home Depot \u2014 direct fetch 403s; read via Wayback. IMPORTANT LIMITATION: HD strips the price out of the structured data on commodity dimensional-lumber and sheet-goods pages, so I could NOT get a single Home Depot lumber price (I tried ~15 lumber SKUs across 2025-2026 snapshots; all return $0.00 / no Offer node). Non-commodity SKUs do carry a price. Verified: Simpson LUS28Z 2x8 joist hanger $2.57 (snapshot 2026-01-14); Simpson HU212 2x12 joist hanger $10.98 (2025-07-04); GAF Cobra Ridge Runner 11.5in x 30ft roll ridge vent $118.00 (2025-08-13); TAFCO 36in x 48in vinyl single-hung window with grids and screen $210.00 (2025-07-06); Grip-Rite 8d bright common nails 5 lb box $21.84 (2025-09-09); Grip-Rite 1in cap roofing nails 3 lb $17.86 (2025-09-09); DuPont Tyvek Roof Protector 42in x 286ft $108.00 (2025-06-18); Grip-Rite ProWrap-SA housewrap 400 sq ft $319.13 (2025-11-18); Amerimax Accuvent soffit baffle $4.97 (2025-08-26).",
+   "Retailers I tried and could NOT price from: Lowe's (403 direct; Wayback CDX returns no dimensional-lumber product URLs on the /pd/2-x-6-x pattern), Ace Hardware (Cloudflare 'Just a moment' on search), McCoy's (403), Carter Lumber and 84 Lumber (site loads but no prices exposed on search), Tractor Supply / Northern Tool / Do It Best / True Value / Build.com / Zoro (000/403/406). No general web search engine is available on this host."
+  ],
+  "priced": "PARTIAL",
+  "priced_lines": [
+   {
+    "extended": "$23-$32",
+    "item": "PT 2x8x8 bandboard",
+    "qty": "2",
+    "source": "low = Sutherlands verified 2026-09-07; high = ESTIMATE (PT premium over Menards untreated $11.99)",
+    "unit_price": "$11.66-$16.00"
+   },
+   {
+    "extended": "$99-$132",
+    "item": "PT 2x8x12 bandboard + skid bracing",
+    "qty": "6",
+    "source": "low = Sutherlands verified; high = ESTIMATE",
+    "unit_price": "$16.55-$22.00"
+   },
+   {
+    "extended": "$373-$480",
+    "item": "PT 2x8x16 floor joists, 16in o.c.",
+    "qty": "16",
+    "source": "low = Sutherlands verified $23.30; high = ESTIMATE (no big-box PT 2x8x16 price obtainable)",
+    "unit_price": "$23.30-$30.00"
+   },
+   {
+    "extended": "$220",
+    "item": "3/4in 4x8 OSB floor sheathing",
+    "qty": "10",
+    "source": "Sutherlands verified 2026-09-07 (plan specifies OSB, so no grade upgrade applied)",
+    "unit_price": "$21.99"
+   },
+   {
+    "extended": "$470-$610",
+    "item": "2x6x92-5/8 wall studs (front 16, back 13, left 17, right 17, interior 11)",
+    "qty": "74",
+    "source": "low = Sutherlands precut builder stud $6.35 verified; high = Menards 2x6x8 $8.24 verified (2026-02-17), cut to length",
+    "unit_price": "$6.35-$8.24"
+   },
+   {
+    "extended": "$219-$255",
+    "item": "2x6x8 - front header, side wall plates, 18 truss top chords, 4 gable truss tops",
+    "qty": "31",
+    "source": "low = Sutherlands verified $7.08; high = Menards verified $8.24 (2026-02-17)",
+    "unit_price": "$7.08-$8.24"
+   },
+   {
+    "extended": "$197-$240",
+    "item": "2x6x10 truss side chords (18 interior + 4 gable)",
+    "qty": "22",
+    "source": "low = Sutherlands verified $8.96; high = Menards verified $10.89 (2026-05-16)",
+    "unit_price": "$8.96-$10.89"
+   },
+   {
+    "extended": "$41-$54",
+    "item": "2x6x12 side wall plates",
+    "qty": "4",
+    "source": "low = Sutherlands verified; high = Menards verified (2025-12-20)",
+    "unit_price": "$10.32-$13.62"
+   },
+   {
+    "extended": "$155-$167",
+    "item": "2x6x16 top/bottom plates + gable bottom cross pieces",
+    "qty": "10",
+    "source": "low = Menards verified $15.54 (2026-04-09); high = Sutherlands verified $16.70 - note big-box was CHEAPER here",
+    "unit_price": "$15.54-$16.70"
+   },
+   {
+    "extended": "$69-$100",
+    "item": "2x4x8 gable uprights + window framing",
+    "qty": "16",
+    "source": "low = Sutherlands 2x4x92-5/8 precut stud $4.29 verified; high = ESTIMATE",
+    "unit_price": "$4.29-$6.25"
+   },
+   {
+    "extended": "$51-$58",
+    "item": "2x4x10 gable uprights + overhang cross pieces",
+    "qty": "8",
+    "source": "low = Sutherlands verified; high = Menards verified (2026-02-14)",
+    "unit_price": "$6.35-$7.22"
+   },
+   {
+    "extended": "$111-$126",
+    "item": "2x4x12 interior wall plates + overhang side pieces",
+    "qty": "15",
+    "source": "low = Sutherlands verified; high = Menards verified (2026-01-09)",
+    "unit_price": "$7.42-$8.38"
+   },
+   {
+    "extended": "$173-$332",
+    "item": "2x12x16 loft/ceiling joists, 24in o.c.",
+    "qty": "7",
+    "source": "low = Sutherlands SYP #2 verified $24.70; high = ESTIMATE derived from Menards #1 SYP 2x12x12 $35.59 = $2.97/ft",
+    "unit_price": "$24.70-$47.50"
+   },
+   {
+    "extended": "$157-$309",
+    "item": "2x12x8 stair stringers (6) + treads (7)",
+    "qty": "13",
+    "source": "low = Sutherlands verified $12.10; high = ESTIMATE (#1 SYP grade)",
+    "unit_price": "$12.10-$23.75"
+   },
+   {
+    "extended": "$119-$154",
+    "item": "1x8x8 stair risers",
+    "qty": "7",
+    "source": "low = Sutherlands whitewood appearance board verified; high = ESTIMATE",
+    "unit_price": "$16.98-$22.00"
+   },
+   {
+    "extended": "$9-$14",
+    "item": "2x8x10 stairway landing framing",
+    "qty": "1",
+    "source": "low = Sutherlands SYP verified; high = Menards verified (2025-01-18)",
+    "unit_price": "$8.99-$13.99"
+   },
+   {
+    "extended": "$32-$48",
+    "item": "2x8x8 stairway landing framing",
+    "qty": "4",
+    "source": "low = Sutherlands SYP verified; high = Menards verified (2026-02-07)",
+    "unit_price": "$7.88-$11.99"
+   },
+   {
+    "extended": "$198-$469",
+    "item": "3/4in 4x8 loft flooring",
+    "qty": "9",
+    "source": "both Sutherlands verified: low = 3/4in OSB $21.99, high = 23/32in BC plywood $52.10 (plan says plywood, allows OSB)",
+    "unit_price": "$21.99-$52.10"
+   },
+   {
+    "extended": "$22-$52",
+    "item": "3/4in landing floor (3/4x4x4, buy 1 sheet)",
+    "qty": "1",
+    "source": "Sutherlands verified, OSB / plywood",
+    "unit_price": "$21.99-$52.10"
+   },
+   {
+    "extended": "$192-$349",
+    "item": "1/2in-class 4x8 sheets: 4 truss gussets, 8 gable-end sheeting, 1 header filler, 2 overhang tops",
+    "qty": "15",
+    "source": "low = Sutherlands 7/16in OSB $12.79 verified; high = 5 sheets 1/2in plywood at ESTIMATE $28 + 10 sheets Menards 5/8in OSB $20.90 verified (2025-08-22)",
+    "unit_price": "$12.79-$23.27"
+   },
+   {
+    "extended": "$1,221-$1,342",
+    "item": "LP SmartSide 3/8 x 8in x 16ft cedar-texture lap siding - 768 sq ft of wall (128+128+160+160 walls + 192 gable ends) plus 10% waste at 6-3/4in exposure",
+    "qty": "94",
+    "source": "low = Menards verified $12.99 (2026-08-13); high = Sutherlands verified $14.28. LARGEST SINGLE LINE IN THE BILL.",
+    "unit_price": "$12.99-$14.28"
+   },
+   {
+    "extended": "$93",
+    "item": "#30 felt siding underlayment, 576 sq ft (216 sq ft rolls)",
+    "qty": "3",
+    "source": "Menards verified $31.12/roll (2025-10-31)",
+    "unit_price": "$31.12"
+   },
+   {
+    "extended": "$79-$150",
+    "item": "House wrap, 9ft x 100ft roll (900 sq ft; 576 sq ft needed)",
+    "qty": "1",
+    "source": "low = Sutherlands Perma-Pro verified $78.99; high = ESTIMATE for genuine DuPont Tyvek HomeWrap",
+    "unit_price": "$78.99-$150.00"
+   },
+   {
+    "extended": "$416-$480",
+    "item": "Shingles, 370 sq ft = 12 bundles",
+    "qty": "12",
+    "source": "low = Menards Atlas Briarwood Pro architectural 32.8 sq ft/bundle $34.70 verified (2025-07-22); high = Sutherlands OC Supreme 3-tab 33.3 sq ft $39.97 verified. Architectural was cheaper than 3-tab.",
+    "unit_price": "$34.70-$39.97"
+   },
+   {
+    "extended": "$35-$75",
+    "item": "Ridge cap shingles, 23 lin ft",
+    "qty": "1",
+    "source": "low = 1 extra bundle cut into caps, Menards verified $34.70; high = ESTIMATE for a purchased hip-and-ridge bundle",
+    "unit_price": "$34.70-$75.00"
+   },
+   {
+    "extended": "$65-$118",
+    "item": "Ridge vent, 22 lin ft",
+    "qty": "1",
+    "source": "low = ESTIMATE (rigid 4ft sections); high = Home Depot GAF Cobra Ridge Runner 11.5in x 30ft roll $118.00 verified (2025-08-13)",
+    "unit_price": "$65.00-$118.00"
+   },
+   {
+    "extended": "$77-$132",
+    "item": "Soffit vents",
+    "qty": "22",
+    "source": "ESTIMATE - no retailer price obtained (Sutherlands lists them at $0/call-for-price; HD snapshots had no Offer node)",
+    "unit_price": "$3.50-$6.00"
+   },
+   {
+    "extended": "$130-$208",
+    "item": "Drip edge, 10ft pieces",
+    "qty": "13",
+    "source": "ESTIMATE - tried 9 different drip-edge SKUs across Sutherlands, Menards and Home Depot; none returned a price",
+    "unit_price": "$10.00-$16.00"
+   },
+   {
+    "extended": "$56-$84",
+    "item": "Simpson H2.5 hurricane ties (truss + loft joist to top plate)",
+    "qty": "40",
+    "source": "low = Sutherlands 18ga ZMAX hurricane tie $1.39 verified; high = ESTIMATE for the exact H2.5A",
+    "unit_price": "$1.39-$2.10"
+   },
+   {
+    "extended": "$31-$38",
+    "item": "2x8 joist hangers (landing)",
+    "qty": "12",
+    "source": "low = Home Depot Simpson LUS28Z $2.57 verified (snapshot 2026-01-14); high = ESTIMATE",
+    "unit_price": "$2.57-$3.20"
+   },
+   {
+    "extended": "$22-$44",
+    "item": "2x12 single joist hangers",
+    "qty": "4",
+    "source": "low = ESTIMATE (LUS212); high = Home Depot Simpson HU212 $10.98 verified (2025-07-04)",
+    "unit_price": "$5.50-$10.98"
+   },
+   {
+    "extended": "$32-$56",
+    "item": "2x12 double joist hangers",
+    "qty": "2",
+    "source": "ESTIMATE - no price obtained",
+    "unit_price": "$16.00-$28.00"
+   },
+   {
+    "extended": "$24-$42",
+    "item": "3in x 6in mending plates (gable truss assembly)",
+    "qty": "24",
+    "source": "ESTIMATE - Simpson 3x6 mending plate listed at both Sutherlands and HD but neither returned a price",
+    "unit_price": "$1.00-$1.75"
+   },
+   {
+    "extended": "$84-$144",
+    "item": "Simpson TWB 10ft wall bracing (2 each on back, left, right walls)",
+    "qty": "6",
+    "source": "ESTIMATE - TWB is a contractor-channel item, not stocked online at any retailer I could reach",
+    "unit_price": "$14.00-$24.00"
+   },
+   {
+    "extended": "$84-$99",
+    "item": "16d framing nails, 5 lb boxes (~570 nails called for; galvanized spiral on front/back walls)",
+    "qty": "3",
+    "source": "low = Sutherlands 16d common bright 5 lb $27.99 verified; high = ESTIMATE for galvanized spiral premium",
+    "unit_price": "$27.99-$33.00"
+   },
+   {
+    "extended": "$27-$32",
+    "item": "12d spiral shank nails, 5 lb box (~2 lb + 110 nails)",
+    "qty": "1",
+    "source": "low = Sutherlands 12d common 5 lb $26.99 verified; high = ESTIMATE spiral premium",
+    "unit_price": "$26.99-$32.00"
+   },
+   {
+    "extended": "$87-$108",
+    "item": "8d spiral shank nails, 5 lb boxes (~1,600 nails for gussets, sheathing, loft floor)",
+    "qty": "4",
+    "source": "low = Home Depot Grip-Rite 8C5 $21.84 verified (2025-09-09); high = Sutherlands $26.99 verified",
+    "unit_price": "$21.84-$26.99"
+   },
+   {
+    "extended": "$28",
+    "item": "6d 2in siding nails, 5 lb box (768 sq ft of siding)",
+    "qty": "1",
+    "source": "Sutherlands 6d box nails bright 5 lb $27.99 verified",
+    "unit_price": "$27.99"
+   },
+   {
+    "extended": "$35-$55",
+    "item": "1-1/2in roofing nails, ~9 lb (plan calls ~1,200 nails)",
+    "qty": "1",
+    "source": "ESTIMATE - HD's 30 lb Grip-Rite roofing-nail box had no Offer node; Sutherlands roofing nails are $0/call",
+    "unit_price": "$35.00-$55.00"
+   },
+   {
+    "extended": "$18-$30",
+    "item": "Joist hanger nails, 3 lb",
+    "qty": "1",
+    "source": "ESTIMATE",
+    "unit_price": "$18.00-$30.00"
+   },
+   {
+    "extended": "$60-$110",
+    "item": "3in construction screws, 8 lb (stairway)",
+    "qty": "1",
+    "source": "ESTIMATE - HD/Sutherlands 5 lb boxes returned no price",
+    "unit_price": "$60.00-$110.00"
+   },
+   {
+    "extended": "$630-$930",
+    "item": "3ft x 4ft windows (1 front wall, 2 second story)",
+    "qty": "3",
+    "source": "low = Home Depot TAFCO 36x48 vinyl SINGLE-hung with grids + screen $210.00 verified (2025-07-06); high = ESTIMATE for the DOUBLE-hung units the plan actually specifies",
+    "unit_price": "$210.00-$310.00"
+   },
+   {
+    "extended": "$185-$1,100",
+    "item": "6ft wide double entry doors",
+    "qty": "1",
+    "source": "low = ESTIMATE for site-built doors: 2 x LP SmartSide 4x8 panel at Menards $44.49 verified (2025-11-13) + six 2x4x8 + hinges/hasp estimated $70; high = ESTIMATE for a purchased 72in double door unit. WIDEST UNCERTAINTY IN THE BILL - the plan includes door construction details but the materials list gives no hardware.",
+    "unit_price": "$185.00-$1,100.00"
+   },
+   {
+    "extended": "$153-$251",
+    "item": "OMITTED BY THE PLAN - main roof sheathing, 370 sq ft = 12 sheets 4x8",
+    "qty": "12",
+    "source": "low = Sutherlands 7/16in OSB $12.79 verified; high = Menards 5/8in OSB $20.90 verified (2025-08-22). The published list has 370 sq ft of shingles and NO roof deck - a real hole in the sheet.",
+    "unit_price": "$12.79-$20.90"
+   },
+   {
+    "extended": "$62-$155",
+    "item": "OMITTED BY THE PLAN - roof underlayment, 370 sq ft",
+    "qty": "1",
+    "source": "both Menards verified: low = 2 rolls #30 felt at $31.12; high = OC Deck Defense synthetic 1,000 sq ft $154.86 (2025-07-22)",
+    "unit_price": "$62.24-$154.86"
+   },
+   {
+    "extended": "$275-$400",
+    "item": "OMITTED BY THE PLAN - 4x6x16 PT skids",
+    "qty": "5",
+    "source": "ESTIMATE - the list has '2x8x12 skid bracing' but never lists the skids themselves; no 4x6 PT price obtainable",
+    "unit_price": "$55.00-$80.00"
+   },
+   {
+    "extended": "$350-$700",
+    "item": "OMITTED BY THE PLAN - exterior trim: corner boards, fascia/rake for the gambrel, door and window casing",
+    "qty": "1 lot",
+    "source": "ESTIMATE - the plan page says 'white trim on roof and corners with cedar for the door trim' but the materials list has no trim line at all",
+    "unit_price": "$350.00-$700.00"
+   }
+  ],
+  "slug": "shedking-16x20-gambrel-barn",
+  "total_high_usd": 11205,
+  "total_low_usd": 7289
+ }
+}

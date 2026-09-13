@@ -1,0 +1,65 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+    paths: ['index.html', 'app.js', 'styles.css', 'data/**', 'tools/build_pages.py', '.github/workflows/pages.yml']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# never let two deploys race; don't cancel one mid-flight
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      # Builds WITHOUT --with-assets, so no vendor images or PDFs are ever published.
+      - name: Build publishable site
+        run: python3 tools/build_pages.py
+
+      # Fail the deploy rather than quietly publishing third-party assets.
+      - name: Assert no vendor assets are being published
+        run: |
+          if [ -d dist/assets ]; then
+            echo "::error::dist/assets exists — vendor images/PDFs would be republished. Aborting."
+            exit 1
+          fi
+          python3 - <<'PY'
+          import json, sys
+          d = json.load(open('dist/data/plans.json'))
+          bad_img = [p['slug'] for p in d['plans'] if p.get('image_local_path')]
+          bad_pdf = [p['slug'] for p in d['plans']
+                     if any(str(u).startswith('local:') for u in (p.get('extra_urls') or []))]
+          if d['meta'].get('assets_rehosted'):
+              sys.exit('::error::meta.assets_rehosted is true')
+          if bad_img or bad_pdf:
+              sys.exit(f'::error::local asset refs leaked: {bad_img[:5]} {bad_pdf[:5]}')
+          print(f"OK: {len(d['plans'])} records, no rehosted assets")
+          PY
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

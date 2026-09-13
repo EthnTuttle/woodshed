@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Woodshed — 16×20 shed plan options</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="top">
+  <div class="top-inner">
+    <div class="brand">Woodshed <span>/ ~16×20 ft DIY shed plans</span></div>
+    <div class="top-meta">
+      <span id="asof"></span>
+      <button class="btn" id="themeBtn" type="button">Light</button>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <section class="kpi-row" id="kpis" aria-label="Summary"></section>
+
+  <div class="notice" id="notice"></div>
+
+  <section class="panel" id="startPanel" hidden>
+    <h2>Where to start</h2>
+    <p class="hint">Shortcuts through the list, each by one stated criterion — not a general ranking.
+      Open any of them to see the reasoning and the fact-check trail.</p>
+    <div class="picks" id="picks"></div>
+  </section>
+
+  <section class="filters" aria-label="Filters">
+    <div class="fgroup">
+      <label for="q">Search</label>
+      <input type="search" id="q" placeholder="vendor, style, spec, keyword…" autocomplete="off">
+    </div>
+    <div class="fgroup">
+      <label>Type</label>
+      <div class="chips" id="kindChips"></div>
+    </div>
+    <div class="fgroup">
+      <label for="fFoot">Footprint</label>
+      <select id="fFoot"><option value="">All</option></select>
+    </div>
+    <div class="fgroup">
+      <label for="fStyle">Style</label>
+      <select id="fStyle"><option value="">All</option></select>
+    </div>
+    <div class="fgroup">
+      <label for="fEnc">Walls</label>
+      <select id="fEnc">
+        <option value="">Any</option>
+        <option value="open">Open-sided (any)</option>
+        <option value="Roof only — no walls">Roof only, no walls</option>
+        <option value="Open front, three sides slatted">Open front, slatted sides</option>
+        <option value="Open front, three sides solid">Open front, solid sides</option>
+        <option value="Fully enclosed">Fully enclosed</option>
+      </select>
+    </div>
+    <div class="fgroup">
+      <label for="fLoft">Loft</label>
+      <select id="fLoft">
+        <option value="">Any</option>
+        <option value="yes">Has a loft</option>
+        <option value="no">No loft</option>
+      </select>
+    </div>
+    <div class="fgroup">
+      <label for="fPrice">Price</label>
+      <select id="fPrice">
+        <option value="">Any</option>
+        <option value="free">Free only</option>
+        <option value="50">Under $50</option>
+        <option value="200">Under $200</option>
+        <option value="known">Has a published price</option>
+      </select>
+    </div>
+    <div class="fgroup">
+      <label for="fSort">Sort</label>
+      <select id="fSort">
+        <option value="pick">Recommended</option>
+        <option value="price-asc">Price: low → high</option>
+        <option value="price-desc">Price: high → low</option>
+        <option value="sqft-desc">Size: large → small</option>
+        <option value="sqft-asc">Size: small → large</option>
+        <option value="vendor">Vendor A→Z</option>
+      </select>
+    </div>
+    <div class="spacer"></div>
+    <div class="fgroup">
+      <label>View</label>
+      <div class="chips">
+        <button class="btn on" id="vCards" type="button">Cards</button>
+        <button class="btn" id="vTable" type="button">Table</button>
+        <button class="btn" id="vCompare" type="button">Compare <span id="pinCount"></span></button>
+      </div>
+    </div>
+    <div class="fgroup">
+      <label>&nbsp;</label>
+      <button class="btn" id="onlyPinned" type="button" aria-pressed="false">★ Shortlist</button>
+    </div>
+    <div class="fgroup">
+      <label>&nbsp;</label>
+      <button class="btn" id="showExcluded" type="button" aria-pressed="false" title="Show records that were researched but don't qualify as a build option">Show excluded</button>
+    </div>
+    <div class="fcount" id="count"></div>
+  </section>
+
+  <section class="panel" id="chartPanel" hidden>
+    <h2>What it costs</h2>
+    <p class="hint">Two different measures, so two charts rather than one misleading axis: a set of
+      drawings and a truckload of pre-cut lumber are not comparable numbers. Click any bar to open
+      that option.</p>
+    <div class="charts">
+      <figure class="chart" id="chartPlans" hidden>
+        <figcaption>Plans, guides and PDFs <span>— what you pay for the drawings, not the lumber</span></figcaption>
+        <div class="bars" id="barsPlans"></div>
+        <div class="axis-note" id="notePlans"></div>
+      </figure>
+      <figure class="chart" id="chartKits" hidden>
+        <figcaption>Pre-cut kits <span>— materials and plans delivered together</span></figcaption>
+        <div class="bars" id="barsKits"></div>
+        <div class="axis-note" id="noteKits"></div>
+      </figure>
+      <figure class="chart" id="chartBuild" hidden>
+        <figcaption>Estimated materials bill to build it yourself
+          <span>— researched at 2026 retail; a range, not a quote</span></figcaption>
+        <div class="bars" id="barsBuild"></div>
+        <div class="axis-note" id="noteBuild"></div>
+      </figure>
+    </div>
+  </section>
+
+  <section id="cardsView"><div class="grid" id="grid"></div></section>
+
+  <section id="tableView" hidden>
+    <div class="tablewrap">
+      <table class="data">
+        <thead><tr>
+          <th>Plan</th><th>Vendor</th><th>Type</th><th>Footprint</th><th>Sq ft</th>
+          <th>Style</th><th>Roof</th><th>Walls</th><th>Loft</th><th>Foundation</th>
+          <th>Price</th><th>Materials list</th><th>Format</th><th>Checked</th>
+        </tr></thead>
+        <tbody id="tbody"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="compareView" hidden>
+    <div class="cmpwrap" id="cmpwrap"></div>
+  </section>
+
+  <footer class="sitefoot" id="footer" hidden></footer>
+</div>
+
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="drawer" aria-modal="true" role="dialog" aria-labelledby="dTitle">
+  <div class="dhead">
+    <div>
+      <h2 id="dTitle">—</h2>
+      <div class="vendor" id="dVendor"></div>
+    </div>
+    <button class="btn" id="dClose" type="button" style="margin-left:auto">Close ✕</button>
+  </div>
+  <div class="dbody" id="dBody"></div>
+</aside>
+
+<div class="tip" id="tip"></div>
+
+<script src="app.js"></script>
+</body>
+</html>

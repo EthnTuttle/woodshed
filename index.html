@@ -24,12 +24,12 @@
 
   <div class="notice" id="notice"></div>
 
-  <section class="panel" id="startPanel" hidden>
-    <h2>Where to start</h2>
+  <details class="panel collapsible" id="startPanel" hidden open>
+    <summary><h2>Where to start</h2><span class="sumhint" id="startSummary"></span></summary>
     <p class="hint">Shortcuts through the list, each by one stated criterion — not a general ranking.
       Open any of them to see the reasoning and the fact-check trail.</p>
     <div class="picks" id="picks"></div>
-  </section>
+  </details>
 
   <section class="filters" aria-label="Filters">
     <div class="fgroup">
@@ -108,8 +108,8 @@
     <div class="fcount" id="count"></div>
   </section>
 
-  <section class="panel" id="chartPanel" hidden>
-    <h2>What it costs</h2>
+  <details class="panel collapsible" id="chartPanel" hidden open>
+    <summary><h2>What it costs</h2><span class="sumhint" id="chartSummary"></span></summary>
     <p class="hint">Two different measures, so two charts rather than one misleading axis: a set of
       drawings and a truckload of pre-cut lumber are not comparable numbers. Click any bar to open
       that option.</p>
@@ -131,7 +131,7 @@
         <div class="axis-note" id="noteBuild"></div>
       </figure>
     </div>
-  </section>
+  </details>
 
   <section id="cardsView"><div class="grid" id="grid"></div></section>
 

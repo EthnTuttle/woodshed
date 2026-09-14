@@ -200,6 +200,7 @@ function renderPicks() {
     picks.push({ rule, r: best });
   }
   $('#startPanel').hidden = picks.length < 2;
+  $('#startSummary').textContent = picks.map(x => x.rule.label.toLowerCase()).join(' · ');
   $('#picks').innerHTML = picks.map(({ rule, r }) => `
     <button class="pick" type="button" data-open="${esc(r.slug)}">
       <span class="pick-label">${esc(rule.label)}</span>
@@ -410,7 +411,16 @@ function renderCharts(rows) {
     drawBars('#chartKits', '#barsKits', '#noteKits', rows.filter(isKit), 'delivered kit price'),
     drawRanges('#chartBuild', '#barsBuild', '#noteBuild', rows.filter(r => r.cost_estimate)),
   ];
-  $('#chartPanel').hidden = !drawn.some(Boolean);
+  const panel = $('#chartPanel');
+  panel.hidden = !drawn.some(Boolean);
+  const priced = rows.filter(r => priceNum(r) > 0).map(priceNum).sort((a, b) => a - b);
+  const nFree = rows.filter(r => priceNum(r) === 0).length;
+  const nCost = rows.filter(r => r.cost_estimate).length;
+  const money = n => '$' + Math.round(n).toLocaleString();
+  $('#chartSummary').textContent = priced.length
+    ? `${nFree} free · ${priced.length} priced from ${money(priced[0])} to ${money(priced[priced.length - 1])}`
+      + (nCost ? ` · ${nCost} with a materials estimate` : '')
+    : `${nFree} free`;
 }
 
 function drawBars(figSel, barsSel, noteSel, group, measure) {
@@ -653,6 +663,13 @@ function wire() {
   document.addEventListener('keydown', e => {
     if (e.key === 'Escape') closeDrawer();
     if (e.key === '/' && document.activeElement !== $('#q')) { e.preventDefault(); $('#q').focus(); }
+  });
+  // both big panels collapse, and each remembers its own state
+  [['#chartPanel', 'woodshed.costOpen'], ['#startPanel', 'woodshed.startOpen']].forEach(([sel, key]) => {
+    const el = $(sel);
+    if (!el) return;
+    if (localStorage.getItem(key) === '0') el.open = false;
+    el.addEventListener('toggle', () => localStorage.setItem(key, el.open ? '1' : '0'));
   });
   $('#themeBtn').addEventListener('click', () => {
     const now = document.documentElement.dataset.theme === 'light' ? 'dark' : 'light';

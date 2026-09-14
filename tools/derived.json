@@ -1,0 +1,311 @@
+{
+ "houseplans-16x20-farmhouse-23-2749": {
+  "derived_lumber_list": [
+   "Wall studs \u2014 2x4 \u2014 62 @ 96\" [confidence: medium] \u2014 72 ft perimeter at 16\" OC plus corners and openings; across 34 published lists this method runs 1.11x actual for 2x4 (p25-p75 0.77-2.24, usable)",
+   "Plates (1 bottom + 2 top) \u2014 2x4 \u2014 3 @ 864\" [confidence: medium] \u2014 single bottom plate, double top plate; across 34 published lists this method runs 1.11x actual for 2x4 (p25-p75 0.77-2.24, usable)",
+   "Siding \u2014 sheet \u2014 18 [confidence: medium] \u2014 576 sq ft of wall at 32 sq ft per sheet",
+   "Rafters \u2014 2x6 \u2014 22 @ 127\" [confidence: medium] \u2014 11 bays at 24\" OC x2 for the gable pair; slope length 115\" + 12\" overhang; across 27 published lists this method runs 0.86x actual for 2x6 (p25-p75 0.47-1.83, usable)",
+   "Roof sheathing \u2014 sheet \u2014 13 [confidence: medium] \u2014 385 sq ft of roof at 32 sq ft per sheet",
+   "Shingles (squares) \u2014 square \u2014 5 [confidence: medium] \u2014 roof area in 100 sq ft squares, + waste"
+  ],
+  "derived_caveats": [
+   "wall height is NOT published \u2014 8 ft assumed"
+  ],
+  "derived_tier": "generic",
+  "derived_list_note": "BUDGET ESTIMATE, NOT A CUT LIST. This is a quantity take-off computed from footprint, wall height and roof geometry only. Scored against 34 published materials lists in this collection, it lands within roughly a FACTOR OF TWO: 2x4 runs 1.11x actual (p25-p75 0.77-2.24), 2x6 runs 0.86x actual (p25-p75 0.47-1.83), 4x4 runs 1.72x actual (p25-p75 1.08-3.33). Use it to sanity-check a lumber budget or compare two designs \u2014 do not order or cut from it. The vendor's own list is the only reliable source, and for most of these records that means buying the plan."
+ },
+ "ashland-barns-16x20-gable": {
+  "derived_lumber_list": [
+   "Wall studs \u2014 2x4 \u2014 62 @ 96\" [confidence: medium] \u2014 72 ft perimeter at 16\" OC plus corners and openings; across 34 published lists this method runs 1.11x actual for 2x4 (p25-p75 0.77-2.24, usable)",
+   "Plates (1 bottom + 2 top) \u2014 2x4 \u2014 3 @ 864\" [confidence: medium] \u2014 single bottom plate, double top plate; across 34 published lists this method runs 1.11x actual for 2x4 (p25-p75 0.77-2.24, usable)",
+   "Siding \u2014 sheet \u2014 18 [confidence: medium] \u2014 576 sq ft of wall at 32 sq ft per sheet",
+   "Gambrel truss chords \u2014 2x6 \u2014 44 @ 81\" [confidence: low] \u2014 11 trusses at 24\" OC, 4 chords each (two slopes per side); across 27 published lists this method runs 0.86x actual for 2x6 (p25-p75 0.47-1.83, usable)",
+   "Truss gussets \u2014 sheet \u2014 3 [confidence: low] \u2014 plywood gussets, ~5 trusses per sheet",
+   "Roof sheathing \u2014 sheet \u2014 13 [confidence: medium] \u2014 416 sq ft of roof at 32 sq ft per sheet",
+   "Shingles (squares) \u2014 square \u2014 6 [confidence: medium] \u2014 roof area in 100 sq ft squares, + waste"
+  ],
+  "derived_caveats": [
+   "wall height is NOT published \u2014 8 ft assumed",
+   "gambrel truss chords are the weakest line here \u2014 two slopes and a knee-wall geometry that a footprint alone does not pin down"
+  ],
+  "derived_tier": "generic",
+  "derived_list_note": "BUDGET ESTIMATE, NOT A CUT LIST. This is a quantity take-off computed from footprint, wall height and roof geometry only. Scored against 34 published materials lists in this collection, it lands within roughly a FACTOR OF TWO: 2x4 runs 1.11x actual (p25-p75 0.77-2.24), 2x6 runs 0.86x actual (p25-p75 0.47-1.83), 4x4 runs 1.72x actual (p25-p75 1.08-3.33). Use it to sanity-check a lumber budget or compare two designs \u2014 do not order or cut from it. The vendor's own list is the only reliable source, and for most of these records that means buying the plan."
+ },
+ "barnplans-16x24-gambrel-barn-house": {
+  "derived_lumber_list": [
+   "Wall studs \u2014 2x4 \u2014 68 @ 96\" [confidence: medium] \u2014 80 ft perimeter at 16\" OC plus corners and openings; across 34 published lists this method runs 1.11x actual for 2x4 (p25-p75 0.77-2.24, usable)",
+   "Plates (1 bottom + 2 top) \u2014 2x4 \u2014 3 @ 960\" [confidence: medium] \u2014 single bottom plate, double top plate; across 34 published lists this method runs 1.11x actual for 2x4 (p25-p75 0.77-2.24, usable)",
+   "Siding \u2014 sheet \u2014 20 [confidence: medium] \u2014 640 sq ft of wall at 32 sq ft per sheet",
+   "Gambrel truss chords \u2014 2x6 \u2014 52 @ 81\" [confidence: low] \u2014 13 trusses at 24\" OC, 4 chords each (two slopes per side); across 27 published lists this method runs 0.86x actual for 2x6 (p25-p75 0.47-1.83, usable)",
+   "Truss gussets \u2014 sheet \u2014 3 [confidence: low] \u2014 plywood gussets, ~5 trusses per sheet",
+   "Roof sheathing \u2014 sheet \u2014 16 [confidence: medium] \u2014 499 sq ft of roof at 32 sq ft per sheet",
+   "Shingles (squares) \u2014 square \u2014 6 [confidence: medium] \u2014 roof area in 100 sq ft squares, + waste"
+  ],
+  "derived_caveats": [
+   "wall height is NOT published \u2014 8 ft assumed",
+   "gambrel truss chords are the weakest line here \u2014 two slopes and a knee-wall geometry that a footprint alone does not pin down"
+  ],
+  "derived_tier": "generic",
+  "derived_list_note": "BUDGET ESTIMATE, NOT A CUT LIST. This is a quantity take-off computed from footprint, wall height and roof geometry only. Scored against 34 published materials lists in this collection, it lands within roughly a FACTOR OF TWO: 2x4 runs 1.11x actual (p25-p75 0.77-2.24), 2x6 runs 0.86x actual (p25-p75 0.47-1.83), 4x4 runs 1.72x actual (p25-p75 1.08-3.33). Use it to sanity-check a lumber budget or compare two designs \u2014 do not order or cut from it. The vendor's own list is the only reliable source, and for most of these records that means buying the plan."
+ },
+ "garageplanshop-028s-0005-16x20-garden-shed": {
+  "derived_lumber_list": [
+   "Wall studs \u2014 2x4 \u2014 62 @ 96\" [confidence: medium] \u2014 72 ft perimeter at 16\" OC plus corners and openings; across 34 published lists this method runs 1.11x actual for 2x4 (p25-p75 0.77-2.24, usable)",
+   "Plates (1 bottom + 2 top) \u2014 2x4 \u2014 3 @ 864\" [confidence: medium] \u2014 single bottom plate, double top plate; across 34 published lists this method runs 1.11x actual for 2x4 (p25-p75 0.77-2.24, usable)",
+   "Siding \u2014 sheet \u2014 18 [confidence: medium] \u2014 576 sq ft of wall at 32 sq ft per sheet",
+   "Rafters \u2014 2x6 \u2014 22 @ 113\" [confidence: medium] \u2014 11 bays at 24\" OC x2 for the gable pair; slope length 101\" + 12\" overhang; across 27 published lists this method runs 0.86x actual for 2x6 (p25-p75 0.47-1.83, usable)",
+   "Roof sheathing \u2014 sheet \u2014 11 [confidence: medium] \u2014 337 sq ft of roof at 32 sq ft per sheet",
+   "Shingles (squares) \u2014 square \u2014 5 [confidence: medium] \u2014 roof area in 100 sq ft squares, + waste"
+  ],
+  "derived_caveats": [
+   "roof pitch is NOT published \u2014 4:12 assumed from the style"
+  ],
+  "derived_tier": "generic",
+  "derived_list_note": "BUDGET ESTIMATE, NOT A CUT LIST. This is a quantity take-off computed from footprint, wall height and roof geometry only. Scored against 34 published materials lists in this collection, it lands within roughly a FACTOR OF TWO: 2x4 runs 1.11x actual (p25-p75 0.77-2.24), 2x6 runs 0.86x actual (p25-p75 0.47-1.83), 4x4 runs 1.72x actual (p25-p75 1.08-3.33). Use it to sanity-check a lumber budget or compare two designs \u2014 do not order or cut from it. The vendor's own list is the only reliable source, and for most of these records that means buying the plan."
+ },
+ "showphil-16x20-off-grid-cabin": {
+  "derived_lumber_list": [
+   "Wall studs \u2014 2x4 \u2014 62 @ 96\" [confidence: medium] \u2014 72 ft perimeter at 16\" OC plus corners and openings; across 34 published lists this method runs 1.11x actual for 2x4 (p25-p75 0.77-2.24, usable)",
+   "Plates (1 bottom + 2 top) \u2014 2x4 \u2014 3 @ 864\" [confidence: medium] \u2014 single bottom plate, double top plate; across 34 published lists this method runs 1.11x actual for 2x4 (p25-p75 0.77-2.24, usable)",
+   "Siding \u2014 sheet \u2014 18 [confidence: medium] \u2014 576 sq ft of wall at 32 sq ft per sheet",
+   "Rafters \u2014 2x6 \u2014 22 @ 113\" [confidence: medium] \u2014 11 bays at 24\" OC x2 for the gable pair; slope length 101\" + 12\" overhang; across 27 published lists this method runs 0.86x actual for 2x6 (p25-p75 0.47-1.83, usable)",
+   "Roof sheathing \u2014 sheet \u2014 11 [confidence: medium] \u2014 337 sq ft of roof at 32 sq ft per sheet",
+   "Shingles (squares) \u2014 square \u2014 5 [confidence: medium] \u2014 roof area in 100 sq ft squares, + waste"
+  ],
+  "derived_caveats": [
+   "wall height is NOT published \u2014 8 ft assumed",
+   "roof pitch is NOT published \u2014 4:12 assumed from the style"
+  ],
+  "derived_tier": "generic",
+  "derived_list_note": "BUDGET ESTIMATE, NOT A CUT LIST. This is a quantity take-off computed from footprint, wall height and roof geometry only. Scored against 34 published materials lists in this collection, it lands within roughly a FACTOR OF TWO: 2x4 runs 1.11x actual (p25-p75 0.77-2.24), 2x6 runs 0.86x actual (p25-p75 0.47-1.83), 4x4 runs 1.72x actual (p25-p75 1.08-3.33). Use it to sanity-check a lumber budget or compare two designs \u2014 do not order or cut from it. The vendor's own list is the only reliable source, and for most of these records that means buying the plan."
+ },
+ "behm-16x20-gable-garage": {
+  "derived_lumber_list": [
+   "Wall studs \u2014 2x4 \u2014 62 @ 96\" [confidence: medium] \u2014 72 ft perimeter at 16\" OC plus corners and openings; across 34 published lists this method runs 1.11x actual for 2x4 (p25-p75 0.77-2.24, usable)",
+   "Plates (1 bottom + 2 top) \u2014 2x4 \u2014 3 @ 864\" [confidence: medium] \u2014 single bottom plate, double top plate; across 34 published lists this method runs 1.11x actual for 2x4 (p25-p75 0.77-2.24, usable)",
+   "Siding \u2014 sheet \u2014 18 [confidence: medium] \u2014 576 sq ft of wall at 32 sq ft per sheet",
+   "Rafters \u2014 2x6 \u2014 22 @ 113\" [confidence: medium] \u2014 11 bays at 24\" OC x2 for the gable pair; slope length 101\" + 12\" overhang; across 27 published lists this method runs 0.86x actual for 2x6 (p25-p75 0.47-1.83, usable)",
+   "Roof sheathing \u2014 sheet \u2014 11 [confidence: medium] \u2014 337 sq ft of roof at 32 sq ft per sheet",
+   "Shingles (squares) \u2014 square \u2014 5 [confidence: medium] \u2014 roof area in 100 sq ft squares, + waste"
+  ],
+  "derived_caveats": [
+   "wall height is NOT published \u2014 8 ft assumed",
+   "roof pitch is NOT published \u2014 4:12 assumed from the style"
+  ],
+  "derived_tier": "generic",
+  "derived_list_note": "BUDGET ESTIMATE, NOT A CUT LIST. This is a quantity take-off computed from footprint, wall height and roof geometry only. Scored against 34 published materials lists in this collection, it lands within roughly a FACTOR OF TWO: 2x4 runs 1.11x actual (p25-p75 0.77-2.24), 2x6 runs 0.86x actual (p25-p75 0.47-1.83), 4x4 runs 1.72x actual (p25-p75 1.08-3.33). Use it to sanity-check a lumber budget or compare two designs \u2014 do not order or cut from it. The vendor's own list is the only reliable source, and for most of these records that means buying the plan."
+ },
+ "houseplans-16x20-craftsman-garage-shed": {
+  "derived_lumber_list": [
+   "Wall studs \u2014 2x4 \u2014 62 @ 108\" [confidence: medium] \u2014 72 ft perimeter at 16\" OC plus corners and openings; across 34 published lists this method runs 1.11x actual for 2x4 (p25-p75 0.77-2.24, usable)",
+   "Plates (1 bottom + 2 top) \u2014 2x4 \u2014 3 @ 864\" [confidence: medium] \u2014 single bottom plate, double top plate; across 34 published lists this method runs 1.11x actual for 2x4 (p25-p75 0.77-2.24, usable)",
+   "Siding \u2014 sheet \u2014 21 [confidence: medium] \u2014 648 sq ft of wall at 32 sq ft per sheet",
+   "Rafters \u2014 2x6 \u2014 22 @ 148\" [confidence: medium] \u2014 11 bays at 24\" OC x2 for the gable pair; slope length 136\" + 12\" overhang; across 27 published lists this method runs 0.86x actual for 2x6 (p25-p75 0.47-1.83, usable)",
+   "Roof sheathing \u2014 sheet \u2014 15 [confidence: medium] \u2014 453 sq ft of roof at 32 sq ft per sheet",
+   "Shingles (squares) \u2014 square \u2014 6 [confidence: medium] \u2014 roof area in 100 sq ft squares, + waste"
+  ],
+  "derived_caveats": [],
+  "derived_tier": "generic",
+  "derived_list_note": "BUDGET ESTIMATE, NOT A CUT LIST. This is a quantity take-off computed from footprint, wall height and roof geometry only. Scored against 34 published materials lists in this collection, it lands within roughly a FACTOR OF TWO: 2x4 runs 1.11x actual (p25-p75 0.77-2.24), 2x6 runs 0.86x actual (p25-p75 0.47-1.83), 4x4 runs 1.72x actual (p25-p75 1.08-3.33). Use it to sanity-check a lumber budget or compare two designs \u2014 do not order or cut from it. The vendor's own list is the only reliable source, and for most of these records that means buying the plan."
+ },
+ "shesgotskilz-16x20-low-slope": {
+  "derived_lumber_list": [
+   "Wall studs \u2014 2x4 \u2014 62 @ 96\" [confidence: medium] \u2014 72 ft perimeter at 16\" OC plus corners and openings; across 34 published lists this method runs 1.11x actual for 2x4 (p25-p75 0.77-2.24, usable)",
+   "Plates (1 bottom + 2 top) \u2014 2x4 \u2014 3 @ 864\" [confidence: medium] \u2014 single bottom plate, double top plate; across 34 published lists this method runs 1.11x actual for 2x4 (p25-p75 0.77-2.24, usable)",
+   "Siding \u2014 sheet \u2014 18 [confidence: medium] \u2014 576 sq ft of wall at 32 sq ft per sheet",
+   "Rafters \u2014 2x6 \u2014 22 @ 113\" [confidence: medium] \u2014 11 bays at 24\" OC x2 for the gable pair; slope length 101\" + 12\" overhang; across 27 published lists this method runs 0.86x actual for 2x6 (p25-p75 0.47-1.83, usable)",
+   "Roof sheathing \u2014 sheet \u2014 11 [confidence: medium] \u2014 337 sq ft of roof at 32 sq ft per sheet",
+   "Shingles (squares) \u2014 square \u2014 5 [confidence: medium] \u2014 roof area in 100 sq ft squares, + waste"
+  ],
+  "derived_caveats": [
+   "wall height is NOT published \u2014 8 ft assumed",
+   "roof pitch is NOT published \u2014 4:12 assumed from the style"
+  ],
+  "derived_tier": "generic",
+  "derived_list_note": "BUDGET ESTIMATE, NOT A CUT LIST. This is a quantity take-off computed from footprint, wall height and roof geometry only. Scored against 34 published materials lists in this collection, it lands within roughly a FACTOR OF TWO: 2x4 runs 1.11x actual (p25-p75 0.77-2.24), 2x6 runs 0.86x actual (p25-p75 0.47-1.83), 4x4 runs 1.72x actual (p25-p75 1.08-3.33). Use it to sanity-check a lumber budget or compare two designs \u2014 do not order or cut from it. The vendor's own list is the only reliable source, and for most of these records that means buying the plan."
+ },
+ "kens-karpentry-16x20-gambrel-workshop": {
+  "derived_lumber_list": [
+   "Wall studs \u2014 2x4 \u2014 62 @ 96\" [confidence: medium] \u2014 72 ft perimeter at 16\" OC plus corners and openings; across 34 published lists this method runs 1.11x actual for 2x4 (p25-p75 0.77-2.24, usable)",
+   "Plates (1 bottom + 2 top) \u2014 2x4 \u2014 3 @ 864\" [confidence: medium] \u2014 single bottom plate, double top plate; across 34 published lists this method runs 1.11x actual for 2x4 (p25-p75 0.77-2.24, usable)",
+   "Siding \u2014 sheet \u2014 18 [confidence: medium] \u2014 576 sq ft of wall at 32 sq ft per sheet",
+   "Gambrel truss chords \u2014 2x6 \u2014 44 @ 81\" [confidence: low] \u2014 11 trusses at 24\" OC, 4 chords each (two slopes per side); across 27 published lists this method runs 0.86x actual for 2x6 (p25-p75 0.47-1.83, usable)",
+   "Truss gussets \u2014 sheet \u2014 3 [confidence: low] \u2014 plywood gussets, ~5 trusses per sheet",
+   "Roof sheathing \u2014 sheet \u2014 13 [confidence: medium] \u2014 416 sq ft of roof at 32 sq ft per sheet",
+   "Shingles (squares) \u2014 square \u2014 6 [confidence: medium] \u2014 roof area in 100 sq ft squares, + waste"
+  ],
+  "derived_caveats": [
+   "wall height is NOT published \u2014 8 ft assumed",
+   "gambrel truss chords are the weakest line here \u2014 two slopes and a knee-wall geometry that a footprint alone does not pin down"
+  ],
+  "derived_tier": "generic",
+  "derived_list_note": "BUDGET ESTIMATE, NOT A CUT LIST. This is a quantity take-off computed from footprint, wall height and roof geometry only. Scored against 34 published materials lists in this collection, it lands within roughly a FACTOR OF TWO: 2x4 runs 1.11x actual (p25-p75 0.77-2.24), 2x6 runs 0.86x actual (p25-p75 0.47-1.83), 4x4 runs 1.72x actual (p25-p75 1.08-3.33). Use it to sanity-check a lumber budget or compare two designs \u2014 do not order or cut from it. The vendor's own list is the only reliable source, and for most of these records that means buying the plan."
+ },
+ "bigtimedecisions-16x20-shed-roof-workshop": {
+  "derived_lumber_list": [
+   "Floor joists \u2014 2x6 \u2014 16 @ 189\" [confidence: medium] \u2014 20 ft run at 16\" OC, cut to the 16 ft depth less two rims; across 27 published lists this method runs 0.86x actual for 2x6 (p25-p75 0.47-1.83, usable)",
+   "Rim joists \u2014 2x6 \u2014 2 @ 240\" [confidence: medium] \u2014 one each side, running the length; across 27 published lists this method runs 0.86x actual for 2x6 (p25-p75 0.47-1.83, usable)",
+   "Floor sheathing \u2014 sheet \u2014 10 [confidence: medium] \u2014 3/4\" T&G at 32 sq ft per 4x8 sheet",
+   "Skids \u2014 4x4 \u2014 7 @ 192\" [confidence: medium] \u2014 one skid roughly every 3 ft of length, running the depth; across 12 published lists this method runs 1.72x actual for 4x4 (p25-p75 1.08-3.33, poor)",
+   "Wall studs \u2014 2x4 \u2014 62 @ 96\" [confidence: medium] \u2014 72 ft perimeter at 16\" OC plus corners and openings; across 34 published lists this method runs 1.11x actual for 2x4 (p25-p75 0.77-2.24, usable)",
+   "Plates (1 bottom + 2 top) \u2014 2x4 \u2014 3 @ 864\" [confidence: medium] \u2014 single bottom plate, double top plate; across 34 published lists this method runs 1.11x actual for 2x4 (p25-p75 0.77-2.24, usable)",
+   "Siding \u2014 sheet \u2014 18 [confidence: medium] \u2014 576 sq ft of wall at 32 sq ft per sheet",
+   "Rafters \u2014 2x6 \u2014 22 @ 109\" [confidence: medium] \u2014 11 bays at 24\" OC x2 for the gable pair; slope length 97\" + 12\" overhang; across 27 published lists this method runs 0.86x actual for 2x6 (p25-p75 0.47-1.83, usable)",
+   "Roof sheathing \u2014 sheet \u2014 11 [confidence: medium] \u2014 324 sq ft of roof at 32 sq ft per sheet",
+   "Shingles (squares) \u2014 square \u2014 5 [confidence: medium] \u2014 roof area in 100 sq ft squares, + waste"
+  ],
+  "derived_caveats": [
+   "wall height is NOT published \u2014 8 ft assumed",
+   "roof pitch is NOT published \u2014 2:12 assumed from the style"
+  ],
+  "derived_tier": "generic",
+  "derived_list_note": "BUDGET ESTIMATE, NOT A CUT LIST. This is a quantity take-off computed from footprint, wall height and roof geometry only. Scored against 34 published materials lists in this collection, it lands within roughly a FACTOR OF TWO: 2x4 runs 1.11x actual (p25-p75 0.77-2.24), 2x6 runs 0.86x actual (p25-p75 0.47-1.83), 4x4 runs 1.72x actual (p25-p75 1.08-3.33). Use it to sanity-check a lumber budget or compare two designs \u2014 do not order or cut from it. The vendor's own list is the only reliable source, and for most of these records that means buying the plan."
+ },
+ "reality-renovision-14x20-single-slope-shed": {
+  "derived_lumber_list": [
+   "Wall studs \u2014 2x4 \u2014 59 @ 96\" [confidence: medium] \u2014 68 ft perimeter at 16\" OC plus corners and openings; across 34 published lists this method runs 1.11x actual for 2x4 (p25-p75 0.77-2.24, usable)",
+   "Plates (1 bottom + 2 top) \u2014 2x4 \u2014 3 @ 816\" [confidence: medium] \u2014 single bottom plate, double top plate; across 34 published lists this method runs 1.11x actual for 2x4 (p25-p75 0.77-2.24, usable)",
+   "Siding \u2014 sheet \u2014 17 [confidence: medium] \u2014 544 sq ft of wall at 32 sq ft per sheet",
+   "Rafters \u2014 2x6 \u2014 22 @ 97\" [confidence: medium] \u2014 11 bays at 24\" OC x2 for the gable pair; slope length 85\" + 12\" overhang; across 27 published lists this method runs 0.86x actual for 2x6 (p25-p75 0.47-1.83, usable)",
+   "Roof sheathing \u2014 sheet \u2014 9 [confidence: medium] \u2014 284 sq ft of roof at 32 sq ft per sheet",
+   "Shingles (squares) \u2014 square \u2014 4 [confidence: medium] \u2014 roof area in 100 sq ft squares, + waste"
+  ],
+  "derived_caveats": [
+   "wall height is NOT published \u2014 8 ft assumed",
+   "roof pitch is NOT published \u2014 2:12 assumed from the style"
+  ],
+  "derived_tier": "generic",
+  "derived_list_note": "BUDGET ESTIMATE, NOT A CUT LIST. This is a quantity take-off computed from footprint, wall height and roof geometry only. Scored against 34 published materials lists in this collection, it lands within roughly a FACTOR OF TWO: 2x4 runs 1.11x actual (p25-p75 0.77-2.24), 2x6 runs 0.86x actual (p25-p75 0.47-1.83), 4x4 runs 1.72x actual (p25-p75 1.08-3.33). Use it to sanity-check a lumber budget or compare two designs \u2014 do not order or cut from it. The vendor's own list is the only reliable source, and for most of these records that means buying the plan."
+ },
+ "mydiybuilds-16x20-gable-garage": {
+  "derived_lumber_list": [
+   "Wall studs \u2014 2x4 \u2014 62 @ 96\" [confidence: medium] \u2014 72 ft perimeter at 16\" OC plus corners and openings; across 34 published lists this method runs 1.11x actual for 2x4 (p25-p75 0.77-2.24, usable)",
+   "Plates (1 bottom + 2 top) \u2014 2x4 \u2014 3 @ 864\" [confidence: medium] \u2014 single bottom plate, double top plate; across 34 published lists this method runs 1.11x actual for 2x4 (p25-p75 0.77-2.24, usable)",
+   "Siding \u2014 sheet \u2014 18 [confidence: medium] \u2014 576 sq ft of wall at 32 sq ft per sheet",
+   "Rafters \u2014 2x6 \u2014 22 @ 113\" [confidence: medium] \u2014 11 bays at 24\" OC x2 for the gable pair; slope length 101\" + 12\" overhang; across 27 published lists this method runs 0.86x actual for 2x6 (p25-p75 0.47-1.83, usable)",
+   "Roof sheathing \u2014 sheet \u2014 11 [confidence: medium] \u2014 337 sq ft of roof at 32 sq ft per sheet",
+   "Shingles (squares) \u2014 square \u2014 5 [confidence: medium] \u2014 roof area in 100 sq ft squares, + waste"
+  ],
+  "derived_caveats": [
+   "wall height is NOT published \u2014 8 ft assumed",
+   "roof pitch is NOT published \u2014 4:12 assumed from the style"
+  ],
+  "derived_tier": "generic",
+  "derived_list_note": "BUDGET ESTIMATE, NOT A CUT LIST. This is a quantity take-off computed from footprint, wall height and roof geometry only. Scored against 34 published materials lists in this collection, it lands within roughly a FACTOR OF TWO: 2x4 runs 1.11x actual (p25-p75 0.77-2.24), 2x6 runs 0.86x actual (p25-p75 0.47-1.83), 4x4 runs 1.72x actual (p25-p75 1.08-3.33). Use it to sanity-check a lumber budget or compare two designs \u2014 do not order or cut from it. The vendor's own list is the only reliable source, and for most of these records that means buying the plan."
+ },
+ "keimpiece-12x24-gable-shed-video": {
+  "derived_lumber_list": [
+   "Wall studs \u2014 2x4 \u2014 62 @ 96\" [confidence: medium] \u2014 72 ft perimeter at 16\" OC plus corners and openings; across 34 published lists this method runs 1.11x actual for 2x4 (p25-p75 0.77-2.24, usable)",
+   "Plates (1 bottom + 2 top) \u2014 2x4 \u2014 3 @ 864\" [confidence: medium] \u2014 single bottom plate, double top plate; across 34 published lists this method runs 1.11x actual for 2x4 (p25-p75 0.77-2.24, usable)",
+   "Siding \u2014 sheet \u2014 18 [confidence: medium] \u2014 576 sq ft of wall at 32 sq ft per sheet",
+   "Rafters \u2014 2x6 \u2014 26 @ 88\" [confidence: medium] \u2014 13 bays at 24\" OC x2 for the gable pair; slope length 76\" + 12\" overhang; across 27 published lists this method runs 0.86x actual for 2x6 (p25-p75 0.47-1.83, usable)",
+   "Roof sheathing \u2014 sheet \u2014 10 [confidence: medium] \u2014 304 sq ft of roof at 32 sq ft per sheet",
+   "Shingles (squares) \u2014 square \u2014 5 [confidence: medium] \u2014 roof area in 100 sq ft squares, + waste"
+  ],
+  "derived_caveats": [
+   "wall height is NOT published \u2014 8 ft assumed",
+   "roof pitch is NOT published \u2014 4:12 assumed from the style"
+  ],
+  "derived_tier": "generic",
+  "derived_list_note": "BUDGET ESTIMATE, NOT A CUT LIST. This is a quantity take-off computed from footprint, wall height and roof geometry only. Scored against 34 published materials lists in this collection, it lands within roughly a FACTOR OF TWO: 2x4 runs 1.11x actual (p25-p75 0.77-2.24), 2x6 runs 0.86x actual (p25-p75 0.47-1.83), 4x4 runs 1.72x actual (p25-p75 1.08-3.33). Use it to sanity-check a lumber budget or compare two designs \u2014 do not order or cut from it. The vendor's own list is the only reliable source, and for most of these records that means buying the plan."
+ },
+ "menards-16x20-gable-1car-garage": {
+  "derived_lumber_list": [
+   "Wall studs \u2014 2x4 \u2014 62 @ 96\" [confidence: medium] \u2014 72 ft perimeter at 16\" OC plus corners and openings; across 34 published lists this method runs 1.11x actual for 2x4 (p25-p75 0.77-2.24, usable)",
+   "Plates (1 bottom + 2 top) \u2014 2x4 \u2014 3 @ 864\" [confidence: medium] \u2014 single bottom plate, double top plate; across 34 published lists this method runs 1.11x actual for 2x4 (p25-p75 0.77-2.24, usable)",
+   "Siding \u2014 sheet \u2014 18 [confidence: medium] \u2014 576 sq ft of wall at 32 sq ft per sheet",
+   "Rafters \u2014 2x6 \u2014 22 @ 113\" [confidence: medium] \u2014 11 bays at 24\" OC x2 for the gable pair; slope length 101\" + 12\" overhang; across 27 published lists this method runs 0.86x actual for 2x6 (p25-p75 0.47-1.83, usable)",
+   "Roof sheathing \u2014 sheet \u2014 11 [confidence: medium] \u2014 337 sq ft of roof at 32 sq ft per sheet",
+   "Shingles (squares) \u2014 square \u2014 5 [confidence: medium] \u2014 roof area in 100 sq ft squares, + waste"
+  ],
+  "derived_caveats": [
+   "roof pitch is NOT published \u2014 4:12 assumed from the style"
+  ],
+  "derived_tier": "generic",
+  "derived_list_note": "BUDGET ESTIMATE, NOT A CUT LIST. This is a quantity take-off computed from footprint, wall height and roof geometry only. Scored against 34 published materials lists in this collection, it lands within roughly a FACTOR OF TWO: 2x4 runs 1.11x actual (p25-p75 0.77-2.24), 2x6 runs 0.86x actual (p25-p75 0.47-1.83), 4x4 runs 1.72x actual (p25-p75 1.08-3.33). Use it to sanity-check a lumber budget or compare two designs \u2014 do not order or cut from it. The vendor's own list is the only reliable source, and for most of these records that means buying the plan."
+ },
+ "grabcad-16x20-porch-shed": {
+  "derived_lumber_list": [
+   "Floor joists \u2014 2x6 \u2014 16 @ 189\" [confidence: medium] \u2014 20 ft run at 16\" OC, cut to the 16 ft depth less two rims; across 27 published lists this method runs 0.86x actual for 2x6 (p25-p75 0.47-1.83, usable)",
+   "Rim joists \u2014 2x6 \u2014 2 @ 240\" [confidence: medium] \u2014 one each side, running the length; across 27 published lists this method runs 0.86x actual for 2x6 (p25-p75 0.47-1.83, usable)",
+   "Floor sheathing \u2014 sheet \u2014 10 [confidence: medium] \u2014 3/4\" T&G at 32 sq ft per 4x8 sheet",
+   "Skids \u2014 4x4 \u2014 7 @ 192\" [confidence: medium] \u2014 one skid roughly every 3 ft of length, running the depth; across 12 published lists this method runs 1.72x actual for 4x4 (p25-p75 1.08-3.33, poor)",
+   "Wall studs \u2014 2x4 \u2014 62 @ 96\" [confidence: medium] \u2014 72 ft perimeter at 16\" OC plus corners and openings; across 34 published lists this method runs 1.11x actual for 2x4 (p25-p75 0.77-2.24, usable)",
+   "Plates (1 bottom + 2 top) \u2014 2x4 \u2014 3 @ 864\" [confidence: medium] \u2014 single bottom plate, double top plate; across 34 published lists this method runs 1.11x actual for 2x4 (p25-p75 0.77-2.24, usable)",
+   "Siding \u2014 sheet \u2014 18 [confidence: medium] \u2014 576 sq ft of wall at 32 sq ft per sheet",
+   "Gambrel truss chords \u2014 2x6 \u2014 44 @ 81\" [confidence: low] \u2014 11 trusses at 24\" OC, 4 chords each (two slopes per side); across 27 published lists this method runs 0.86x actual for 2x6 (p25-p75 0.47-1.83, usable)",
+   "Truss gussets \u2014 sheet \u2014 3 [confidence: low] \u2014 plywood gussets, ~5 trusses per sheet",
+   "Roof sheathing \u2014 sheet \u2014 13 [confidence: medium] \u2014 416 sq ft of roof at 32 sq ft per sheet",
+   "Shingles (squares) \u2014 square \u2014 6 [confidence: medium] \u2014 roof area in 100 sq ft squares, + waste"
+  ],
+  "derived_caveats": [
+   "wall height is NOT published \u2014 8 ft assumed",
+   "gambrel truss chords are the weakest line here \u2014 two slopes and a knee-wall geometry that a footprint alone does not pin down"
+  ],
+  "derived_tier": "generic",
+  "derived_list_note": "BUDGET ESTIMATE, NOT A CUT LIST. This is a quantity take-off computed from footprint, wall height and roof geometry only. Scored against 34 published materials lists in this collection, it lands within roughly a FACTOR OF TWO: 2x4 runs 1.11x actual (p25-p75 0.77-2.24), 2x6 runs 0.86x actual (p25-p75 0.47-1.83), 4x4 runs 1.72x actual (p25-p75 1.08-3.33). Use it to sanity-check a lumber budget or compare two designs \u2014 do not order or cut from it. The vendor's own list is the only reliable source, and for most of these records that means buying the plan."
+ },
+ "mop-12x20-firewood-11cord": {
+  "derived_lumber_list": [
+   "Floor joists \u2014 2x6 \u2014 16 @ 141\" [confidence: high] \u2014 20 ft run at 16\" OC, cut to the 12 ft depth less two rims; across 27 published lists this method runs 0.86x actual for 2x6 (p25-p75 0.47-1.83, usable)",
+   "Rim joists \u2014 2x6 \u2014 2 @ 240\" [confidence: high] \u2014 one each side, running the length; across 27 published lists this method runs 0.86x actual for 2x6 (p25-p75 0.47-1.83, usable)",
+   "Floor slats (gapped) \u2014 2x4 \u2014 55 @ 144\" [confidence: high] \u2014 3-1/2\" board + 7/8\" gap = 4.375\" pitch (published for this family); across 34 published lists this method runs 1.11x actual for 2x4 (p25-p75 0.77-2.24, usable)",
+   "Skids \u2014 4x4 \u2014 7 @ 144\" [confidence: medium] \u2014 one skid roughly every 3 ft of length, running the depth; across 12 published lists this method runs 1.72x actual for 4x4 (p25-p75 1.08-3.33, poor)",
+   "Posts (front tall, back short) \u2014 4x4 \u2014 9 @ 96\" [confidence: medium] \u2014 3 depth lines x 3 along the length; front posts taller by 24\" for the 2:12 slope; across 12 published lists this method runs 1.72x actual for 4x4 (p25-p75 1.08-3.33, poor)",
+   "Support beams \u2014 4x8 \u2014 6 @ 120\" [confidence: medium] \u2014 3 beam lines along the length, in 10 ft pieces",
+   "Knee braces \u2014 4x4 \u2014 9 @ 36\" [confidence: low] \u2014 one per post; across 12 published lists this method runs 1.72x actual for 4x4 (p25-p75 1.08-3.33, poor)",
+   "Wall slats - back \u2014 1x6 \u2014 13 @ 240\" [confidence: medium] \u2014 5-1/2\" board + 2-1/4\" gap = 7.75\" pitch over a 96\" wall",
+   "Wall slats - two sides \u2014 1x6 \u2014 28 @ 144\" [confidence: low] \u2014 sides taper with the roof slope; averaged",
+   "Rafters \u2014 2x6 \u2014 11 @ 158\" [confidence: medium] \u2014 11 bays at 24\" OC; slope length 146\" + 12\" overhang; across 27 published lists this method runs 0.86x actual for 2x6 (p25-p75 0.47-1.83, usable)",
+   "Purlins \u2014 2x4 \u2014 8 @ 240\" [confidence: medium] \u2014 8 purlin lines up the slope (metal roofing needs no deck); across 34 published lists this method runs 1.11x actual for 2x4 (p25-p75 0.77-2.24, usable)",
+   "Metal roofing 3'x8' \u2014 sheet \u2014 16 [confidence: high] \u2014 7 columns across the length x 2 courses up the slope, + lap"
+  ],
+  "derived_caveats": [
+   "wall height is NOT published \u2014 8 ft assumed"
+  ],
+  "derived_tier": "family",
+  "derived_list_note": "DERIVED, not the author's cut list \u2014 that is behind their premium unlock. Computed from the design rules this plan family publishes free (2x6 joists at 16\" OC, 7/8\" floor-slat gaps, 1x6 walls with 2-1/4\" gaps, 2:12 lean-to, 3'x8' metal roofing) and calibrated against the COMPLETE free lists of its 12x12, 12x30 and 12x36 siblings by the same author. Spot-checks reproduce the siblings' roofing sheet counts and floor-slat row counts. Good enough to price and order lumber; the notched-post, brace and birdsmouth layout is still yours to do. Buy the premium plan before cutting \u2014 it is a few dollars and it pays the designer."
+ },
+ "mop-10x20-firewood-8cord": {
+  "derived_lumber_list": [
+   "Floor joists \u2014 2x6 \u2014 16 @ 117\" [confidence: high] \u2014 20 ft run at 16\" OC, cut to the 10 ft depth less two rims; across 27 published lists this method runs 0.86x actual for 2x6 (p25-p75 0.47-1.83, usable)",
+   "Rim joists \u2014 2x6 \u2014 2 @ 240\" [confidence: high] \u2014 one each side, running the length; across 27 published lists this method runs 0.86x actual for 2x6 (p25-p75 0.47-1.83, usable)",
+   "Floor slats (gapped) \u2014 2x4 \u2014 55 @ 120\" [confidence: high] \u2014 3-1/2\" board + 7/8\" gap = 4.375\" pitch (published for this family); across 34 published lists this method runs 1.11x actual for 2x4 (p25-p75 0.77-2.24, usable)",
+   "Skids \u2014 4x4 \u2014 7 @ 120\" [confidence: medium] \u2014 one skid roughly every 3 ft of length, running the depth; across 12 published lists this method runs 1.72x actual for 4x4 (p25-p75 1.08-3.33, poor)",
+   "Posts (front tall, back short) \u2014 4x4 \u2014 9 @ 96\" [confidence: medium] \u2014 3 depth lines x 3 along the length; front posts taller by 30\" for the 3:12 slope; across 12 published lists this method runs 1.72x actual for 4x4 (p25-p75 1.08-3.33, poor)",
+   "Support beams \u2014 4x8 \u2014 6 @ 120\" [confidence: medium] \u2014 3 beam lines along the length, in 10 ft pieces",
+   "Knee braces \u2014 4x4 \u2014 9 @ 36\" [confidence: low] \u2014 one per post; across 12 published lists this method runs 1.72x actual for 4x4 (p25-p75 1.08-3.33, poor)",
+   "Wall slats - back \u2014 1x6 \u2014 13 @ 240\" [confidence: medium] \u2014 5-1/2\" board + 2-1/4\" gap = 7.75\" pitch over a 96\" wall",
+   "Wall slats - two sides \u2014 1x6 \u2014 30 @ 120\" [confidence: low] \u2014 sides taper with the roof slope; averaged",
+   "Rafters \u2014 2x6 \u2014 11 @ 136\" [confidence: medium] \u2014 11 bays at 24\" OC; slope length 124\" + 12\" overhang; across 27 published lists this method runs 0.86x actual for 2x6 (p25-p75 0.47-1.83, usable)",
+   "Purlins \u2014 2x4 \u2014 8 @ 240\" [confidence: medium] \u2014 8 purlin lines up the slope (metal roofing needs no deck); across 34 published lists this method runs 1.11x actual for 2x4 (p25-p75 0.77-2.24, usable)",
+   "Metal roofing 3'x8' \u2014 sheet \u2014 16 [confidence: high] \u2014 7 columns across the length x 2 courses up the slope, + lap"
+  ],
+  "derived_caveats": [
+   "wall height is NOT published \u2014 8 ft assumed"
+  ],
+  "derived_tier": "family",
+  "derived_list_note": "DERIVED, not the author's cut list \u2014 that is behind their premium unlock. Computed from the design rules this plan family publishes free (2x6 joists at 16\" OC, 7/8\" floor-slat gaps, 1x6 walls with 2-1/4\" gaps, 2:12 lean-to, 3'x8' metal roofing) and calibrated against the COMPLETE free lists of its 12x12, 12x30 and 12x36 siblings by the same author. Spot-checks reproduce the siblings' roofing sheet counts and floor-slat row counts. Good enough to price and order lumber; the notched-post, brace and birdsmouth layout is still yours to do. Buy the premium plan before cutting \u2014 it is a few dollars and it pays the designer."
+ },
+ "mop-12x16-firewood-9cord": {
+  "derived_lumber_list": [
+   "Floor joists \u2014 2x6 \u2014 13 @ 141\" [confidence: high] \u2014 16 ft run at 16\" OC, cut to the 12 ft depth less two rims; across 27 published lists this method runs 0.86x actual for 2x6 (p25-p75 0.47-1.83, usable)",
+   "Rim joists \u2014 2x6 \u2014 2 @ 192\" [confidence: high] \u2014 one each side, running the length; across 27 published lists this method runs 0.86x actual for 2x6 (p25-p75 0.47-1.83, usable)",
+   "Floor slats (gapped) \u2014 2x4 \u2014 44 @ 144\" [confidence: high] \u2014 3-1/2\" board + 7/8\" gap = 4.375\" pitch (published for this family); across 34 published lists this method runs 1.11x actual for 2x4 (p25-p75 0.77-2.24, usable)",
+   "Skids \u2014 4x4 \u2014 6 @ 144\" [confidence: medium] \u2014 one skid roughly every 3 ft of length, running the depth; across 12 published lists this method runs 1.72x actual for 4x4 (p25-p75 1.08-3.33, poor)",
+   "Posts (front tall, back short) \u2014 4x4 \u2014 9 @ 96\" [confidence: medium] \u2014 3 depth lines x 3 along the length; front posts taller by 24\" for the 2:12 slope; across 12 published lists this method runs 1.72x actual for 4x4 (p25-p75 1.08-3.33, poor)",
+   "Support beams \u2014 4x8 \u2014 6 @ 120\" [confidence: medium] \u2014 3 beam lines along the length, in 10 ft pieces",
+   "Knee braces \u2014 4x4 \u2014 9 @ 36\" [confidence: low] \u2014 one per post; across 12 published lists this method runs 1.72x actual for 4x4 (p25-p75 1.08-3.33, poor)",
+   "Wall slats - back \u2014 1x6 \u2014 13 @ 192\" [confidence: medium] \u2014 5-1/2\" board + 2-1/4\" gap = 7.75\" pitch over a 96\" wall",
+   "Wall slats - two sides \u2014 1x6 \u2014 28 @ 144\" [confidence: low] \u2014 sides taper with the roof slope; averaged",
+   "Rafters \u2014 2x6 \u2014 9 @ 158\" [confidence: medium] \u2014 9 bays at 24\" OC; slope length 146\" + 12\" overhang; across 27 published lists this method runs 0.86x actual for 2x6 (p25-p75 0.47-1.83, usable)",
+   "Purlins \u2014 2x4 \u2014 8 @ 192\" [confidence: medium] \u2014 8 purlin lines up the slope (metal roofing needs no deck); across 34 published lists this method runs 1.11x actual for 2x4 (p25-p75 0.77-2.24, usable)",
+   "Metal roofing 3'x8' \u2014 sheet \u2014 14 [confidence: high] \u2014 6 columns across the length x 2 courses up the slope, + lap"
+  ],
+  "derived_caveats": [
+   "wall height is NOT published \u2014 8 ft assumed"
+  ],
+  "derived_tier": "family",
+  "derived_list_note": "DERIVED, not the author's cut list \u2014 that is behind their premium unlock. Computed from the design rules this plan family publishes free (2x6 joists at 16\" OC, 7/8\" floor-slat gaps, 1x6 walls with 2-1/4\" gaps, 2:12 lean-to, 3'x8' metal roofing) and calibrated against the COMPLETE free lists of its 12x12, 12x30 and 12x36 siblings by the same author. Spot-checks reproduce the siblings' roofing sheet counts and floor-slat row counts. Good enough to price and order lumber; the notched-post, brace and birdsmouth layout is still yours to do. Buy the premium plan before cutting \u2014 it is a few dollars and it pays the designer."
+ }
+}

@@ -380,3 +380,8 @@ a.herolink:hover { background: var(--surface-2); }
 }
 .sitefoot p { margin: 0 0 9px; max-width: 96ch; }
 .sitefoot strong { color: var(--text-secondary); font-weight: 600; }
+
+/* staleness notice — always visible, not buried in the footer */
+.asof-date { color: var(--text-secondary); }
+.asof-warn { color: var(--warning); margin-left: 5px; }
+@media (max-width: 720px) { .asof-warn { display: none; } }

@@ -73,7 +73,13 @@ async function load() {
   }
   state.all = (payload.plans || []).slice();
   state.meta = payload.meta || {};
-  $('#asof').textContent = state.meta.compiled_at ? `data compiled ${state.meta.compiled_at}` : '';
+  const asof = $('#asof');
+  if (state.meta.compiled_at) {
+    asof.innerHTML = `<span class="asof-date">Prices &amp; specs compiled ${esc(state.meta.compiled_at)}</span>`
+      + ` <span class="asof-warn">— verify at source before buying</span>`;
+    asof.title = 'Every figure here was read off the vendor page on the compile date. '
+      + 'Prices move and pages change; the vendor is always authoritative.';
+  } else { asof.textContent = ''; }
   buildKindChips();
   const pool0 = state.all.filter(r => !r.disqualified);
   fillSelect('#fFoot', uniq(pool0.map(r => r.footprint)).sort(footSort));
@@ -527,10 +533,16 @@ function openDrawer(slug) {
 
     ${r.cost_estimate ? costSection(r.cost_estimate, r) : ''}
 
-    ${(r.derived_lumber_list || []).length ? `<div class="sect"><h4>Derived materials take-off</h4>
-      <div class="notice" style="margin:0 0 10px;border-left-color:var(--series-4)"><strong>Estimated, not the author's list.</strong> ${esc(r.derived_list_note || '')}</div>
-      <details class="lumber" open><summary>${r.derived_lumber_list.length} derived line items</summary>
-      <pre>${esc(r.derived_lumber_list.join('\n'))}</pre></details></div>` : ''}
+    ${(r.derived_lumber_list || []).length ? (() => {
+      const budget = r.derived_tier === 'generic';
+      return `<div class="sect"><h4>${budget ? 'Lumber budget estimate' : 'Derived materials take-off'}</h4>
+      <div class="notice" style="margin:0 0 10px;border-left-color:${budget ? 'var(--serious)' : 'var(--series-4)'}">
+        <strong>${budget ? 'Budget estimate — NOT a cut list.' : "Derived, not the author's list."}</strong>
+        ${esc(r.derived_list_note || '')}</div>
+      ${(r.derived_caveats || []).length ? `<ul class="tight con" style="margin-bottom:10px">${r.derived_caveats.map(c => `<li>${esc(c)}</li>`).join('')}</ul>` : ''}
+      <details class="lumber"${budget ? '' : ' open'}><summary>${r.derived_lumber_list.length} ${budget ? 'estimated' : 'derived'} line items</summary>
+      <pre>${esc(r.derived_lumber_list.join('\n'))}</pre></details></div>`;
+    })() : ''}
 
     ${(r.lumber_list || []).length ? `<div class="sect"><h4>Materials / cut list as published</h4>
       <details class="lumber"><summary>${r.lumber_list.length} lines — click to expand</summary>

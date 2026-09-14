@@ -280,6 +280,10 @@ def main():
     for slug, rec in additions.items():
         details.setdefault(slug, rec)
 
+    # Derived cut lists from tools/cutlist.py: {slug: {...}}
+    der_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "derived.json")
+    derived = json.load(open(der_path)) if os.path.exists(der_path) else {}
+
     # Materials-cost estimates from the costing pass: {slug: {...}}
     cost_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "costs.json")
     costs = json.load(open(cost_path)) if os.path.exists(cost_path) else {}
@@ -387,6 +391,10 @@ def main():
         # the same thing, so only kits get a delivered cost per square foot.
         if rec.get("kind") == "kit" and price_num(rec) > 0 and rec.get("sqft"):
             rec["kit_cost_per_sqft"] = round(price_num(rec) / rec["sqft"], 2)
+        dv = derived.get(slug)
+        # a hand-written derivation (e.g. the 12x20) already on the record wins over the generated one
+        if dv and not rec.get("derived_lumber_list"):
+            rec.update(dv)
         c = costs.get(slug)
         if c and str(c.get("priced", "")).upper() in ("YES", "PARTIAL") and (c.get("total_low_usd") or -1) > 0:
             rec["cost_estimate"] = c

@@ -49,7 +49,11 @@ jobs:
           print(f"OK: {len(d['plans'])} records, no rehosted assets")
           PY
 
+      # enablement:true makes this self-healing — a fresh clone or a repo where Pages
+      # was never turned on configures itself instead of failing the run.
       - uses: actions/configure-pages@v5
+        with:
+          enablement: true
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist

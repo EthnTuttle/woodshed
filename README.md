@@ -94,25 +94,31 @@ python3 tools/build_pages.py          # -> dist/, ~4 MB, safe to publish
 python3 -m http.server 8788 -d dist   # preview it
 ```
 
-**The build deliberately does not republish vendor assets.** Locally this site rehosts 139 hero
-images and 75 PDFs pulled from vendor pages — fine as private research, not something to put on a
-public URL. `build_pages.py` therefore strips all of them and substitutes a *View image at source*
-link on each record (117 of 125 have one). That takes the payload from 171 MB to 4.3 MB and means
-no plan sheets, cut lists or copyrighted drawings are redistributed. `assets/` and `dist/` are both
-gitignored.
+**Where the line sits on assets.** Locally this site keeps 139 full-size hero images (32 MB) and
+75 vendor PDFs. The published build ships neither of those as-is. It generates **downscaled
+thumbnails capped at 520px** (~3.8 MB for 125 images), each shown with a visible `Thumbnail ©
+<vendor>` credit and a link to the full-size original at the source. Plan PDFs and full-size
+drawings are **never** published — those are the product, and you get them from the vendor. That
+takes the payload from 172 MB to 8 MB. `assets/` and `dist/` are both gitignored.
 
-What does get published is our own work: the structured research, the fact-check trail, the derived
-cost and quantity estimates, and the code. Every record links back to the vendor to buy or download.
+An earlier version of this build stripped images entirely and showed "View image at source" links
+instead. That was the wrong call: a visual catalogue with no visuals reads as broken, and it made
+the site materially less useful. Thumbnails with attribution are ordinary practice for an index.
 
-`.github/workflows/pages.yml` deploys on push to `main`. It runs the build without `--with-assets`
-and then **fails the deploy** if `dist/assets` exists or if any `image_local_path` / `local:` PDF
-reference survived — so a future change can't quietly start publishing third-party files.
+`.github/workflows/pages.yml` deploys on push to `main`. It **fails the deploy** if
+`dist/assets/pdf` or `dist/assets/img` exists, if any `local:` PDF reference survived, if an image
+path points outside `assets/thumb/`, or if any thumbnail exceeds the width cap — so a future change
+can't quietly start publishing full-size drawings or plan documents.
 
-If you do want the images (a private repo, or purely local use):
+Three modes:
 
 ```bash
-python3 tools/build_pages.py --with-assets   # 169 MB — PRIVATE repos only
+python3 tools/build_pages.py                 # default: 520px thumbnails, no PDFs  (8 MB)
+python3 tools/build_pages.py --no-thumbs     # no images at all, link out instead  (4 MB)
+python3 tools/build_pages.py --with-assets   # full-size images AND PDFs — PRIVATE repos only (169 MB)
 ```
+
+If you own an image that appears here and would rather it didn't, open an issue and it comes down.
 
 For a project page served from `https://<user>.github.io/<repo>/` rather than a domain root, add
 `--base /<repo>` so relative paths resolve.

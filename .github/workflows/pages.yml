@@ -26,31 +26,54 @@ jobs:
           python-version: '3.12'
 
       # Builds WITHOUT --with-assets, so no vendor images or PDFs are ever published.
+      - name: Install Pillow (thumbnail generation)
+        run: python3 -m pip install --quiet Pillow
+
       - name: Build publishable site
         run: python3 tools/build_pages.py
 
-      # Fail the deploy rather than quietly publishing third-party assets.
-      - name: Assert no vendor assets are being published
+      # The line we hold: downscaled thumbnails are fine to publish; full-size drawings and
+      # plan PDFs are the product and must never be. Fail the deploy rather than drift.
+      - name: Assert only thumbnails are published
         run: |
-          if [ -d dist/assets ]; then
-            echo "::error::dist/assets exists — vendor images/PDFs would be republished. Aborting."
+          if [ -d dist/assets/pdf ]; then
+            echo "::error::dist/assets/pdf exists — plan PDFs must never be published. Aborting."
+            exit 1
+          fi
+          if [ -d dist/assets/img ]; then
+            echo "::error::dist/assets/img exists — that is the full-size set. Aborting."
             exit 1
           fi
           python3 - <<'PY'
-          import json, sys
+          import json, os, sys, glob
           d = json.load(open('dist/data/plans.json'))
-          bad_img = [p['slug'] for p in d['plans'] if p.get('image_local_path')]
-          bad_pdf = [p['slug'] for p in d['plans']
-                     if any(str(u).startswith('local:') for u in (p.get('extra_urls') or []))]
           if d['meta'].get('assets_rehosted'):
               sys.exit('::error::meta.assets_rehosted is true')
-          if bad_img or bad_pdf:
-              sys.exit(f'::error::local asset refs leaked: {bad_img[:5]} {bad_pdf[:5]}')
-          print(f"OK: {len(d['plans'])} records, no rehosted assets")
+          bad_pdf = [p['slug'] for p in d['plans']
+                     if any(str(u).startswith('local:') for u in (p.get('extra_urls') or []))]
+          if bad_pdf:
+              sys.exit(f'::error::local PDF refs leaked: {bad_pdf[:5]}')
+          off = [p['slug'] for p in d['plans']
+                 if p.get('image_local_path') and not p['image_local_path'].startswith('assets/thumb/')]
+          if off:
+              sys.exit(f'::error::image paths outside assets/thumb/: {off[:5]}')
+          cap = d['meta'].get('thumb_width', 520)
+          try:
+              from PIL import Image
+              wide = []
+              for f in glob.glob('dist/assets/thumb/*.jpg'):
+                  with Image.open(f) as im:
+                      if im.width > cap + 8:
+                          wide.append((os.path.basename(f), im.width))
+              if wide:
+                  sys.exit(f'::error::thumbnails exceed the {cap}px cap: {wide[:5]}')
+          except ImportError:
+              print('Pillow unavailable; skipped the pixel-width check')
+          n = len(glob.glob('dist/assets/thumb/*.jpg'))
+          mb = sum(os.path.getsize(f) for f in glob.glob('dist/assets/thumb/*.jpg')) / 1e6
+          print(f'OK: {len(d["plans"])} records, {n} thumbnails, {mb:.1f} MB, no PDFs, no full-size images')
           PY
 
-      # enablement:true makes this self-healing — a fresh clone or a repo where Pages
-      # was never turned on configures itself instead of failing the run.
       - uses: actions/configure-pages@v5
         with:
           enablement: true

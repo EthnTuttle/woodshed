@@ -218,10 +218,15 @@ function renderFooter() {
       in the ~240–480 sq ft range. Every specification, price and quote is attributed to the vendor
       page it came from — follow the “Open the plan page” link on any record to buy or download from
       the source.`);
-    if (m.assets_rehosted === false) {
+    if (m.mode === 'thumbnails') {
+      bits.push(`<strong>About the images.</strong> Previews are downscaled thumbnails (max
+        ${esc(m.thumb_width || 520)}px) shown to identify a design, each credited to its vendor and
+        linked to the original. Full-size drawings and plan PDFs are <em>not</em> rehosted — those are
+        the product, and you get them from the vendor. If you own an image here and would rather it
+        weren't shown, open an issue and it comes down.`);
+    } else if (m.assets_rehosted === false) {
       bits.push(`<strong>Nothing is rehosted.</strong> Vendor images, drawings and PDFs are
-        deliberately not copied here; each record links back to its source. No plan sheets, cut
-        lists or copyrighted drawings are redistributed.`);
+        deliberately not copied here; each record links back to its source.`);
     }
     bits.push(`<strong>No warranty.</strong> Specs and prices are only as current as the source page
       on ${esc(m.compiled_at || 'the compile date')}, some values are explicitly derived rather than
@@ -500,7 +505,11 @@ function openDrawer(slug) {
 
   $('#dBody').innerHTML = `
     ${has(r.image_local_path)
-        ? `<img class="hero" src="${esc(r.image_local_path)}" alt="${esc(r.name)}" onerror="this.remove()">`
+        ? `<figure class="herofig">
+             <img class="hero" src="${esc(r.image_local_path)}" alt="${esc(r.name)}" onerror="this.closest('figure').remove()">
+             <figcaption>${r.image_is_thumb ? 'Thumbnail' : 'Image'} © ${esc(r.vendor)}${
+               has(r.image_source_url) ? ` — <a href="${esc(r.image_source_url)}" target="_blank" rel="noopener nofollow">view full size at ${esc(r.image_source_url.split('/')[2] || 'source')} ↗</a>` : ''}</figcaption>
+           </figure>`
         : (r.image_was_local && has(r.image_source_url)
             ? `<a class="herolink" href="${esc(r.image_source_url)}" target="_blank" rel="noopener nofollow">View the plan image at ${esc((r.image_source_url.split('/')[2] || 'the source'))} ↗</a>`
             : '')}

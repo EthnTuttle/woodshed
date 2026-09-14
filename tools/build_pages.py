@@ -1,13 +1,19 @@
 #!/usr/bin/env python3
 """Build a publishable copy of the site into dist/.
 
-The local site rehosts 139 hero images and 75 PDFs pulled from vendor sites — fine as private
-research, not something to republish. So by default this build ships ONLY our own work (the
-structured research, the code, the derived estimates) and links every image and PDF back to
-where it came from.
+Where the line sits, and why:
 
-  python3 tools/build_pages.py                 # safe to publish: no vendor assets rehosted
-  python3 tools/build_pages.py --with-assets   # includes them; for a PRIVATE repo or local use
+  THUMBNAILS ARE PUBLISHED. A visual catalogue with no visuals is useless, and a downscaled
+  thumbnail beside an attribution and a link to the source is ordinary index/review practice.
+  Originals average 227 KB and up to 1920px; these are capped at 520px wide, so they identify a
+  design without substituting for it. ~6 MB total.
+
+  FULL-SIZE IMAGES AND PLAN PDFS ARE NOT. Those 75 PDFs are the product itself — several are
+  complete plan sets. Rehosting them would replace a purchase. They stay local; records link out.
+
+  python3 tools/build_pages.py                 # default: thumbnails only, no PDFs
+  python3 tools/build_pages.py --no-thumbs     # strip images entirely, link out instead
+  python3 tools/build_pages.py --with-assets   # full-size images AND PDFs; PRIVATE repo only
 
 usage note: --base is for project pages served from /<repo>/ rather than a domain root.
 """
@@ -41,6 +47,47 @@ def dir_size(path):
     return total
 
 
+def make_thumbs(payload, max_w):
+    """Downscale each hero image into dist/assets/thumb/. Returns stats."""
+    from PIL import Image
+    src_dir = os.path.join(ROOT, "assets", "img")
+    out_dir = os.path.join(DIST, "assets", "thumb")
+    os.makedirs(out_dir, exist_ok=True)
+    made = missing = 0
+    for rec in payload.get("plans", []):
+        rel = rec.get("image_local_path")
+        if not rel:
+            continue
+        src = os.path.join(ROOT, str(rel).lstrip("/"))
+        if not os.path.exists(src):
+            rec["image_local_path"] = ""
+            missing += 1
+            continue
+        name = os.path.splitext(os.path.basename(src))[0] + ".jpg"
+        try:
+            with Image.open(src) as im:
+                im = im.convert("RGB")
+                if im.width > max_w:
+                    im = im.resize((max_w, round(im.height * max_w / im.width)), Image.LANCZOS)
+                im.save(os.path.join(out_dir, name), "JPEG", quality=72, optimize=True,
+                        progressive=True)
+        except Exception:
+            rec["image_local_path"] = ""
+            missing += 1
+            continue
+        rec["image_local_path"] = f"assets/thumb/{name}"
+        rec["image_is_thumb"] = True
+        made += 1
+    # PDFs are never published — drop the local: refs regardless
+    pdfs = 0
+    for rec in payload.get("plans", []):
+        urls = rec.get("extra_urls") or []
+        kept = [u for u in urls if not str(u).startswith("local:")]
+        pdfs += len(urls) - len(kept)
+        rec["extra_urls"] = kept
+    return dict(thumbs=made, missing=missing, pdfs_dropped=pdfs)
+
+
 def strip_assets(payload):
     """Drop references to rehosted files, keeping a link out in their place."""
     stats = dict(images_dropped=0, images_linked=0, pdfs_dropped=0)
@@ -62,7 +109,11 @@ def strip_assets(payload):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--with-assets", action="store_true",
-                    help="rehost the vendor images and PDFs (private repo only)")
+                    help="rehost FULL-SIZE images and plan PDFs (private repo only)")
+    ap.add_argument("--no-thumbs", action="store_true",
+                    help="publish no images at all; link out instead")
+    ap.add_argument("--thumb-width", type=int, default=520,
+                    help="max thumbnail width in px (default 520)")
     ap.add_argument("--base", default="",
                     help="path prefix for project pages, e.g. /woodshed")
     args = ap.parse_args()
@@ -83,20 +134,29 @@ def main():
     payload["meta"]["publish"] = True
     payload["meta"]["assets_rehosted"] = bool(args.with_assets)
 
+    NOTE_BASE = ("Every record was fetched from its source, extracted, then independently "
+                 "fact-checked by a second agent; corrections are shown in each detail panel. "
+                 "Prices and specs are only as current as the source page.")
     if args.with_assets:
         for sub in ("img", "pdf"):
-            s = os.path.join(ROOT, "assets", sub)
-            if os.path.isdir(s):
-                shutil.copytree(s, os.path.join(DIST, "assets", sub))
+            sd = os.path.join(ROOT, "assets", sub)
+            if os.path.isdir(sd):
+                shutil.copytree(sd, os.path.join(DIST, "assets", sub))
         stats = None
-    else:
+        payload["meta"]["mode"] = "full-assets"
+    elif args.no_thumbs:
         stats = strip_assets(payload)
-        payload["meta"]["note"] = (
-            "Every record was fetched from its source, extracted, then independently fact-checked "
-            "by a second agent; corrections are shown in each detail panel. Vendor images and PDFs "
-            "are deliberately NOT rehosted here — each record links back to the source page. "
-            "Prices and specs are only as current as the source page."
-        )
+        payload["meta"]["mode"] = "no-images"
+        payload["meta"]["note"] = NOTE_BASE + (" Vendor images and PDFs are not rehosted here — "
+                                               "each record links back to the source page.")
+    else:
+        stats = make_thumbs(payload, args.thumb_width)
+        payload["meta"]["mode"] = "thumbnails"
+        payload["meta"]["thumb_width"] = args.thumb_width
+        payload["meta"]["note"] = NOTE_BASE + (
+            f" Preview images are downscaled thumbnails (max {args.thumb_width}px) shown for "
+            "identification, each credited to and linked back to its source. Full-size drawings "
+            "and plan PDFs are not rehosted — follow the link to the vendor for those.")
 
     # research-notes is our own analysis, safe to ship
     notes = os.path.join(ROOT, "data", "research-notes.md")
@@ -119,11 +179,14 @@ def main():
     opts = [p for p in live if p.get("kind") != "reference"]
     print(f"dist/ built: {human(dir_size(DIST))}")
     print(f"  {len(plans)} records ({len(opts)} build options, {len({p['vendor'] for p in opts})} vendors)")
-    if stats:
-        print(f"  assets NOT rehosted: {stats['images_dropped']} images dropped "
-              f"({stats['images_linked']} have a source link), {stats['pdfs_dropped']} local PDF refs removed")
+    if stats and "thumbs" in stats:
+        print(f"  {stats['thumbs']} thumbnails at max {args.thumb_width}px "
+              f"({stats['missing']} unavailable); {stats['pdfs_dropped']} plan-PDF refs removed")
+    elif stats:
+        print(f"  no images published: {stats['images_dropped']} dropped "
+              f"({stats['images_linked']} have a source link), {stats['pdfs_dropped']} PDF refs removed")
     else:
-        print("  WARNING: --with-assets rehosts vendor images and PDFs. Use a PRIVATE repo.")
+        print("  WARNING: --with-assets rehosts FULL-SIZE images and plan PDFs. Use a PRIVATE repo.")
 
 
 if __name__ == "__main__":

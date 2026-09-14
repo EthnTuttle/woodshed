@@ -48,9 +48,18 @@ def dir_size(path):
 
 
 def make_thumbs(payload, max_w):
-    """Downscale each hero image into dist/assets/thumb/. Returns stats."""
+    """Thumbnails live in assets/thumb/, which is TRACKED IN GIT.
+
+    That matters: assets/img/ (32 MB of originals) is gitignored, so a CI runner never sees it.
+    Generating thumbs straight into dist/ therefore produced an empty gallery on the deployed site
+    while succeeding locally. Instead we generate into the tracked assets/thumb/ when originals are
+    present, and copy from there — so the repo holds exactly the ~4 MB that gets published, and the
+    build works identically on a runner that only has the thumbnails.
+    """
     from PIL import Image
-    src_dir = os.path.join(ROOT, "assets", "img")
+    have_src = os.path.isdir(os.path.join(ROOT, "assets", "img"))
+    thumb_dir = os.path.join(ROOT, "assets", "thumb")
+    os.makedirs(thumb_dir, exist_ok=True)
     out_dir = os.path.join(DIST, "assets", "thumb")
     os.makedirs(out_dir, exist_ok=True)
     made = missing = 0
@@ -59,22 +68,22 @@ def make_thumbs(payload, max_w):
         if not rel:
             continue
         src = os.path.join(ROOT, str(rel).lstrip("/"))
-        if not os.path.exists(src):
-            rec["image_local_path"] = ""
-            missing += 1
-            continue
         name = os.path.splitext(os.path.basename(src))[0] + ".jpg"
-        try:
-            with Image.open(src) as im:
-                im = im.convert("RGB")
-                if im.width > max_w:
-                    im = im.resize((max_w, round(im.height * max_w / im.width)), Image.LANCZOS)
-                im.save(os.path.join(out_dir, name), "JPEG", quality=72, optimize=True,
-                        progressive=True)
-        except Exception:
+        thumb = os.path.join(thumb_dir, name)
+        if have_src and os.path.exists(src):
+            try:
+                with Image.open(src) as im:
+                    im = im.convert("RGB")
+                    if im.width > max_w:
+                        im = im.resize((max_w, round(im.height * max_w / im.width)), Image.LANCZOS)
+                    im.save(thumb, "JPEG", quality=72, optimize=True, progressive=True)
+            except Exception:
+                pass
+        if not os.path.exists(thumb):
             rec["image_local_path"] = ""
             missing += 1
             continue
+        shutil.copy2(thumb, os.path.join(out_dir, name))
         rec["image_local_path"] = f"assets/thumb/{name}"
         rec["image_is_thumb"] = True
         made += 1
